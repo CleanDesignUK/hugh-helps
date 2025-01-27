@@ -8,660 +8,584 @@
     name="description"
     content="Comprehensive mental health and life coaching services including stress, anxiety, insomnia, IBS, phobias, stopping smoking, chronic fatigue (ME), driving test nerves, exam nerves, fears, anger issues, pain relief, hypnobirthing, career problems, relationship problems, habits, nail biting, public speaking, weight and food issues, skin problems, confidence, feeling down, relaxation, tinnitus, emotions, self-consciousness, stage fright, job interview nerves, sporting performance and more. Serving Shepperton, Addlestone, Thames Ditton, Cobham, and surrounding areas."
   />
-  
+
   <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
-  
-  <!-- Custom CSS -->
-  <style>
-    /* Custom Styles */
-    body {
-      padding-top: 70px;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f5f5f5;
-      color: #3d3d3d;
-    }
-    .service-section {
-      margin-bottom: 50px;
-    }
-    .service-card {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-bottom: 30px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-    }
-    .service-card img {
-      width: 100%;
-      height: auto;
-      max-width: 300px;
-      object-fit: cover;
-    }
-    .service-card-body {
-      padding: 20px;
-    }
-    .service-card-body h3 {
-      margin-bottom: 15px;
-      color: #1f4e79;
-    }
-    .service-card-body p {
-      margin-bottom: 10px;
-    }
-    .btn-primary {
-      background-color: #1f4e79;
-      border: none;
-    }
-    .btn-primary:hover {
-      background-color: #76d7ea;
-      color: #fff;
-    }
-    .navbar-dark .navbar-nav .nav-link.active {
-      color: #c4e3f2;
-    }
-    .navbar-dark .navbar-nav .nav-link:hover {
-      color: #76d7ea;
-    }
-    footer {
-      background-color: #1f4e79;
-      color: #fff;
-    }
-    footer a {
-      color: #c4e3f2;
-      text-decoration: none;
-    }
-    footer a:hover {
-      color: #76d7ea;
-      text-decoration: none;
-    }
-    @media (max-width: 767.98px) {
-      .service-card {
-        flex-direction: column;
-      }
-      .service-card img {
-        max-width: 100%;
-      }
-    }
-    /* Search Bar Styles */
-    .search-bar {
-      margin-bottom: 40px;
-    }
-    .search-bar input {
-      width: 100%;
-      padding: 10px 15px;
-      border: 2px solid #1f4e79;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-    .search-bar input:focus {
-      outline: none;
-      border-color: #76d7ea;
-    }
-  </style>
-  
+
+  <!-- Global Styles (Fonts, Navbar, Footer, etc.) -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Page-Specific Styles for Additional Services Page -->
+  <link rel="stylesheet" href="services-general.css" />
+
   <!-- Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "LocalBusiness",
-        "name": "Hugh Helps Alpha Consultancy",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Your Street Address",
-          "addressLocality": "Shepperton",
-          "addressRegion": "Surrey",
-          "postalCode": "TW17",
-          "addressCountry": "UK"
-        },
-        "telephone": "07443 625 032",
-        "email": "hugh@hughhelps.com",
-        "url": "https://www.hughhelpsalpha.com",
-        "sameAs": [
-          "https://www.facebook.com/hughhelpsalpha",
-          "https://www.instagram.com/hughhelpsalpha"
-        ]
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Stress Management Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Anxiety Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Insomnia Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "IBS (Irritable Bowel Syndrome) Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Phobia Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Stopping Smoking Hypnotherapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Chronic Fatigue (ME) Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Driving Test Nerves Coaching",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Exam Nerves Coaching",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Anger Issues Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Pain Relief Hypnotherapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Hypnobirthing",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Career Problems Coaching",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Relationship Problems Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Habit Correction Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Nail Biting Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Public Speaking Coaching",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Weight and Food Issues Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Skin Problems Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Confidence Building Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Feeling Down Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Relaxation Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Tinnitus Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Emotions Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Self-Consciousness Therapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Stage Fright Coaching",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Job Interview Nerves Coaching",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Sporting Performance Hypnotherapy",
-        "provider": {
-          "@id": "https://www.hughhelpsalpha.com#LocalBusiness"
-        }
-      }
-    ]
-  }
-  </script>
+
 </head>
 <body>
-
-  <!-- Navigation Bar -->
+  <!-- ===== NAVIGATION BAR ===== -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Hugh Helps</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="index.html"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About Us</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               Services
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="service-1.html#professional-therapy">Therapist Services</a></li>
-              <li><a class="dropdown-item" href="service-2.html#hypnosis-and-hypnotism">Hypnotherapy Services</a></li>
-              <li><a class="dropdown-item" href="service-3.html#couples-therapy">Couples Therapy Services</a></li>
-              <li><a class="dropdown-item" href="service-4.html#life-coaching">Life Coaching Services</a></li>
-              <li><a class="dropdown-item" href="service-5.html#mental-health-therapies">Mental Health Therapies</a></li>
-              <li><a class="dropdown-item active" href="services-general.html">Additional Services</a></li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="services-1.html#professional-therapy"
+                  >Therapist Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="services-2.html#hypnosis-and-hypnotism"
+                  >Hypnotherapy Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="services-3.html#couples-therapy"
+                  >Couples Therapy Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="services-4.html#life-coaching-services"
+                  >Life Coaching Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="services-5.html#mental-health-therapies"
+                  >Mental Health Therapies</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item active"
+                  href="services-general.html"
+                  >Additional Services</a
+                >
+              </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="contact.html"
+              >Contact Us</a
+            >
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- ===== /NAVIGATION BAR ===== -->
 
-  <!-- Additional Services Section -->
+  <!-- ===== ADDITIONAL SERVICES SECTION ===== -->
   <section id="additional-services" class="py-5">
     <div class="container">
       <h1 class="text-center mb-4">Additional Services in Shepperton and Nearby Areas</h1>
-      <h2 class="text-center mb-5">Comprehensive Mental Health and Life Coaching Support</h2>
+      <h2 class="text-center mb-5">
+        Comprehensive Mental Health and Life Coaching Support
+      </h2>
 
       <!-- Search Function -->
       <div class="search-bar">
-        <input type="text" id="serviceSearch" class="form-control" placeholder="Search for a service..." />
+        <input
+          type="text"
+          id="serviceSearch"
+          class="form-control"
+          placeholder="Search for a service..."
+        />
       </div>
 
-      <!-- Service 1: IBS (Irritable Bowel Syndrome) Therapy -->
+      <!-- SERVICES (Each As a Card) -->
+      <!-- IBS Therapy -->
       <div id="ibs-relief" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="IBS Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="IBS Therapy"
+        />
         <div class="service-card-body">
           <h3>IBS (Irritable Bowel Syndrome) Therapy</h3>
           <p>
-            Address the challenges of IBS through targeted therapeutic techniques designed to improve digestive health and overall well-being. Our approach combines cognitive-behavioral strategies with relaxation techniques to manage symptoms effectively.
+            Address the challenges of IBS through targeted therapeutic techniques designed to improve digestive health and overall well-being. Our approach combines cognitive-behavioural strategies with relaxation techniques to manage symptoms effectively.
           </p>
           <a href="contact.html" class="btn btn-primary">Learn More About IBS Therapy</a>
         </div>
       </div>
 
-      <!-- Service 2: Chronic Fatigue (ME) Therapy -->
+      <!-- Chronic Fatigue Therapy -->
       <div id="chronic-fatigue" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Chronic Fatigue Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Chronic Fatigue Therapy"
+        />
         <div class="service-card-body">
           <h3>Chronic Fatigue (ME) Therapy</h3>
           <p>
-            Manage and overcome chronic fatigue with our specialized therapy sessions. We provide strategies to enhance energy levels, reduce fatigue symptoms, and improve your quality of life through a personalized approach.
+            Manage and overcome chronic fatigue with our specialised therapy sessions. We provide strategies to enhance energy levels, reduce fatigue symptoms, and improve your quality of life through a personalised approach.
           </p>
-          <a href="contact.html" class="btn btn-primary">Start Chronic Fatigue Therapy</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Start Chronic Fatigue Therapy</a
+          >
         </div>
       </div>
 
-      <!-- Service 3: Driving Test Nerves Coaching -->
+      <!-- Driving Test Nerves Coaching -->
       <div id="driving-test-nerves" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Driving Test Nerves Coaching" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Driving Test Nerves Coaching"
+        />
         <div class="service-card-body">
           <h3>Driving Test Nerves Coaching</h3>
           <p>
             Overcome anxiety related to driving tests with our coaching sessions. We equip you with techniques to manage nerves, boost confidence, and ensure you perform at your best during your driving assessment.
           </p>
-          <a href="contact.html" class="btn btn-primary">Book Driving Test Nerves Coaching</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Book Driving Test Nerves Coaching</a
+          >
         </div>
       </div>
 
-      <!-- Service 4: Exam Nerves Coaching -->
+      <!-- Exam Nerves Coaching -->
       <div id="exam-nerves" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Exam Nerves Coaching" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Exam Nerves Coaching"
+        />
         <div class="service-card-body">
           <h3>Exam Nerves Coaching</h3>
           <p>
-            Reduce anxiety and enhance performance during exams with our specialized coaching. Learn effective stress management techniques and build the confidence needed to excel in your academic endeavors.
+            Reduce anxiety and enhance performance during exams with our specialised coaching. Learn effective stress management techniques and build the confidence needed to excel in your academic endeavours.
           </p>
-          <a href="contact.html" class="btn btn-primary">Enhance Your Exam Performance</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Enhance Your Exam Performance</a
+          >
         </div>
       </div>
 
-      <!-- Service 5: Anger Issues Therapy -->
+      <!-- Anger Issues Therapy -->
       <div id="anger-management" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Anger Management Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Anger Management Therapy"
+        />
         <div class="service-card-body">
           <h3>Anger Issues Therapy</h3>
           <p>
             Manage and channel your anger constructively with our therapy sessions. We provide strategies to control anger responses, improve relationships, and foster a more peaceful and balanced life.
           </p>
-          <a href="contact.html" class="btn btn-primary">Start Anger Management Therapy</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Start Anger Management Therapy</a
+          >
         </div>
       </div>
 
-      <!-- Service 6: Pain Relief Hypnotherapy -->
+      <!-- Pain Relief Hypnotherapy -->
       <div id="pain-relief" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Pain Relief Hypnotherapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Pain Relief Hypnotherapy"
+        />
         <div class="service-card-body">
           <h3>Pain Relief Hypnotherapy</h3>
           <p>
             Alleviate chronic pain through our hypnotherapy sessions. By accessing your subconscious mind, we help reduce pain perception and enhance your ability to manage discomfort effectively.
           </p>
-          <a href="contact.html" class="btn btn-primary">Learn More About Pain Relief Hypnotherapy</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Learn More About Pain Relief Hypnotherapy</a
+          >
         </div>
       </div>
 
-      <!-- Service 7: Hypnobirthing -->
+      <!-- Hypnobirthing -->
       <div id="hypnobirthing" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Hypnobirthing" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Hypnobirthing"
+        />
         <div class="service-card-body">
           <h3>Hypnobirthing</h3>
           <p>
-            Prepare for childbirth with our Hypnobirthing services. We utilize hypnotherapy techniques to promote relaxation, reduce fear, and ensure a calm and positive birthing experience for expectant mothers.
+            Prepare for childbirth with our Hypnobirthing services. We utilise hypnotherapy techniques to promote relaxation, reduce fear, and ensure a calm and positive birthing experience for expectant mothers.
           </p>
-          <a href="contact.html" class="btn btn-primary">Book Hypnobirthing Session</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Book Hypnobirthing Session</a
+          >
         </div>
       </div>
 
-      <!-- Service 8: Career Problems Coaching -->
+      <!-- Career Problems Coaching -->
       <div id="career-problems" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Career Problems Coaching" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Career Problems Coaching"
+        />
         <div class="service-card-body">
           <h3>Career Problems Coaching</h3>
           <p>
             Navigate career challenges and achieve professional growth with our coaching services. We assist you in setting career goals, overcoming obstacles, and enhancing your job satisfaction and performance.
           </p>
-          <a href="contact.html" class="btn btn-primary">Enhance Your Career</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Enhance Your Career</a
+          >
         </div>
       </div>
 
-      <!-- Service 9: Relationship Problems Therapy -->
+      <!-- Relationship Problems Therapy -->
       <div id="relationship-problems" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Relationship Problems Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Relationship Problems Therapy"
+        />
         <div class="service-card-body">
           <h3>Relationship Problems Therapy</h3>
           <p>
             Improve your personal and professional relationships through our targeted therapy sessions. We help you understand relationship dynamics, enhance communication, and resolve conflicts effectively.
           </p>
-          <a href="contact.html" class="btn btn-primary">Start Relationship Therapy</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Start Relationship Therapy</a
+          >
         </div>
       </div>
 
-      <!-- Service 10: Habit Correction Therapy -->
+      <!-- Habit Correction Therapy -->
       <div id="habits" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Habit Correction Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Habit Correction Therapy"
+        />
         <div class="service-card-body">
           <h3>Habit Correction Therapy</h3>
           <p>
-            Break unwanted habits and develop positive behaviors with our Habit Correction Therapy. We provide strategies to identify triggers, implement change, and maintain healthy habits for long-term success.
+            Break unwanted habits and develop positive behaviours with our Habit Correction Therapy. We provide strategies to identify triggers, implement change, and maintain healthy habits for long-term success.
           </p>
-          <a href="contact.html" class="btn btn-primary">Correct Unwanted Habits</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Correct Unwanted Habits</a
+          >
         </div>
       </div>
 
-      <!-- Service 11: Nail Biting Therapy -->
+      <!-- Nail Biting Therapy -->
       <div id="nail-biting" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Nail Biting Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Nail Biting Therapy"
+        />
         <div class="service-card-body">
           <h3>Nail Biting Therapy</h3>
           <p>
-            Overcome nail biting with our specialized therapy sessions. We address the underlying causes of this habit and provide techniques to stop nail biting and promote healthier behaviors.
+            Overcome nail biting with our specialised therapy sessions. We address the underlying causes of this habit and provide techniques to stop nail biting and promote healthier behaviours.
           </p>
-          <a href="contact.html" class="btn btn-primary">Stop Nail Biting Today</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Stop Nail Biting Today</a
+          >
         </div>
       </div>
 
-      <!-- Service 12: Public Speaking Coaching -->
+      <!-- Public Speaking Coaching -->
       <div id="public-speaking" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Public Speaking Coaching" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Public Speaking Coaching"
+        />
         <div class="service-card-body">
           <h3>Public Speaking Coaching</h3>
           <p>
             Enhance your public speaking skills and overcome fear with our coaching services. We help you build confidence, improve presentation techniques, and communicate effectively in any public setting.
           </p>
-          <a href="contact.html" class="btn btn-primary">Enhance Your Public Speaking</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Enhance Your Public Speaking</a
+          >
         </div>
       </div>
 
-      <!-- Service 13: Weight and Food Issues Therapy -->
+      <!-- Weight and Food Issues Therapy -->
       <div id="weight-and-food-issues" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Weight and Food Issues Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Weight and Food Issues Therapy"
+        />
         <div class="service-card-body">
           <h3>Weight and Food Issues Therapy</h3>
           <p>
             Address weight management and food-related concerns with our comprehensive therapy sessions. We focus on developing healthy eating habits, managing cravings, and promoting a balanced lifestyle.
           </p>
-          <a href="contact.html" class="btn btn-primary">Start Weight Management Therapy</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Start Weight Management Therapy</a
+          >
         </div>
       </div>
 
-      <!-- Service 14: Skin Problems Therapy -->
+      <!-- Skin Problems Therapy -->
       <div id="skin-problems" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Skin Problems Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Skin Problems Therapy"
+        />
         <div class="service-card-body">
           <h3>Skin Problems Therapy</h3>
           <p>
             Manage skin-related issues by addressing the psychological factors contributing to them. Our therapy sessions help reduce stress-induced skin problems and promote overall skin health.
           </p>
-          <a href="contact.html" class="btn btn-primary">Improve Your Skin Health</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Improve Your Skin Health</a
+          >
         </div>
       </div>
 
-      <!-- Service 15: Confidence Building Therapy -->
+      <!-- Confidence Building Therapy -->
       <div id="confidence" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Confidence Building Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Confidence Building Therapy"
+        />
         <div class="service-card-body">
           <h3>Confidence Building Therapy</h3>
           <p>
             Boost your self-esteem and confidence with our targeted therapy sessions. We help you overcome self-doubt, embrace your strengths, and build a positive self-image.
           </p>
-          <a href="contact.html" class="btn btn-primary">Build Your Confidence</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Build Your Confidence</a
+          >
         </div>
       </div>
 
-      <!-- Service 16: Feeling Down Therapy -->
+      <!-- Feeling Down Therapy -->
       <div id="feeling-down" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Feeling Down Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Feeling Down Therapy"
+        />
         <div class="service-card-body">
           <h3>Feeling Down Therapy</h3>
           <p>
             Lift your spirits and improve your mood with our Feeling Down Therapy sessions. We provide support and strategies to help you overcome feelings of sadness and enhance your emotional well-being.
           </p>
-          <a href="contact.html" class="btn btn-primary">Improve Your Mood</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Improve Your Mood</a
+          >
         </div>
       </div>
 
-      <!-- Service 17: Relaxation Therapy -->
+      <!-- Relaxation Therapy -->
       <div id="relaxation" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Relaxation Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Relaxation Therapy"
+        />
         <div class="service-card-body">
           <h3>Relaxation Therapy</h3>
           <p>
-            Achieve deep relaxation and reduce stress with our Relaxation Therapy sessions. We utilize various techniques to help you unwind, improve mental clarity, and enhance overall well-being.
+            Achieve deep relaxation and reduce stress with our Relaxation Therapy sessions. We utilise various techniques to help you unwind, improve mental clarity, and enhance overall well-being.
           </p>
-          <a href="contact.html" class="btn btn-primary">Start Relaxation Therapy</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Start Relaxation Therapy</a
+          >
         </div>
       </div>
 
-      <!-- Service 18: Tinnitus Therapy -->
+      <!-- Tinnitus Therapy -->
       <div id="tinnitus" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Tinnitus Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Tinnitus Therapy"
+        />
         <div class="service-card-body">
           <h3>Tinnitus Therapy</h3>
           <p>
-            Manage the persistent ringing in your ears with our specialized Tinnitus Therapy. We offer strategies to reduce the perception of tinnitus and improve your quality of life.
+            Manage the persistent ringing in your ears with our specialised Tinnitus Therapy. We offer strategies to reduce the perception of tinnitus and improve your quality of life.
           </p>
-          <a href="contact.html" class="btn btn-primary">Manage Tinnitus</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Manage Tinnitus</a
+          >
         </div>
       </div>
 
-      <!-- Service 19: Emotions Therapy -->
+      <!-- Emotions Therapy -->
       <div id="emotions" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Emotions Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Emotions Therapy"
+        />
         <div class="service-card-body">
           <h3>Emotions Therapy</h3>
           <p>
             Gain control over your emotions with our Emotions Therapy sessions. We help you understand and manage your emotional responses, leading to a more balanced and fulfilling life.
           </p>
-          <a href="contact.html" class="btn btn-primary">Manage Your Emotions</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Manage Your Emotions</a
+          >
         </div>
       </div>
 
-      <!-- Service 20: Self-Consciousness Therapy -->
+      <!-- Self-Consciousness Therapy -->
       <div id="self-consciousness" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Self-Consciousness Therapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Self-Consciousness Therapy"
+        />
         <div class="service-card-body">
           <h3>Self-Consciousness Therapy</h3>
           <p>
             Overcome feelings of self-consciousness with our targeted therapy sessions. We provide techniques to boost self-confidence and reduce self-awareness, allowing you to engage more freely in social situations.
           </p>
-          <a href="contact.html" class="btn btn-primary">Boost Your Confidence</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Boost Your Confidence</a
+          >
         </div>
       </div>
 
-      <!-- Service 21: Stage Fright Coaching -->
+      <!-- Stage Fright Coaching -->
       <div id="stage-fright" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Stage Fright Coaching" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Stage Fright Coaching"
+        />
         <div class="service-card-body">
           <h3>Stage Fright Coaching</h3>
           <p>
             Conquer stage fright and perform with confidence through our coaching sessions. We equip you with strategies to manage anxiety, enhance your presence, and deliver impactful performances.
           </p>
-          <a href="contact.html" class="btn btn-primary">Overcome Stage Fright</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Overcome Stage Fright</a
+          >
         </div>
       </div>
 
-      <!-- Service 22: Job Interview Nerves Coaching -->
+      <!-- Job Interview Nerves Coaching -->
       <div id="job-interview-nerves" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Job Interview Nerves Coaching" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Job Interview Nerves Coaching"
+        />
         <div class="service-card-body">
           <h3>Job Interview Nerves Coaching</h3>
           <p>
-            Prepare for job interviews with confidence through our specialized coaching. We help you manage nerves, present yourself effectively, and excel in your interviews to secure your desired position.
+            Prepare for job interviews with confidence through our specialised coaching. We help you manage nerves, present yourself effectively, and excel in your interviews to secure your desired position.
           </p>
-          <a href="contact.html" class="btn btn-primary">Ace Your Job Interviews</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Ace Your Job Interviews</a
+          >
         </div>
       </div>
 
-      <!-- Service 23: Sporting Performance Hypnotherapy -->
+      <!-- Sporting Performance Hypnotherapy -->
       <div id="sporting-performance" class="service-section service-card">
-        <img src="https://via.placeholder.com/300x200" alt="Sporting Performance Hypnotherapy" />
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Sporting Performance Hypnotherapy"
+        />
         <div class="service-card-body">
           <h3>Sporting Performance Hypnotherapy</h3>
           <p>
             Enhance your athletic performance with our Sporting Performance Hypnotherapy. We focus on improving focus, reducing anxiety, and boosting motivation to help you achieve your sporting goals.
           </p>
-          <a href="contact.html" class="btn btn-primary">Improve Your Sporting Performance</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            >Improve Your Sporting Performance</a
+          >
         </div>
       </div>
 
       <!-- Related Services -->
       <div class="mt-5">
         <h4>Explore More Services</h4>
-        <a href="service-1.html#professional-therapy" class="btn btn-link">Therapist Services</a>
-        <a href="service-2.html#hypnosis-and-hypnotism" class="btn btn-link">Hypnotherapy Services</a>
-        <a href="service-3.html#couples-therapy" class="btn btn-link">Couples Therapy Services</a>
-        <a href="service-4.html#life-coaching" class="btn btn-link">Life Coaching Services</a>
-        <a href="service-5.html#mental-health-therapies" class="btn btn-link">Mental Health Therapies</a>
+        <a href="services-1.html#professional-therapy" class="btn btn-link"
+          >Therapist Services</a
+        >
+        <a href="services-2.html#hypnosis-and-hypnotism" class="btn btn-link"
+          >Hypnotherapy Services</a
+        >
+        <a href="services-3.html#couples-therapy" class="btn btn-link"
+          >Couples Therapy Services</a
+        >
+        <a href="services-4.html#life-coaching-services" class="btn btn-link"
+          >Life Coaching Services</a
+        >
+        <a href="services-5.html#mental-health-therapies" class="btn btn-link"
+          >Mental Health Therapies</a
+        >
       </div>
 
       <!-- Testimonials -->
@@ -694,13 +618,12 @@
       </div>
     </div>
   </section>
+  <!-- ===== /ADDITIONAL SERVICES SECTION ===== -->
 
-  <!-- Footer -->
+  <!-- ===== FOOTER ===== -->
   <footer class="bg-dark text-white py-4">
     <div class="container text-center">
-      <p>
-        &copy; 2025 Hugh Helps Alpha Consultancy. All Rights Reserved.
-      </p>
+      <p>&copy; 2025 Hugh Helps Alpha Consultancy. All Rights Reserved.</p>
       <p>
         <a
           href="https://www.facebook.com/hughhelpsalpha"
@@ -708,12 +631,16 @@
         >
           Facebook
         </a>
-        <a href="https://www.instagram.com/hughhelpsalpha" class="text-white">
+        <a
+          href="https://www.instagram.com/hughhelpsalpha"
+          class="text-white"
+        >
           Instagram
         </a>
       </p>
     </div>
   </footer>
+  <!-- ===== /FOOTER ===== -->
 
   <!-- Bootstrap JS and dependencies -->
   <script
