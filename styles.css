@@ -1,0 +1,106 @@
+/* ==========================================================================
+   HOME PAGE STYLES (index.html)
+   - Hero, intro sections, local areas, testimonials, etc.
+========================================================================== */
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+    background: url('https://via.placeholder.com/1200x800?text=Therapy+Counselling+Hypnotherapy')
+      no-repeat center center / cover;
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 15px;
+    color: #fff;
+  }
+  .hero-title {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .hero-subtitle {
+    font-family: var(--font-subtitle);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* ===== INTRO SECTION ===== */
+  .intro-section .section-title {
+    font-family: var(--font-title);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  .intro-section .section-text {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* ===== SERVICES PREVIEW SECTION ===== */
+  .services-preview .section-title {
+    font-family: var(--font-title);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  .service-preview-card .card-title {
+    font-size: 1.125rem;
+  }
+  .service-preview-card .card-text {
+    font-size: 0.95rem;
+  }
+  
+  /* ===== LOCAL REACH SECTION ===== */
+  .local-reach-section .section-title {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+  }
+  .local-reach-section .section-text {
+    font-family: var(--font-body);
+    font-size: 1rem;
+  }
+  .location-box {
+    border-radius: 4px;
+  }
+  .location-box h6 {
+    font-family: var(--font-subtitle);
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  .location-box small {
+    font-family: var(--font-body);
+  }
+  
+  /* ===== TESTIMONIALS SECTION ===== */
+  .testimonials-section .section-title {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+  }
+  .testimonial-box {
+    background-color: #fff;
+    border-radius: 6px;
+  }
+  .testimonial {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-style: italic;
+  }
+  
+  /* ===== CTA SECTION ===== */
+  .cta-section .cta-title {
+    font-family: var(--font-title);
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .cta-section .cta-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* ===== RESPONSIVE NOTES ===== */
+  /* Optional: Add additional media queries if needed */
+  

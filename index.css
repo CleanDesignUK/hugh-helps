@@ -1,0 +1,146 @@
+/* ==========================================================================
+   GLOBAL STYLES FOR HUGH HELPS ALPHA CONSULTANCY
+   - Fonts, color variables, navbar, footer, etc.
+========================================================================== */
+
+/* ===== FONT IMPORTS & VARIABLES ===== */
+:root {
+    --color-bg-light: #f5f5f5;       /* Light background */
+    --color-accent-light: #c4e3f2;   /* Lighter accent */
+    --color-accent: #76d7ea;         /* Accent color */
+    --color-accent-dark: #1f4e79;    /* Darker accent */
+    --color-text-dark: #3d3d3d;      /* Dark text color */
+  
+    --font-title: "Source Serif 4", serif;
+    --font-subtitle: "Quicksand", sans-serif;
+    --font-body: "Open Sans", sans-serif;
+  }
+  
+  /* ===== RESETS & GLOBAL ELEMENTS ===== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg-light);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    padding-top: 70px; /* Offset for fixed navbar */
+  }
+  
+  /* Remove default link underlines in a consistent way */
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+    color: var(--color-accent-dark);
+  }
+  
+  /* ===== HEADINGS ===== */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+    color: var(--color-text-dark);
+  }
+  
+  /* ===== LINKS & BUTTONS ===== */
+  .btn-primary {
+    background-color: var(--color-accent-dark) !important;
+    border: none;
+  }
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: var(--color-accent) !important;
+    color: #fff;
+  }
+  
+  .btn-outline-primary {
+    color: var(--color-accent-dark) !important;
+    border-color: var(--color-accent-dark) !important ;
+  }
+  .btn-outline-primary:hover,
+  .btn-outline-primary:focus {
+    background-color: var(--color-accent-dark) !important ;
+    color: #fff !important;
+  }
+  
+  /* ===== NAVBAR ===== */
+  .custom-navbar {
+    background-color: var(--color-accent-dark) !important;
+  }
+  .custom-navbar .navbar-brand {
+    font-family: var(--font-subtitle);
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .custom-navbar .navbar-brand:hover {
+    color: var(--color-accent);
+  }
+  .custom-navbar .brand-title {
+    display: block;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  .custom-navbar .brand-subtitle {
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+  .custom-navbar .nav-link {
+    font-family: var(--font-body);
+    font-weight: 400;
+    margin-right: 1rem;
+    color: #fff;
+  }
+  .custom-navbar .nav-link:hover {
+    color: var(--color-accent);
+  }
+  .custom-navbar .nav-link.active {
+    color: var(--color-accent-light) !important;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .navbar-toggler-icon {
+    background-image: none;
+  }
+  .navbar-toggler-icon::before {
+    content: "☰";
+    font-size: 1.25rem;
+    color: #fff;
+  }
+  
+  /* ===== FOOTER ===== */
+  .footer {
+    background-color: var(--color-accent-light);
+    color: var(--color-text-dark);
+  }
+  .footer p {
+    margin: 0;
+  }
+  .footer small {
+    font-family: var(--font-body);
+  }
+  
+  /* ===== CARD UTILS ===== */
+  .card {
+    border: none;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .card-img-top {
+    border-bottom: 3px solid var(--color-accent);
+  }
+  .card-title {
+    font-family: var(--font-subtitle);
+    font-weight: 600;
+    color: var(--color-text-dark);
+  }
+  
+  /* ===== MISC UTILS ===== */
+  .shadow-sm {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  

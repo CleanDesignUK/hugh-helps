@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Hugh Helps Alpha Consultancy</title>
+  <meta name="description" content="Get in touch with Hugh Helps Alpha Consultancy for professional therapy and counselling services in Shepperton, Sunbury-on-Thames, Walton-on-Thames, Weybridge, and surrounding areas. Book your free consultation today!">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      padding-top: 70px; /* To prevent navbar overlapping content */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Hugh Helps Alpha Consultancy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" 
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown">
+              <!-- Service 1 -->
+              <li><a class="dropdown-item" href="service-1.html#professional-therapy">Professional Therapy</a></li>
+              <li><a class="dropdown-item" href="service-1.html#expert-counselling">Expert Counselling</a></li>
+              <li><a class="dropdown-item" href="service-1.html#local-therapy-sessions">Local Therapy Sessions</a></li>
+              <!-- Service 2 -->
+              <li><a class="dropdown-item" href="service-2.html#hypnosis-hypnotism">Hypnosis and Hypnotism</a></li>
+              <li><a class="dropdown-item" href="service-2.html#professional-hypnotherapy">Professional Hypnotherapy</a></li>
+              <li><a class="dropdown-item" href="service-2.html#sleep-improvement-hypnosis">Sleep Improvement Hypnosis</a></li>
+              <!-- Service 3 -->
+              <li><a class="dropdown-item" href="service-3.html#expert-couples-therapy">Expert Couples Therapy</a></li>
+              <li><a class="dropdown-item" href="service-3.html#dedicated-couples-therapist">Dedicated Couples Therapy Therapist</a></li>
+              <li><a class="dropdown-item" href="service-3.html#effective-marriage-counseling">Effective Marriage Counseling</a></li>
+              <!-- Service 4 -->
+              <li><a class="dropdown-item" href="service-4.html#certified-life-coach">Certified Life Coach</a></li>
+              <li><a class="dropdown-item" href="service-4.html#personalized-coaching-life">Personalized Coaching Life</a></li>
+              <li><a class="dropdown-item" href="service-4.html#professional-life-coach">Professional Life Coach</a></li>
+              <!-- Service 5 -->
+              <li><a class="dropdown-item" href="service-5.html#nhs-talking-therapies">NHS Talking Therapies</a></li>
+              <li><a class="dropdown-item" href="service-5.html#comprehensive-nhs-therapy">Comprehensive NHS Therapy</a></li>
+              <li><a class="dropdown-item" href="service-5.html#nhs-hypnotherapy">NHS Hypnotherapy</a></li>
+              <!-- Add more services as needed -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h1 class="text-center">Contact Us</h1>
+      <p class="text-center">Schedule your free initial consultation today with Hugh Helps Alpha Consultancy, serving Shepperton, Sunbury-on-Thames, Walton-on-Thames, and Weybridge.</p>
+      
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <!-- Contact Form -->
+          <form action="submit_form_endpoint" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+            <div class="mb-3">
+              <label for="service" class="form-label">Service Interested In</label>
+              <select class="form-select" id="service" name="service">
+                <option selected>Select a service</option>
+                <option value="Professional Therapy">Professional Therapy</option>
+                <option value="Expert Counselling">Expert Counselling</option>
+                <option value="Local Therapy Sessions">Local Therapy Sessions</option>
+                <option value="Hypnosis and Hypnotism">Hypnosis and Hypnotism</option>
+                <option value="Professional Hypnotherapy">Professional Hypnotherapy</option>
+                <option value="Sleep Improvement Hypnosis">Sleep Improvement Hypnosis</option>
+                <option value="Expert Couples Therapy">Expert Couples Therapy</option>
+                <option value="Dedicated Couples Therapy Therapist">Dedicated Couples Therapy Therapist</option>
+                <option value="Effective Marriage Counseling">Effective Marriage Counseling</option>
+                <option value="Certified Life Coach">Certified Life Coach</option>
+                <option value="Personalized Coaching Life">Personalized Coaching Life</option>
+                <option value="Professional Life Coach">Professional Life Coach</option>
+                <option value="NHS Talking Therapies">NHS Talking Therapies</option>
+                <option value="Comprehensive NHS Therapy">Comprehensive NHS Therapy</option>
+                <option value="NHS Hypnotherapy">NHS Hypnotherapy</option>
+                <!-- Add more service options as needed -->
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          
+          <hr>
+          
+          <!-- Contact Details -->
+          <h4>Contact Details</h4>
+          <p>Call or Text: <a href="tel:07443625032">07443 625 032</a> | <a href="tel:01932252777">01932 252 777</a></p>
+          <p>Email: <a href="mailto:hugh@hughhelps.com">hugh@hughhelps.com</a> | <a href="mailto:hypnotherapygb@aol.com">hypnotherapygb@aol.com</a></p>
+          
+          <!-- Getting Here -->
+          <h4>Getting Here</h4>
+          <p><strong>By Car:</strong> We are about 10 minutes from J1 of the M3 and around 15 minutes from J11 of the M25. Shepperton is approximately 30 minutes by car from Heathrow Airport.</p>
+          <p><strong>By Rail:</strong> We are just a very short walk from Shepperton Railway Station. We are also less than a 10-minute drive from Walton-on-Thames Railway Station, which is 25 minutes from London Waterloo and has excellent connections through Surrey.</p>
+          
+          <!-- Map -->
+          <div class="mt-4">
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Hugh Helps Alpha Consultancy. All rights reserved.</p>
+      <p>
+        <a href="https://www.facebook.com/hughhelpsalpha" class="text-white me-3">Facebook</a>
+        <a href="https://www.instagram.com/hughhelpsalpha" class="text-white">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
