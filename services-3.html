@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Couples Therapy Services - Hugh Helps Alpha Consultancy</title>
-  <meta name="description" content="Professional couples therapy, couples therapy therapists, and marriage counseling in Shepperton, East Molesey, Chertsey, and Staines-upon-Thames. Strengthen your relationship today!">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Couples Therapy Services in Shepperton, Weybridge, Hampton, Egham, Staines-upon-Thames, and Cobham - Hugh Helps Alpha Consultancy</title>
+  <meta
+    name="description"
+    content="Professional couples therapy services, including marriage counselling and relationship counselling, for clients in Shepperton, Weybridge, Hampton, Egham, Staines-upon-Thames, and Cobham. Improve communication, resolve conflict, and rebuild trust. Book an appointment today!"
+  />
+
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <style>
-    /* Custom Styles */
-    body {
-      padding-top: 70px;
-    }
-    .service-section {
-      margin-bottom: 50px;
-    }
-  </style>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom Inline Styles (Replace with external CSS if desired) -->
+    <!-- Global Styles (Navbar, Footer, etc.) -->
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- Page-Specific Styles for Hypnotherapy Services Page -->
+  <link rel="stylesheet" href="services-3.css" />
+
   <!-- Schema Markup -->
   <script type="application/ld+json">
   {
@@ -37,163 +42,327 @@
       "telephone": "07443 625 032",
       "email": "hugh@hughhelps.com",
       "url": "https://www.hughhelpsalpha.com"
-    }
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Shepperton, Weybridge, Hampton, Egham, Staines-upon-Thames, Cobham"
+    },
+    "sameAs": [
+      "https://www.facebook.com/hughhelpsalpha",
+      "https://www.instagram.com/hughhelpsalpha"
+    ]
   }
   </script>
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<!-- ===== STICKY NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Hugh Helps</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-title">Hugh Helps</span>
+        <small class="brand-subtitle d-block">Alpha Consultancy</small>
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarContent" 
+        aria-controls="navbarContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="about.html"
+              >About Hugh</a
+            >
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a 
+              class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" 
+              data-bs-toggle="dropdown" 
+              aria-expanded="false"
+            >
               Services
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="service-1.html#professional-therapy">Therapist Services</a></li>
-              <li><a class="dropdown-item" href="service-2.html#hypnosis-and-hypnotism">Hypnotherapy Services</a></li>
-              <li><a class="dropdown-item active" href="service-3.html#couples-therapy">Couples Therapy Services</a></li>
-              <li><a class="dropdown-item" href="service-4.html#life-coaching">Life Coaching Services</a></li>
-              <li><a class="dropdown-item" href="service-5.html#nhs-talking-therapies">NHS Talking Therapies</a></li>
-              <li><a class="dropdown-item" href="services-general.html#additional-services">Additional Services</a></li>
+              <li><a class="dropdown-item" href="services-1.html#professional-therapy">Therapist Services</a></li>
+              <li><a class="dropdown-item" href="services-1.html#expert-counselling">Expert Counselling</a></li>
+              <li><a class="dropdown-item" href="services-1.html#local-therapy-sessions">Local Therapy Sessions</a></li>
+
+
+              <li><a class="dropdown-item" href="services-2.html#hypnotherapy-services">Hypnotherapy Services</a></li>
+<li><a class="dropdown-item" href="services-2.html#sleep-improvement-hypnosis">Sleep Improvement Hypnosis</a></li>
+<li><a class="dropdown-item" href="services-2.html#quit-smoking-hypnosis">Quit Smoking Hypnosis</a></li>
+
+
+
+
+              <li><a class="dropdown-item" href="services-3.html#couples-therapy-services">Couples Therapy Services</a></li>
+
+      <li><a class="dropdown-item" href="services-3.html#hypnosis-and-weight-loss">Couples Therapy Services</a></li>
+
+  <li><a class="dropdown-item" href="services-3.html#effective-marriage-counseling">Hypnosis and Weight Lossg</a></li>
+
+
+              <li><a class="dropdown-item" href="services-4.html#life-coaching-services">Life Coaching Services</a></li>
+
+ <li><a class="dropdown-item" href="services-4.html#adult-adhd-therapist">Adult ADHD Therapist</a></li>
+ <li><a class="dropdown-item" href="services-4.html#seasonal-affective-disorder">Seasonal Affective Disorder Therapies</a></li>
+
+ <li><a class="dropdown-item" href="services-4.html#bereavement-counsellor">Bereavement Counsellor</a></li>
+
+              <li><a class="dropdown-item" href="services-5.html#bipolar-disorder-counselling">Bipolar Disorder Counselling</a></li>
+
+      <li><a class="dropdown-item" href="services-5.html#kids-therapist-near-me">Kids Therapist Near Me</a></li>
+
+<li><a class="dropdown-item" href="services-5.html#depression-therapy">Depression Therapy</a></li>
+
+<li><a class="dropdown-item" href="services-5.html#anxiety-therapy">Anxiety Therapy</a></li>
+
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="services-general.html">Additional Services</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="contact.html"
+              >Contact</a
+            >
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- ===== /NAVIGATION BAR ===== -->
 
-  <!-- Couples Therapy Services Section -->
+  <!-- ===== HEADER FOR COUPLES THERAPY ===== -->
+  <header class="couples-therapy-header d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+      <h1 class="page-title">
+        Couples Therapy Services in Shepperton, Weybridge, Hampton,<br />
+        Egham, Staines-upon-Thames, and Cobham
+      </h1>
+      <p class="page-subtitle">
+        Professional Relationship Counselling &amp; Marriage Guidance
+      </p>
+    </div>
+  </header>
+  <!-- ===== /HEADER ===== -->
+
+  <!-- ===== INTRO SECTION (Couples Therapy) ===== -->
   <section id="couples-therapy-services" class="py-5">
     <div class="container">
-      <h1 class="text-center mb-4">Couples Therapy Services in Shepperton and Nearby Areas</h1>
-      <h2 class="text-center mb-5">Strengthen Your Relationship with Expert Couples Therapy</h2>
-      
-      <!-- Service 1: Expert Couples Therapy -->
-      <div id="couples-therapy" class="service-section">
-        <h3>Expert Couples Therapy</h3>
-        <p>
-          Work with our experienced couples therapy therapists to improve communication, resolve conflicts, and strengthen your bond. Available in Shepperton, East Molesey, Chertsey, and Staines-upon-Thames.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Improved communication</li>
-          <li>Conflict resolution</li>
-          <li>Enhanced emotional connection</li>
-        </ul>
-        <h5>Methodologies:</h5>
-        <p>
-          Utilizing Emotionally Focused Therapy (EFT) and Cognitive Behavioural Therapy (CBT), we tailor our approaches to meet the unique needs of each couple.
-        </p>
-        <h5>Why Choose This Service:</h5>
-        <p>
-          Our dedicated couples therapy therapists have a proven track record of helping couples achieve lasting positive change and deeper connection.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Book a Couples Therapy Session</a>
-      </div>
+      <h2 class="text-center mb-4">
+        Enhance Communication, Resolve Conflict, &amp; Rediscover Harmony
+      </h2>
+      <p class="mx-auto text-center" style="max-width: 700px;">
+        At Hugh Helps Alpha Consultancy, we specialise in <strong>professional couples therapy</strong>, 
+        <strong>marriage counselling</strong>, and <strong>relationship counselling</strong> to help you and 
+        your partner navigate challenges. Our warm, evidence-based approach fosters meaningful connections and 
+        long-lasting positive change.
+      </p>
+    </div>
+  </section>
+  <!-- ===== /INTRO SECTION ===== -->
 
-      <!-- Service 2: Dedicated Couples Therapy Therapist -->
-      <div id="dedicated-couples-therapy-therapist" class="service-section">
-        <h3>Dedicated Couples Therapy Therapist</h3>
-        <p>
-          Receive personalized therapy from our dedicated couples therapy therapists, committed to helping you and your partner navigate challenges and foster a strong, loving relationship. Serving Shepperton, East Molesey, Chertsey, and Staines-upon-Thames.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Personalized support</li>
-          <li>Goal-oriented sessions</li>
-          <li>Long-term relationship growth</li>
-        </ul>
-        <h5>Methodologies:</h5>
-        <p>
-          Combining integrative therapy techniques, we address both individual and joint issues to promote mutual understanding and respect.
-        </p>
-        <h5>Why Choose This Service:</h5>
-        <p>
-          Our therapists bring a wealth of experience and empathy, ensuring that each session is a safe space for open dialogue and healing.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Schedule Your Couples Therapy Session</a>
-      </div>
-
-      <!-- Service 3: Effective Marriage Counseling -->
-      <div id="effective-marriage-counseling" class="service-section">
-        <h3>Effective Marriage Counseling</h3>
-        <p>
-          Enhance your marital relationship through our effective marriage counseling services. We assist couples in Shepperton, East Molesey, Chertsey, and Staines-upon-Thames in overcoming challenges and building a harmonious partnership.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Strengthened partnership</li>
-          <li>Improved intimacy</li>
-          <li>Conflict resolution strategies</li>
-        </ul>
-        <h5>Methodologies:</h5>
-        <p>
-          Our marriage counseling sessions incorporate solution-focused techniques and communication training to foster a healthy and supportive marriage.
-        </p>
-        <h5>Why Choose This Service:</h5>
-        <p>
-          With a compassionate approach, our marriage counselors guide you and your partner towards a more connected and fulfilling relationship.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Start Your Marriage Counseling</a>
-      </div>
-
-      <!-- Related Services -->
-      <div class="mt-5">
-        <h4>Explore More Services</h4>
-        <a href="service-1.html#professional-therapy" class="btn btn-link">Therapist Services</a>
-        <a href="service-2.html#hypnosis-and-hypnotism" class="btn btn-link">Hypnotherapy Services</a>
-        <a href="service-4.html#life-coaching" class="btn btn-link">Life Coaching Services</a>
-      </div>
-
-      <!-- Testimonials -->
-      <div class="mt-5">
-        <h4>Client Success Stories</h4>
-        <blockquote class="blockquote">
-          <p>"Hugh Helps Alpha Consultancy's couples therapy has strengthened our relationship in ways we never thought possible."</p>
-          <footer class="blockquote-footer">- Emma Johnson, Chertsey</footer>
-        </blockquote>
-        <blockquote class="blockquote">
-          <p>"The dedicated counselors provided us with the tools to communicate better and resolve our conflicts effectively."</p>
-          <footer class="blockquote-footer">- Liam Brown, East Molesey</footer>
-        </blockquote>
-        <blockquote class="blockquote">
-          <p>"Our marriage counseling sessions have brought us closer and helped us rebuild trust."</p>
-          <footer class="blockquote-footer">- Ava Davis, Shepperton</footer>
-        </blockquote>
+  <!-- ===== SECTION 1: COMMUNICATION & UNDERSTANDING ===== -->
+  <section class="couples-section bg-light">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-6">
+          <img
+            src="https://via.placeholder.com/700x450?text=Communication+and+Understanding"
+            alt="Couples Therapy Communication"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3>Couples Therapy: Communication &amp; Understanding</h3>
+          <p>
+            Strong, respectful communication is key to a thriving relationship. 
+            Our therapies assist couples in sharing thoughts and emotions openly, 
+            while learning to listen with empathy.
+          </p>
+          <ul>
+            <li>Developing mutual understanding</li>
+            <li>Conflict resolution skills</li>
+            <li>Reconnecting through honest dialogue</li>
+          </ul>
+          <p>
+            We integrate proven counselling methods to reduce misunderstandings, 
+            ensuring you and your partner feel heard and supported.
+          </p>
+          <a href="contact.html" class="btn btn-primary"
+            >Improve Your Communication</a
+          >
+        </div>
       </div>
     </div>
   </section>
+  <!-- ===== /SECTION 1 ===== -->
 
-  <!-- Footer -->
+  <!-- ===== SECTION 2: REBUILDING TRUST & MARRIAGE COUNSELLING ===== -->
+  <section class="couples-section">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-6 order-md-2">
+          <img
+            src="https://via.placeholder.com/700x450?text=Rebuilding+Trust+and+Marriage+Counselling"
+            alt="Marriage Counselling"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3>Marriage Counselling: Rebuilding Trust</h3>
+          <p>
+            Whether coping with past betrayals or general strains, our <strong>marriage counselling</strong> 
+            sessions offer a safe environment to reconnect and heal. We help identify 
+            underlying issues, encourage accountability, and reinforce commitment.
+          </p>
+          <ul>
+            <li>Addressing painful history</li>
+            <li>Encouraging honesty &amp; forgiveness</li>
+            <li>Building a renewed sense of security</li>
+          </ul>
+          <p>
+            Our blend of therapeutic frameworks guides couples in transforming 
+            setbacks into opportunities for a stronger, healthier partnership.
+          </p>
+          <a href="contact.html" class="btn btn-primary"
+            >Rebuild Trust Together</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /SECTION 2 ===== -->
+
+  <!-- ===== SECTION 3: RELATIONSHIP COUNSELLING NEAR YOU ===== -->
+  <section class="couples-section bg-light">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-6">
+          <img
+            src="https://via.placeholder.com/700x450?text=Relationship+Counselling+Near+You"
+            alt="Relationship Counselling"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3>Relationship Counselling Near You</h3>
+          <p>
+            Offering sessions in <strong>Shepperton, Weybridge, Hampton, Egham, Staines-upon-Thames, and Cobham</strong>, 
+            we prioritise accessibility and convenience. Choose in-person or virtual 
+            appointments, ensuring professional <strong>relationship counselling</strong> fits 
+            around your busy life.
+          </p>
+          <ul>
+            <li>Local therapy for busy schedules</li>
+            <li>In-person or virtual options</li>
+            <li>Flexible approach for modern lifestyles</li>
+          </ul>
+          <p>
+            We believe in making high-quality couples therapy easy to access, 
+            guiding you both towards greater harmony wherever you’re located.
+          </p>
+          <a href="contact.html" class="btn btn-primary"
+            >Book Your Local Session</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /SECTION 3 ===== -->
+
+  <!-- ===== RELATED SERVICES SECTION ===== -->
+  <section class="py-5">
+    <div class="container">
+      <h4>Discover More Services</h4>
+      <div class="d-flex flex-wrap gap-3 mt-3">
+        <a
+          href="services-1.html#professional-therapy"
+          class="btn btn-outline-primary"
+          >Therapist Services</a
+        >
+        <a
+          href="services-2.html#hypnotherapy-intro"
+          class="btn btn-outline-primary"
+          >Hypnotherapy</a
+        >
+        <a
+          href="services-4.html#life-coaching-services"
+          class="btn btn-outline-primary"
+          >Life Coaching</a
+        >
+        <a
+          href="services-general.html#additional-services"
+          class="btn btn-outline-primary"
+          >Additional Services</a
+        >
+      </div>
+    </div>
+  </section>
+  <!-- ===== /RELATED SERVICES SECTION ===== -->
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="py-5">
+    <div class="container">
+      <h4 class="mb-4">Client Testimonials</h4>
+      <blockquote class="blockquote">
+        <p class="mb-2">
+          "Our marriage was on the brink, but Hugh Helps Alpha Consultancy guided 
+          us to a place of mutual respect and real closeness again."
+        </p>
+        <footer class="blockquote-footer">- Sarah &amp; David, Weybridge</footer>
+      </blockquote>
+      <blockquote class="blockquote">
+        <p class="mb-2">
+          "We struggled with constant disagreements, but after couples therapy 
+          sessions, we're communicating so much better and actually solving problems 
+          as a team."
+        </p>
+        <footer class="blockquote-footer">- Oliver &amp; Emma, Shepperton</footer>
+      </blockquote>
+      <blockquote class="blockquote">
+        <p class="mb-2">
+          "As working parents, finding time for therapy was tough, but the flexible 
+          session options helped us focus on our relationship and rekindle our 
+          connection."
+        </p>
+        <footer class="blockquote-footer">- Rachel &amp; Tom, Hampton</footer>
+      </blockquote>
+    </div>
+  </section>
+  <!-- ===== /TESTIMONIALS SECTION ===== -->
+
+  <!-- ===== FOOTER ===== -->
   <footer class="bg-dark text-white py-4">
     <div class="container text-center">
       <p>&copy; 2025 Hugh Helps Alpha Consultancy. All Rights Reserved.</p>
       <p>
-        <a href="https://www.facebook.com/hughhelpsalpha" class="text-white me-3">Facebook</a>
-        <a href="https://www.instagram.com/hughhelpsalpha" class="text-white">Instagram</a>
+        <a href="https://www.facebook.com/hughhelpsalpha" class="text-white me-3"
+          >Facebook</a
+        >
+        <a href="https://www.instagram.com/hughhelpsalpha" class="text-white"
+          >Instagram</a
+        >
       </p>
     </div>
   </footer>
+  <!-- ===== /FOOTER ===== -->
 
-  <!-- Bootstrap JS and dependencies -->
+  <!-- Bootstrap JS & Dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

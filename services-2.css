@@ -1,0 +1,135 @@
+/* ==========================================================================
+   PAGE-SPECIFIC STYLES FOR services-2.html
+   Warm & professional layout for Hypnotherapy Services
+========================================================================== */
+
+/* ===== HEADER SECTION: HYPNOTHERAPY PAGE ===== */
+.hypnotherapy-header {
+  background: url("https://via.placeholder.com/1200x600?text=Hypnotherapy+Services+Header")
+    no-repeat center center / cover;
+  color: #fff;
+  padding: 80px 15px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hypnotherapy-header .page-title {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hypnotherapy-header .page-subtitle {
+  font-family: var(--font-subtitle);
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* ===== INTRO SECTION ===== */
+#hypnotherapy-intro {
+  text-align: center;
+}
+
+#hypnotherapy-intro .section-title {
+  font-family: var(--font-title);
+  font-size: 1.75rem;
+}
+
+#hypnotherapy-intro .intro-text {
+  max-width: 700px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ===== HYPNOTHERAPY SECTIONS ===== */
+.hypnotherapy-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hypnotherapy-section .hypnotherapy-title {
+  font-family: var(--font-subtitle);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-accent-dark);
+}
+
+.hypnotherapy-section p {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.hypnotherapy-section ul {
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+.hypnotherapy-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.hypnotherapy-section .btn {
+  margin-top: 1rem;
+}
+
+/* Images styling for sections */
+.hypnotherapy-section img {
+  border: 3px solid var(--color-accent);
+  border-radius: 6px;
+}
+
+/* ===== RELATED SERVICES SECTION ===== */
+.related-services-section {
+  background-color: var(--color-bg-light);
+}
+
+.related-services-section h4 {
+  font-family: var(--font-title);
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons in the related services area */
+.related-services-section .btn-outline-primary {
+  margin-bottom: 10px;
+}
+
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonial-box {
+  background-color: #fff;
+  border-radius: 6px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.testimonial {
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: var(--color-accent-light);
+  color: var(--color-text-dark);
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 576px) {
+  .hypnotherapy-header {
+    padding: 60px 15px;
+  }
+
+  .hypnotherapy-header .page-title {
+    font-size: 2rem;
+  }
+
+  .hypnotherapy-header .page-subtitle {
+    font-size: 1rem;
+  }
+}

@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hypnotherapy Services - Hugh Helps Alpha Consultancy</title>
-  <meta name="description" content="Professional hypnosis and hypnotism, hypnotherapy, and sleep improvement services in Shepperton, Weybridge, Hampton, Egham, Staines-upon-Thames, and Cobham. Book your session today!">
+  <meta
+    name="description"
+    content="Warm and professional hypnotherapy services, including hypnosis, sleep improvement, and quitting smoking, in Shepperton, Weybridge, Hampton, Egham, Staines-upon-Thames, and Cobham. Transform your life today!"
+  />
+
+  <!-- Google Fonts (Matching index.html) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Quicksand:wght@400;600&family=Source+Serif+4:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Global Styles (Navbar, Footer, etc.) -->
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- Page-Specific Styles for Hypnotherapy Services Page -->
+  <link rel="stylesheet" href="services-2.css" />
+
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <style>
-    /* Custom Styles */
-    body {
-      padding-top: 70px;
-    }
-    .service-section {
-      margin-bottom: 50px;
-    }
-  </style>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
   <!-- Schema Markup -->
   <script type="application/ld+json">
   {
@@ -42,158 +54,386 @@
   </script>
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+ <!-- ===== STICKY NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Hugh Helps</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-title">Hugh Helps</span>
+        <small class="brand-subtitle d-block">Alpha Consultancy</small>
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarContent" 
+        aria-controls="navbarContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="about.html"
+              >About Hugh</a
+            >
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a 
+              class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" 
+              data-bs-toggle="dropdown" 
+              aria-expanded="false"
+            >
               Services
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="service-1.html#professional-therapy">Therapist Services</a></li>
-              <li><a class="dropdown-item active" href="service-2.html#hypnosis-and-hypnotism">Hypnotherapy Services</a></li>
-              <li><a class="dropdown-item" href="service-3.html#couples-therapy">Couples Therapy Services</a></li>
-              <li><a class="dropdown-item" href="service-4.html#life-coaching">Life Coaching Services</a></li>
-              <li><a class="dropdown-item" href="service-5.html#nhs-talking-therapies">NHS Talking Therapies</a></li>
-              <li><a class="dropdown-item" href="services-general.html#additional-services">Additional Services</a></li>
+              <li><a class="dropdown-item" href="services-1.html#professional-therapy">Therapist Services</a></li>
+              <li><a class="dropdown-item" href="services-1.html#expert-counselling">Expert Counselling</a></li>
+              <li><a class="dropdown-item" href="services-1.html#local-therapy-sessions">Local Therapy Sessions</a></li>
+
+
+              <li><a class="dropdown-item" href="services-2.html#hypnotherapy-services">Hypnotherapy Services</a></li>
+<li><a class="dropdown-item" href="services-2.html#sleep-improvement-hypnosis">Sleep Improvement Hypnosis</a></li>
+<li><a class="dropdown-item" href="services-2.html#quit-smoking-hypnosis">Quit Smoking Hypnosis</a></li>
+
+
+
+
+              <li><a class="dropdown-item" href="services-3.html#couples-therapy-services">Couples Therapy Services</a></li>
+
+      <li><a class="dropdown-item" href="services-3.html#hypnosis-and-weight-loss">Couples Therapy Services</a></li>
+
+  <li><a class="dropdown-item" href="services-3.html#effective-marriage-counseling">Hypnosis and Weight Lossg</a></li>
+
+
+              <li><a class="dropdown-item" href="services-4.html#life-coaching-services">Life Coaching Services</a></li>
+
+ <li><a class="dropdown-item" href="services-4.html#adult-adhd-therapist">Adult ADHD Therapist</a></li>
+ <li><a class="dropdown-item" href="services-4.html#seasonal-affective-disorder">Seasonal Affective Disorder Therapies</a></li>
+
+ <li><a class="dropdown-item" href="services-4.html#bereavement-counsellor">Bereavement Counsellor</a></li>
+
+              <li><a class="dropdown-item" href="services-5.html#bipolar-disorder-counselling">Bipolar Disorder Counselling</a></li>
+
+      <li><a class="dropdown-item" href="services-5.html#kids-therapist-near-me">Kids Therapist Near Me</a></li>
+
+<li><a class="dropdown-item" href="services-5.html#depression-therapy">Depression Therapy</a></li>
+
+<li><a class="dropdown-item" href="services-5.html#anxiety-therapy">Anxiety Therapy</a></li>
+
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="services-general.html">Additional Services</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="contact.html"
+              >Contact</a
+            >
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- ===== /STICKY NAVBAR ===== -->
 
-  <!-- Hypnotherapy Services Section -->
-  <section id="hypnotherapy-services" class="py-5">
+  <!-- ===== PAGE HEADER ===== -->
+  <header class="hypnotherapy-header d-flex align-items-center justify-content-center">
+    <div class="container text-centre">
+      <h1 class="page-title">Hypnotherapy Services</h1>
+      <p class="page-subtitle">
+        Warm &amp; Professional Hypnosis Solutions for Lasting Wellbeing
+      </p>
+    </div>
+  </header>
+  <!-- ===== /PAGE HEADER ===== -->
+
+  <!-- ===== INTRODUCTION SECTION ===== -->
+  <section id="hypnotherapy-intro" class="py-5">
     <div class="container">
-      <h1 class="text-center mb-4">Hypnotherapy Services in Shepperton and Nearby Areas</h1>
-      <h2 class="text-center mb-5">Transform Your Life with Expert Hypnosis and Hypnotism</h2>
-      
-      <!-- Service 1: Hypnosis and Hypnotism -->
-      <div id="hypnosis-and-hypnotism" class="service-section">
-        <h3>Hypnosis and Hypnotism</h3>
-        <p>
-          Utilize hypnosis techniques to access your subconscious and foster positive change. Our sessions are available in Shepperton, Weybridge, Hampton, Egham, Staines-upon-Thames, and Cobham.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Access subconscious mind</li>
-          <li>Promote positive behavior changes</li>
-          <li>Enhance personal growth</li>
-        </ul>
-        <h5>Methodologies:</h5>
-        <p>
-          Combining traditional hypnotism with modern therapeutic techniques, we tailor each session to your specific needs.
-        </p>
-        <h5>Why Choose This Service:</h5>
-        <p>
-          Our experienced hypnotherapists have helped numerous clients achieve lasting positive changes through effective hypnosis and hypnotism techniques.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Book a Hypnosis Session</a>
-      </div>
+      <h2 class="section-title text-centre mb-4">
+        Transform Your Life with Expert Hypnosis &amp; Hypnotism
+      </h2>
+      <p class="intro-text text-centre mx-auto mb-5">
+        At Hugh Helps Alpha Consultancy, we offer a range of hypnotherapy
+        solutions to help you overcome challenges and achieve personal growth.
+        Our services are available in Shepperton, Weybridge, Hampton, Egham,
+        Staines-upon-Thames, Cobham, and surrounding areas. Whether you’re
+        seeking to tackle insomnia, conquer bad habits, or find relief from
+        stress, our caring approach ensures you receive tailored support.
+      </p>
+    </div>
+  </section>
+  <!-- ===== /INTRODUCTION SECTION ===== -->
 
-      <!-- Service 2: Professional Hypnotherapy -->
-      <div id="professional-hypnotherapy" class="service-section">
-        <h3>Professional Hypnotherapy</h3>
-        <p>
-          Experience effective hypnotherapy sessions tailored to your specific needs, whether it's for stress relief, habit breaking, or personal development. Available in Shepperton, Weybridge, Hampton, Egham, Staines-upon-Thames, and Cobham.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Stress relief</li>
-          <li>Habit breaking</li>
-          <li>Personal development</li>
-        </ul>
-        <h5>Methodologies:</h5>
-        <p>
-          Utilizing a combination of CBT and hypnotherapy, we address the root causes of your challenges to facilitate meaningful change.
-        </p>
-        <h5>Why Choose This Service:</h5>
-        <p>
-          Our hypnotherapy sessions are designed to provide deep relaxation and effective solutions to your personal challenges, supported by years of expertise.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Schedule Your Hypnotherapy Session</a>
-      </div>
-
-      <!-- Service 3: Sleep Improvement Hypnosis -->
-      <div id="sleep-improvement-hypnosis" class="service-section">
-        <h3>Sleep Improvement Hypnosis</h3>
-        <p>
-          Overcome insomnia and improve your sleep quality through targeted hypnosis sessions. Available in Shepperton, Weybridge, Hampton, Egham, Staines-upon-Thames, and Cobham.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Better sleep quality</li>
-          <li>Reduced insomnia</li>
-          <li>Increased energy levels</li>
-        </ul>
-        <h5>Methodologies:</h5>
-        <p>
-          Our hypnosis techniques focus on calming the mind and establishing healthy sleep patterns to ensure restorative rest.
-        </p>
-        <h5>Why Choose This Service:</h5>
-        <p>
-          With a proven track record, our sleep improvement hypnosis sessions have helped numerous clients achieve restful and restorative sleep.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Get Better Sleep</a>
-      </div>
-
-      <!-- Related Services -->
-      <div class="mt-5">
-        <h4>Explore More Services</h4>
-        <a href="service-1.html#professional-therapy" class="btn btn-link">Therapist Services</a>
-        <a href="service-3.html#couples-therapy" class="btn btn-link">Couples Therapy Services</a>
-        <a href="service-4.html#life-coaching" class="btn btn-link">Life Coaching Services</a>
-      </div>
-
-      <!-- Testimonials -->
-      <div class="mt-5">
-        <h4>Client Success Stories</h4>
-        <blockquote class="blockquote">
-          <p>"The hypnotherapy sessions helped me overcome my insomnia. I sleep better than ever!"</p>
-          <footer class="blockquote-footer">- Emma Johnson, Weybridge</footer>
-        </blockquote>
-        <blockquote class="blockquote">
-          <p>"Hugh Helps Alpha Consultancy's hypnosis techniques have transformed my approach to stress management."</p>
-          <footer class="blockquote-footer">- Liam Brown, Hampton</footer>
-        </blockquote>
-        <blockquote class="blockquote">
-          <p>"Thanks to their hypnotism services, I've successfully broken my smoking habit."</p>
-          <footer class="blockquote-footer">- Ava Davis, Shepperton</footer>
-        </blockquote>
+  <!-- ===== SECTION 1: HYPNOSIS & HYPNOTISM ===== -->
+  <section id="hypnosis-and-hypnotism" class="py-5 hypnotherapy-section">
+    <div class="container">
+      <div class="row g-5 align-items-centre">
+        <div class="col-lg-6">
+          <img
+            src="https://via.placeholder.com/700x450?text=Hypnosis+and+Hypnotism"
+            alt="Hypnosis and Hypnotism"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h3 class="hypnotherapy-title">Hypnosis &amp; Hypnotism</h3>
+          <p>
+            Access your subconscious mind to encourage profound positive change.
+            Our professional hypnotherapists tailor each session to suit your
+            individual needs, ensuring you can break free from limiting beliefs
+            and achieve personal growth.
+          </p>
+          <ul>
+            <li>Unleash deeper self-awareness</li>
+            <li>Instil positive habits &amp; mindset shifts</li>
+            <li>Enhance your overall wellbeing</li>
+          </ul>
+          <p>
+            Drawing on traditional hypnotic techniques alongside modern
+            therapies, we empower you to form new, more constructive patterns.
+            This approach has helped many clients overcome obstacles and
+            embrace healthier, happier lives.
+          </p>
+          <a href="contact.html" class="btn btn-primary"
+            >Book a Hypnosis Session</a
+          >
+        </div>
       </div>
     </div>
   </section>
+  <!-- ===== /SECTION 1 ===== -->
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container text-center">
-      <p>&copy; 2025 Hugh Helps Alpha Consultancy. All Rights Reserved.</p>
-      <p>
-        <a href="https://www.facebook.com/hughhelpsalpha" class="text-white me-3">Facebook</a>
-        <a href="https://www.instagram.com/hughhelpsalpha" class="text-white">Instagram</a>
+  <!-- ===== SECTION 2: PROFESSIONAL HYPNOTHERAPY ===== -->
+  <section id="professional-hypnotherapy" class="py-5 hypnotherapy-section bg-light">
+    <div class="container">
+      <div class="row g-5 align-items-centre">
+        <div class="col-lg-6 order-lg-2">
+          <img
+            src="https://via.placeholder.com/700x450?text=Professional+Hypnotherapy"
+            alt="Professional Hypnotherapy"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <h3 class="hypnotherapy-title">Professional Hypnotherapy</h3>
+          <p>
+            Experience effective hypnotherapy designed to address your
+            challenges—whether they relate to stress, habit formation, or
+            personal development. Our therapy is available both in-person and
+            remotely to best serve clients across Shepperton, Weybridge,
+            Hampton, Egham, Staines-upon-Thames, and Cobham.
+          </p>
+          <ul>
+            <li>Targeted stress management</li>
+            <li>Unlearning unhealthy habits</li>
+            <li>Promoting self-improvement &amp; growth</li>
+          </ul>
+          <p>
+            By integrating CBT techniques into our hypnotherapy sessions, we
+            tackle underlying causes to foster lasting transformation. Our
+            experienced therapists are committed to providing a calming
+            environment that nurtures significant personal breakthroughs.
+          </p>
+          <a href="contact.html" class="btn btn-primary"
+            >Schedule a Hypnotherapy Session</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /SECTION 2 ===== -->
+
+  <!-- ===== SECTION 3: SLEEP IMPROVEMENT HYPNOSIS ===== -->
+  <section
+    id="sleep-improvement-hypnosis"
+    class="py-5 hypnotherapy-section"
+  >
+    <div class="container">
+      <div class="row g-5 align-items-centre">
+        <div class="col-lg-6">
+          <img
+            src="https://via.placeholder.com/700x450?text=Sleep+Improvement+Hypnosis"
+            alt="Sleep Improvement Hypnosis"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h3 class="hypnotherapy-title">Sleep Improvement Hypnosis</h3>
+          <p>
+            Reclaim restful nights with our specialised sleep hypnosis. Through
+            gently guiding the mind into a calm, relaxed state, we help you
+            address the root causes of insomnia and restore a healthy sleep
+            routine.
+          </p>
+          <ul>
+            <li>Enhanced quality of rest</li>
+            <li>Reduced insomnia &amp; night-time anxiety</li>
+            <li>Increased daytime energy levels</li>
+          </ul>
+          <p>
+            Our proven relaxation strategies, combined with expert therapeutic
+            guidance, have assisted countless clients in establishing consistent
+            and restorative sleep patterns. It’s time to wake up feeling
+            refreshed and rejuvenated.
+          </p>
+          <a href="contact.html" class="btn btn-primary"
+            >Get Better Sleep</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /SECTION 3 ===== -->
+
+  <!-- ===== SECTION 4: QUIT SMOKING HYPNOSIS ===== -->
+  <section id="quit-smoking-hypnosis" class="py-5 hypnotherapy-section bg-light">
+    <div class="container">
+      <div class="row g-5 align-items-centre">
+        <div class="col-lg-6 order-lg-2">
+          <img
+            src="https://via.placeholder.com/700x450?text=Quit+Smoking+Hypnosis"
+            alt="Quit Smoking Hypnosis"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <h3 class="hypnotherapy-title">Quit Smoking Hypnosis</h3>
+          <p>
+            Ready to break free from nicotine dependence? Our Quit Smoking
+            Hypnosis programme is specifically crafted to target cravings,
+            reduce withdrawal symptoms, and help you embrace a healthier, smoke-free
+            lifestyle.
+          </p>
+          <ul>
+            <li>Conquer nicotine cravings</li>
+            <li>Boost energy &amp; overall health</li>
+            <li>Save money &amp; live more fully</li>
+          </ul>
+          <p>
+            By blending tried-and-tested hypnosis methodologies with individual
+            counselling, we tackle the mental triggers behind your smoking habit.
+            This holistic method has consistently delivered powerful outcomes,
+            enabling countless clients to quit permanently and maintain
+            positivity in their journey towards better health.
+          </p>
+          <a href="contact.html" class="btn btn-primary"
+            >Quit Smoking Today</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /SECTION 4 ===== -->
+
+  <!-- ===== RELATED SERVICES SECTION ===== -->
+  <section class="related-services-section py-5">
+    <div class="container">
+      <h4 class="mb-4">Further Support &amp; Related Services</h4>
+      <div class="d-flex flex-wrap gap-3">
+        <a
+          href="services-1.html#professional-therapy"
+          class="btn btn-outline-primary"
+          >Therapist Services</a
+        >
+        <a
+          href="services-3.html#couples-therapy-services"
+          class="btn btn-outline-primary"
+          >Couples Therapy</a
+        >
+        <a
+          href="services-4.html#life-coaching-services"
+          class="btn btn-outline-primary"
+          >Life Coaching</a
+        >
+        <a
+          href="services-general.html#additional-services"
+          class="btn btn-outline-primary"
+          >Additional Services</a
+        >
+      </div>
+    </div>
+  </section>
+  <!-- ===== /RELATED SERVICES SECTION ===== -->
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="py-5">
+    <div class="container">
+      <h4 class="mb-4">What Our Clients Say</h4>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              “After years of struggling with insomnia, the hypnotherapy at
+              Hugh Helps Alpha Consultancy finally provided a lasting
+              solution. I’m thrilled to be sleeping soundly again!”
+            </p>
+            <small class="text-muted"
+              >– Emma Johnson, Weybridge</small
+            >
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              “Hugh’s techniques for stress management through hypnosis have
+              truly transformed my perspective. I feel calmer and more in
+              control of my life.”
+            </p>
+            <small class="text-muted"
+              >– Liam Brown, Hampton</small
+            >
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              “I’m proud to say I’ve kicked the smoking habit for good, and
+              it’s all thanks to the warm, professional support I received
+              here. Hypnosis really worked for me!”
+            </p>
+            <small class="text-muted"
+              >– Ava Davis, Shepperton</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /TESTIMONIALS SECTION ===== -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer py-4">
+    <div class="container text-centre">
+      <p class="mb-1">
+        &copy; <span id="year"></span> Hugh Helps Alpha Consultancy. All rights
+        reserved.
+      </p>
+      <p class="mb-0">
+        <small
+          >Proudly serving Shepperton, Weybridge, Hampton, Egham,
+          Staines-upon-Thames, Cobham, and beyond.</small
+        >
       </p>
     </div>
   </footer>
+  <!-- ===== /FOOTER ===== -->
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- ===== JS SCRIPTS ===== -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
 </body>
 </html>

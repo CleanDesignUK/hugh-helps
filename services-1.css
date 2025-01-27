@@ -1,0 +1,125 @@
+/* ==========================================================================
+   PAGE-SPECIFIC STYLES FOR services-1.html
+   Aligned with the warm, professional vibe from index.html
+========================================================================== */
+
+/* ===== HEADER SECTION FOR THERAPIST SERVICES ===== */
+.therapist-header {
+  background: url("https://via.placeholder.com/1200x600?text=Therapist+Services+Header")
+    no-repeat center center / cover;
+  color: #fff;
+  padding: 80px 15px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-title {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  font-family: var(--font-subtitle);
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* ===== THERAPIST SERVICES SECTION ===== */
+#therapist-services .section-title {
+  font-family: var(--font-title);
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.service-card {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card img {
+  border-bottom: 3px solid var(--color-accent);
+  height: 220px;
+  object-fit: cover;
+}
+
+.service-card .card-body {
+  padding: 1.25rem;
+}
+
+.service-card h3.card-title {
+  font-family: var(--font-subtitle);
+  color: var(--color-accent-dark);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.service-card .card-text {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+/* Unordered lists for bullet points */
+.service-card ul {
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
+  list-style-type: disc;
+}
+.service-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== RELATED SERVICES SECTION ===== */
+.bg-light {
+  background-color: var(--color-bg-light) !important;
+}
+
+.bg-light h4 {
+  font-family: var(--font-title);
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons in the related services area */
+.d-flex.flex-wrap.gap-3 .btn-outline-primary {
+  margin-bottom: 10px;
+}
+
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonial-box {
+  background-color: #fff;
+  border-radius: 6px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 576px) {
+  .therapist-header {
+    padding: 60px 15px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+}

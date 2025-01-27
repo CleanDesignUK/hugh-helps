@@ -1,0 +1,131 @@
+/* ==========================================================================
+   PAGE-SPECIFIC STYLES FOR services-3.html
+   Warm & professional approach for Couples Therapy Services
+========================================================================== */
+
+/* ===== HEADER SECTION: COUPLES THERAPY PAGE ===== */
+.couples-therapy-header {
+  background: url("https://via.placeholder.com/1200x600?text=Couples+Therapy+Services")
+    no-repeat center center / cover;
+  color: #fff;
+  padding: 80px 15px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.couples-therapy-header .page-title {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.couples-therapy-header .page-subtitle {
+  font-family: var(--font-subtitle);
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* ===== INTRO SECTION ===== */
+#couples-therapy-services {
+  text-align: center;
+}
+
+#couples-therapy-services .section-title {
+  font-family: var(--font-title);
+  font-size: 1.75rem;
+}
+
+#couples-therapy-services .intro-text {
+  max-width: 700px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ===== COUPLES THERAPY SECTIONS ===== */
+.couples-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.couples-section .couples-title {
+  font-family: var(--font-subtitle);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-accent-dark);
+}
+
+.couples-section p {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.couples-section ul {
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+.couples-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Images styling for couples therapy sections */
+.couples-section img {
+  border: 3px solid var(--color-accent);
+  border-radius: 6px;
+}
+
+/* ===== RELATED SERVICES SECTION ===== */
+.related-services-section {
+  background-color: var(--color-bg-light);
+}
+
+.related-services-section h4 {
+  font-family: var(--font-title);
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons in the related services area */
+.related-services-section .btn-outline-primary {
+  margin-bottom: 10px;
+}
+
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonial-box {
+  background-color: #fff;
+  border-radius: 6px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.testimonial {
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: var(--color-accent-light);
+  color: var(--color-text-dark);
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 576px) {
+  .couples-therapy-header {
+    padding: 60px 15px;
+  }
+
+  .couples-therapy-header .page-title {
+    font-size: 2rem;
+  }
+
+  .couples-therapy-header .page-subtitle {
+    font-size: 1rem;
+  }
+}
