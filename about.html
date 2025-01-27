@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Us - Hugh Helps Alpha Consultancy</title>
-  <meta name="description" content="Learn more about Hugh Helps Alpha Consultancy, our mission, vision, and the dedicated team committed to supporting your mental well-being in Shepperton and surrounding areas.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Hugh Helps Alpha Consultancy</title>
+  <meta
+    name="description"
+    content="Discover more about Hugh's background, qualifications, and passion for helping individuals achieve mental well-being and personal growth in Shepperton, Surrey, and beyond."
+  />
+
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <style>
-    /* Custom Styles */
-    body {
-      padding-top: 70px;
-    }
-    .team-member {
-      margin-bottom: 30px;
-    }
-  </style>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Global Styles (Matching index.html) -->
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- Page-Specific Styles for the About Page -->
+  <link rel="stylesheet" href="about.css" />
+
   <!-- Schema Markup -->
   <script type="application/ld+json">
   {
@@ -43,113 +47,182 @@
   </script>
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+ <!-- ===== STICKY NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Hugh Helps</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-title">Hugh Helps</span>
+        <small class="brand-subtitle d-block">Alpha Consultancy</small>
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarContent" 
+        aria-controls="navbarContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="about.html">About Us</a>
+            <a class="nav-link" href="about.html"
+              >About Hugh</a
+            >
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a 
+              class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" 
+              data-bs-toggle="dropdown" 
+              aria-expanded="false"
+            >
               Services
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="service-1.html#professional-therapy">Therapist Services</a></li>
-              <li><a class="dropdown-item" href="service-2.html#hypnosis-and-hypnotism">Hypnotherapy Services</a></li>
-              <li><a class="dropdown-item" href="service-3.html#couples-therapy">Couples Therapy Services</a></li>
-              <li><a class="dropdown-item" href="service-4.html#life-coaching">Life Coaching Services</a></li>
-              <li><a class="dropdown-item" href="service-5.html#nhs-talking-therapies">NHS Talking Therapies</a></li>
-              <li><a class="dropdown-item" href="services-general.html#additional-services">Additional Services</a></li>
+              <li><a class="dropdown-item" href="services-1.html#professional-therapy">Therapist Services</a></li>
+              <li><a class="dropdown-item" href="services-1.html#expert-counselling">Expert Counselling</a></li>
+              <li><a class="dropdown-item" href="services-1.html#local-therapy-sessions">Local Therapy Sessions</a></li>
+
+
+              <li><a class="dropdown-item" href="services-2.html#hypnotherapy-services">Hypnotherapy Services</a></li>
+<li><a class="dropdown-item" href="services-2.html#sleep-improvement-hypnosis">Sleep Improvement Hypnosis</a></li>
+<li><a class="dropdown-item" href="services-2.html#quit-smoking-hypnosis">Quit Smoking Hypnosis</a></li>
+<li><a class="dropdown-item" href="services-2.html#hypnosis-and-weight-loss"> Weight-loss Hypnosis</a></li>
+
+
+
+              <li><a class="dropdown-item" href="services-3.html#couples-therapy-services">Couples Therapy Services</a></li>
+
+      
+
+  <li><a class="dropdown-item" href="services-3.html#effective-marriage-counseling">Hypnosis and Weight Lossg</a></li>
+
+
+              <li><a class="dropdown-item" href="services-4.html#life-coaching-services">Life Coaching Services</a></li>
+
+ <li><a class="dropdown-item" href="services-4.html#adult-adhd-therapist">Adult ADHD Therapist</a></li>
+ <li><a class="dropdown-item" href="services-4.html#seasonal-affective-disorder">Seasonal Affective Disorder Therapies</a></li>
+
+ <li><a class="dropdown-item" href="services-4.html#bereavement-counsellor">Bereavement Counsellor</a></li>
+
+              <li><a class="dropdown-item" href="services-5.html#bipolar-disorder-counselling">Bipolar Disorder Counselling</a></li>
+
+      <li><a class="dropdown-item" href="services-5.html#kids-therapist-near-me">Kids Therapist Near Me</a></li>
+
+<li><a class="dropdown-item" href="services-5.html#depression-therapy">Depression Therapy</a></li>
+
+<li><a class="dropdown-item" href="services-5.html#anxiety-therapy">Anxiety Therapy</a></li>
+
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="services-general.html">Additional Services</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="contact.html"
+              >Contact</a
+            >
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- About Us Section -->
-  <section id="about-us" class="py-5">
+  <!-- ===== ABOUT HUGH SECTION ===== -->
+  <section id="about-hugh" class="py-5">
     <div class="container">
-      <h1 class="text-center mb-4">About Hugh Helps Alpha Consultancy</h1>
-      <div class="row">
+      <h1 class="text-center mb-4">Hugh Christensen DHP.Hyp.HCB.Coun.psyc.LCA  offers fast, successful and positive change</h1>
+      <div class="row g-5 align-items-center">
         <div class="col-md-6">
-          <img src="images/about-us.jpg" class="img-fluid rounded" alt="About Us">
+          <img
+            src="https://via.placeholder.com/700x450?text=Hugh+Helps+Alpha+Consultancy"
+            alt="Hugh Helps"
+            class="img-fluid rounded shadow"
+          />
         </div>
         <div class="col-md-6">
-          <p>Welcome to Hugh Helps Alpha Consultancy, your trusted partner in mental well-being and personal growth. Located in Shepperton, Surrey, we offer a wide range of therapeutic services tailored to meet your unique needs.</p>
-          <p>Our mission is to provide compassionate and effective support to individuals and couples, helping them navigate life's challenges and achieve their personal goals. With a team of experienced therapists and counselors, we are dedicated to fostering a safe and nurturing environment where you can explore your thoughts, emotions, and aspirations.</p>
-          <p>At Hugh Helps, we believe in a holistic approach to mental health, integrating various therapeutic techniques to ensure comprehensive care. Whether you're seeking therapy for stress management, relationship issues, personal development, or specialized treatments like hypnotherapy, our team is here to support you every step of the way.</p>
-          <p>Join the many individuals and couples who have benefited from our services and take the first step towards a healthier, more fulfilling life today.</p>
+          <h2 class="about-title">Over 25 Years of Expertise</h2>
+          <p>
+            Hugh brings over <strong>25 years of expertise</strong> in helping
+            individuals transform their lives. After training with Europe's
+            largest hypnotherapy school at the time, the <em>International
+            Association of Hypnoanalysts (IAH)</em>, Hugh earned a diploma
+            in Hypnotherapy, Counselling, and Psychotherapy from the 
+            <em>Hypnotherapy Control Board (HCB)</em> in 1995.
+          </p>
+          <p>
+            As a qualified Life Coach trained by the Coaching Academy, Hugh
+            is dedicated to continual learning and professional development,
+            ensuring that each client receives the most up-to-date and
+            effective support possible.
+          </p>
+          <p>
+            Hugh initially established Alpha Consultancy in Sunbury-on-Thames 
+            and has also practised in Central London, as well as within a GP 
+            surgery in Surrey. Over the course of his career, he has successfully 
+            treated hundreds of clients, guiding them to overcome challenges 
+            and achieve personal growth.
+          </p>
+          <p>
+            Whether you’re dealing with stress, anxiety, addictions, or seeking 
+            personal development, Hugh’s holistic approach and wealth of experience 
+            can help you make lasting, positive changes to your life.
+          </p>
+          <a
+            href="contact.html"
+            class="btn btn-primary mt-3"
+            >Book Your Free Consultation</a
+          >
         </div>
       </div>
     </div>
   </section>
+  <!-- ===== /ABOUT HUGH SECTION ===== -->
 
-  <!-- Our Team Section -->
-  <section id="our-team" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Meet Our Team</h2>
-      <div class="row">
-        <div class="col-md-4 team-member">
-          <div class="card h-100">
-            <img src="images/team/jane-doe.jpg" class="card-img-top" alt="Jane Doe - Lead Therapist">
-            <div class="card-body">
-              <h5 class="card-title">Jane Doe</h5>
-              <p class="card-text">Lead Therapist</p>
-              <p>With over 15 years of experience in mental health, Jane specializes in Cognitive Behavioural Therapy and Emotionally Focused Therapy.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 team-member">
-          <div class="card h-100">
-            <img src="images/team/mark-smith.jpg" class="card-img-top" alt="Mark Smith - Hypnotherapist">
-            <div class="card-body">
-              <h5 class="card-title">Mark Smith</h5>
-              <p class="card-text">Hypnotherapist</p>
-              <p>Mark is an accredited hypnotherapist with a focus on weight loss, stress management, and overcoming addictions.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 team-member">
-          <div class="card h-100">
-            <img src="images/team/sarah-lee.jpg" class="card-img-top" alt="Sarah Lee - Life Coach">
-            <div class="card-body">
-              <h5 class="card-title">Sarah Lee</h5>
-              <p class="card-text">Life Coach</p>
-              <p>Sarah is a certified life coach dedicated to helping clients achieve their personal and professional goals through tailored coaching programs.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4">
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer py-4 bg-dark text-white">
     <div class="container text-center">
-      <p>&copy; 2025 Hugh Helps Alpha Consultancy. All Rights Reserved.</p>
-      <p>
-        <a href="https://www.facebook.com/hughhelpsalpha" class="text-white me-3">Facebook</a>
-        <a href="https://www.instagram.com/hughhelpsalpha" class="text-white">Instagram</a>
+      <p class="mb-1">
+        &copy; <span id="year"></span> Hugh Helps Alpha Consultancy.
+        All Rights Reserved.
+      </p>
+      <p class="mb-0">
+        <small
+          >Serving Shepperton, Sunbury-on-Thames, Walton-on-Thames,
+          Weybridge, and beyond.</small
+        >
+      </p>
+      <p class="mb-0 mt-2">
+        <a
+          href="https://www.facebook.com/hughhelpsalpha"
+          class="text-white me-3"
+          >Facebook</a
+        >
+        <a
+          href="https://www.instagram.com/hughhelpsalpha"
+          class="text-white"
+          >Instagram</a
+        >
       </p>
     </div>
   </footer>
+  <!-- ===== /FOOTER ===== -->
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- ===== JS SCRIPTS ===== -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
 </body>
 </html>
