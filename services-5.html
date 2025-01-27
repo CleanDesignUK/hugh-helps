@@ -3,49 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mental Health Therapies - Hugh Helps Alpha Consultancy</title>
+  <title>Mental Health Therapies in Shepperton, Sunbury-on-Thames, Weybridge, Egham, Cobham - Hugh Helps Alpha Consultancy</title>
   <meta name="description" content="Comprehensive mental health therapies including bipolar disorder support, kids therapist near me, depression therapy, and anxiety therapy in Shepperton, Sunbury-on-Thames, Weybridge, and Egham. Enhance your well-being today!">
   
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   
-  <!-- Custom CSS -->
-  <style>
-    /* Custom Styles */
-    body {
-      padding-top: 70px;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f5f5f5;
-      color: #3d3d3d;
-    }
-    .service-section {
-      margin-bottom: 50px;
-    }
-    .btn-primary {
-      background-color: #1f4e79;
-      border: none;
-    }
-    .btn-primary:hover {
-      background-color: #76d7ea;
-      color: #fff;
-    }
-    .navbar-dark .navbar-nav .nav-link.active {
-      color: #c4e3f2;
-    }
-    .navbar-dark .navbar-nav .nav-link:hover {
-      color: #76d7ea;
-    }
-    footer {
-      background-color: #1f4e79;
-      color: #fff;
-    }
-    footer a {
-      color: #c4e3f2;
-    }
-    footer a:hover {
-      color: #76d7ea;
-    }
-  </style>
+  <!-- Global Styles (Matching index.html) -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- Page-Specific Styles for Mental Health Therapies Page -->
+  <link rel="stylesheet" href="services-5.css">
   
   <!-- Schema Markup -->
   <script type="application/ld+json">
@@ -81,174 +49,328 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+ <!-- ===== STICKY NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Hugh Helps</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-title">Hugh Helps</span>
+        <small class="brand-subtitle d-block">Alpha Consultancy</small>
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarContent" 
+        aria-controls="navbarContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="about.html"
+              >About Hugh</a
+            >
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a 
+              class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" 
+              data-bs-toggle="dropdown" 
+              aria-expanded="false"
+            >
               Services
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="service-1.html#professional-therapy">Therapist Services</a></li>
-              <li><a class="dropdown-item" href="service-2.html#hypnosis-and-hypnotism">Hypnotherapy Services</a></li>
-              <li><a class="dropdown-item" href="service-3.html#couples-therapy">Couples Therapy Services</a></li>
-              <li><a class="dropdown-item" href="service-4.html#life-coaching">Life Coaching Services</a></li>
-              <li><a class="dropdown-item active" href="service-5.html#mental-health-therapies">Mental Health Therapies</a></li>
-              <li><a class="dropdown-item" href="services-general.html#additional-services">Additional Services</a></li>
+              <li><a class="dropdown-item" href="services-1.html#professional-therapy">Therapist Services</a></li>
+              <li><a class="dropdown-item" href="services-1.html#expert-counselling">Expert Counselling</a></li>
+              <li><a class="dropdown-item" href="services-1.html#local-therapy-sessions">Local Therapy Sessions</a></li>
+
+
+              <li><a class="dropdown-item" href="services-2.html#hypnotherapy-services">Hypnotherapy Services</a></li>
+<li><a class="dropdown-item" href="services-2.html#sleep-improvement-hypnosis">Sleep Improvement Hypnosis</a></li>
+<li><a class="dropdown-item" href="services-2.html#quit-smoking-hypnosis">Quit Smoking Hypnosis</a></li>
+
+
+
+
+              <li><a class="dropdown-item" href="services-3.html#couples-therapy-services">Couples Therapy Services</a></li>
+
+      <li><a class="dropdown-item" href="services-3.html#hypnosis-and-weight-loss">Couples Therapy Services</a></li>
+
+  <li><a class="dropdown-item" href="services-3.html#effective-marriage-counseling">Hypnosis and Weight Lossg</a></li>
+
+
+              <li><a class="dropdown-item" href="services-4.html#life-coaching-services">Life Coaching Services</a></li>
+
+ <li><a class="dropdown-item" href="services-4.html#adult-adhd-therapist">Adult ADHD Therapist</a></li>
+ <li><a class="dropdown-item" href="services-4.html#seasonal-affective-disorder">Seasonal Affective Disorder Therapies</a></li>
+
+ <li><a class="dropdown-item" href="services-4.html#bereavement-counsellor">Bereavement Counsellor</a></li>
+
+              <li><a class="dropdown-item" href="services-5.html#bipolar-disorder-counselling">Bipolar Disorder Counselling</a></li>
+
+      <li><a class="dropdown-item" href="services-5.html#kids-therapist-near-me">Kids Therapist Near Me</a></li>
+
+<li><a class="dropdown-item" href="services-5.html#depression-therapy">Depression Therapy</a></li>
+
+<li><a class="dropdown-item" href="services-5.html#anxiety-therapy">Anxiety Therapy</a></li>
+
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="services-general.html">Additional Services</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="contact.html"
+              >Contact</a
+            >
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- ===== /NAVIGATION BAR ===== -->
 
-  <!-- Mental Health Therapies Section -->
-  <section id="mental-health-therapies" class="py-5">
+  <!-- ===== HEADER FOR MENTAL HEALTH THERAPIES ===== -->
+  <header class="mental-health-header d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+      <h1 class="page-title" id="mental-health-header-title">
+        Mental Health Therapies in Shepperton, Sunbury-on-Thames, Weybridge, Egham, and Cobham
+      </h1>
+      <p class="page-subtitle" id="mental-health-header-subtitle">
+        Comprehensive Mental Health Support &amp; Therapeutic Solutions
+      </p>
+    </div>
+  </header>
+  <!-- ===== /HEADER ===== -->
+
+  <!-- ===== INTRODUCTION SECTION (Mental Health Therapies) ===== -->
+  <section id="mental-health-intro" class="py-5">
     <div class="container">
-      <h1 class="text-center mb-4">Mental Health Therapies in Shepperton and Nearby Areas</h1>
-      <h2 class="text-center mb-5">Comprehensive Support for Your Mental Well-being</h2>
-      
-      <!-- Service 1: Bipolar Disorder Counselling -->
-      <div id="bipolar-disorder-counselling" class="service-section">
-        <h3>Bipolar Disorder Counselling</h3>
-        <p>
-          Our specialized <strong>bipolar disorder</strong> counselling provides comprehensive support to help you manage mood swings, improve emotional stability, and enhance overall well-being. Available in Shepperton, Sunbury-on-Thames, Weybridge, and Egham.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Enhanced emotional regulation</li>
-          <li>Improved interpersonal relationships</li>
-          <li>Effective coping strategies for mood swings</li>
-        </ul>
-        <h5>Methodologies:</h5>
-        <p>
-          Utilizing a combination of Cognitive Behavioural Therapy (CBT) and mood stabilization techniques, our bipolar disorder counselling aims to address the unique challenges faced by individuals living with bipolar disorder.
-        </p>
-        <h5>Why Choose This Service:</h5>
-        <p>
-          Our experienced counsellors understand the complexities of bipolar disorder and are committed to providing personalized support to help you achieve a balanced and fulfilling life.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Schedule Bipolar Disorder Counselling</a>
-      </div>
+      <h2 class="text-center mb-4" id="mental-health-intro-title">
+        Enhance Your Well-being with Expert Mental Health Therapies
+      </h2>
+      <p class="mx-auto text-center" id="mental-health-intro-text" style="max-width: 700px;">
+        At Hugh Helps Alpha Consultancy, our <strong>mental health therapies</strong> are designed to support you through various challenges. Whether you're dealing with bipolar disorder, seeking therapy for your child, struggling with depression, or managing anxiety, our experienced therapists provide personalised care to help you achieve optimal mental well-being.
+      </p>
+    </div>
+  </section>
+  <!-- ===== /INTRODUCTION SECTION ===== -->
 
-      <!-- Service 2: Kids Therapist Near Me -->
-      <div id="kids-therapist-near-me" class="service-section">
-        <h3>Kids Therapist Near Me</h3>
-        <p>
-          Support your child's mental health with our dedicated <strong>kids therapist near me</strong> services. We offer a safe and nurturing environment for children to express themselves and overcome challenges. Available in Shepperton, Sunbury-on-Thames, Weybridge, and Egham.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Improved emotional and behavioral health</li>
-          <li>Enhanced coping skills</li>
-          <li>Support for academic and social development</li>
-        </ul>
-        <h5>Methodologies:</h5>
-        <p>
-          Our child therapists employ age-appropriate therapeutic techniques, including play therapy and cognitive-behavioral strategies, to address issues such as anxiety, depression, and behavioral challenges.
-        </p>
-        <h5>Why Choose This Service:</h5>
-        <p>
-          We understand the unique needs of children and work closely with parents to provide comprehensive support that fosters growth and resilience in young minds.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Book a Kids Therapy Session</a>
-      </div>
-
-      <!-- Service 3: Depression Therapy -->
-      <div id="depression-therapy" class="service-section">
-        <h3>Depression Therapy</h3>
-        <p>
-          Overcome depression with our specialized <strong>depression therapy</strong> services. We provide compassionate support and effective treatment plans to help you regain control and improve your quality of life. Available in Shepperton, Sunbury-on-Thames, Weybridge, and Egham.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Alleviation of depressive symptoms</li>
-          <li>Enhanced emotional well-being</li>
-          <li>Improved daily functioning</li>
-        </ul>
-        <h5>Methodologies:</h5>
-        <p>
-          Our depression therapy incorporates evidence-based approaches such as Cognitive Behavioural Therapy (CBT) and mindfulness techniques to address the root causes of depression and promote lasting change.
-        </p>
-        <h5>Why Choose This Service:</h5>
-        <p>
-          Our dedicated therapists are trained to provide personalized care, ensuring that each therapy session is tailored to your specific needs and goals.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Start Depression Therapy</a>
-      </div>
-
-      <!-- Service 4: Anxiety Therapy -->
-      <div id="anxiety-therapy" class="service-section">
-        <h3>Anxiety Therapy</h3>
-        <p>
-          Manage and reduce anxiety with our effective <strong>anxiety therapy</strong> programs. We offer tailored solutions to help you navigate anxiety and lead a more balanced life. Available in Shepperton, Sunbury-on-Thames, Weybridge, and Egham.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Reduction in anxiety symptoms</li>
-          <li>Improved stress management</li>
-          <li>Enhanced coping mechanisms</li>
-        </ul>
-        <h5>Methodologies:</h5>
-        <p>
-          Combining Cognitive Behavioural Therapy (CBT) with relaxation techniques, our anxiety therapy focuses on identifying and changing negative thought patterns that contribute to anxiety.
-        </p>
-        <h5>Why Choose This Service:</h5>
-        <p>
-          Our experienced therapists provide a supportive environment where you can explore the causes of your anxiety and develop effective strategies to overcome it.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Begin Anxiety Therapy</a>
-      </div>
-
-      <!-- Related Services -->
-      <div class="mt-5">
-        <h4>Explore More Services</h4>
-        <a href="service-1.html#professional-therapy" class="btn btn-link">Therapist Services</a>
-        <a href="service-2.html#hypnosis-and-hypnotism" class="btn btn-link">Hypnotherapy Services</a>
-        <a href="service-3.html#couples-therapy" class="btn btn-link">Couples Therapy Services</a>
-        <a href="service-4.html#life-coaching" class="btn btn-link">Life Coaching Services</a>
-      </div>
-
-      <!-- Testimonials -->
-      <div class="mt-5">
-        <h4>Client Success Stories</h4>
-        <blockquote class="blockquote">
-          <p>"The depression therapy sessions at Hugh Helps Alpha Consultancy provided the support I needed to manage my anxiety effectively."</p>
-          <footer class="blockquote-footer">- Emma Johnson, Weybridge</footer>
-        </blockquote>
-        <blockquote class="blockquote">
-          <p>"Accessing mental health therapies through Hugh Helps Alpha Consultancy has been a lifesaver in my journey towards mental wellness."</p>
-          <footer class="blockquote-footer">- Liam Brown, Sunbury-on-Thames</footer>
-        </blockquote>
-        <blockquote class="blockquote">
-          <p>"The comprehensive therapies offered by Hugh Helps Alpha Consultancy have significantly improved my mental health."</p>
-          <footer class="blockquote-footer">- Ava Davis, Shepperton</footer>
-        </blockquote>
-        <blockquote class="blockquote">
-          <p>"The kids therapist near me services provided by Hugh Helps Alpha Consultancy have been instrumental in my child's emotional development."</p>
-          <footer class="blockquote-footer">- Olivia Martin, Addlestone</footer>
-        </blockquote>
+  <!-- ===== SECTION 1: BIPOLAR DISORDER COUNSELLING ===== -->
+  <section id="bipolar-disorder-counselling-section" class="mental-health-section bg-light">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-6" id="bipolar-disorder-counselling-image">
+          <img
+            src="https://via.placeholder.com/700x450?text=Bipolar+Disorder+Counselling"
+            alt="Bipolar Disorder Counselling"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6" id="bipolar-disorder-counselling-content">
+          <h3 id="bipolar-disorder-counselling-title">Bipolar Disorder Counselling</h3>
+          <p>
+            Our specialized <strong>bipolar disorder</strong> counselling provides comprehensive support to help you manage mood swings, improve emotional stability, and enhance overall well-being. Available in Shepperton, Sunbury-on-Thames, Weybridge, and Egham.
+          </p>
+          <h5>Benefits:</h5>
+          <ul>
+            <li>Enhanced emotional regulation</li>
+            <li>Improved interpersonal relationships</li>
+            <li>Effective coping strategies for mood swings</li>
+          </ul>
+          <h5>Methodologies:</h5>
+          <p>
+            Utilizing a combination of Cognitive Behavioural Therapy (CBT) and mood stabilization techniques, our bipolar disorder counselling aims to address the unique challenges faced by individuals living with bipolar disorder.
+          </p>
+          <h5>Why Choose This Service:</h5>
+          <p>
+            Our experienced counsellors understand the complexities of bipolar disorder and are committed to providing personalised support to help you achieve a balanced and fulfilling life.
+          </p>
+          <a href="contact.html" class="btn btn-primary" id="schedule-bipolar-counselling-btn">Schedule Bipolar Disorder Counselling</a>
+        </div>
       </div>
     </div>
   </section>
+  <!-- ===== /SECTION 1 ===== -->
 
-  <!-- Footer -->
+  <!-- ===== SECTION 2: KIDS THERAPIST NEAR ME ===== -->
+  <section id="kids-therapist-near-me-section" class="mental-health-section">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-6 order-md-2" id="kids-therapist-near-me-image">
+          <img
+            src="https://via.placeholder.com/700x450?text=Kids+Therapist+Near+Me"
+            alt="Kids Therapist Near Me"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6 order-md-1" id="kids-therapist-near-me-content">
+          <h3 id="kids-therapist-near-me-title">Kids Therapist Near Me</h3>
+          <p>
+            Support your child's mental health with our dedicated <strong>kids therapist near me</strong> services. We offer a safe and nurturing environment for children to express themselves and overcome challenges. Available in Shepperton, Sunbury-on-Thames, Weybridge, and Egham.
+          </p>
+          <h5>Benefits:</h5>
+          <ul>
+            <li>Improved emotional and behavioural health</li>
+            <li>Enhanced coping skills</li>
+            <li>Support for academic and social development</li>
+          </ul>
+          <h5>Methodologies:</h5>
+          <p>
+            Our child therapists employ age-appropriate therapeutic techniques, including play therapy and cognitive-behavioural strategies, to address issues such as anxiety, depression, and behavioural challenges.
+          </p>
+          <h5>Why Choose This Service:</h5>
+          <p>
+            We understand the unique needs of children and work closely with parents to provide comprehensive support that fosters growth and resilience in young minds.
+          </p>
+          <a href="contact.html" class="btn btn-primary" id="book-kids-therapy-btn">Book a Kids Therapy Session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /SECTION 2 ===== -->
+
+  <!-- ===== SECTION 3: DEPRESSION THERAPY ===== -->
+  <section id="depression-therapy-section" class="mental-health-section bg-light">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-6" id="depression-therapy-image">
+          <img
+            src="https://via.placeholder.com/700x450?text=Depression+Therapy"
+            alt="Depression Therapy"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6" id="depression-therapy-content">
+          <h3 id="depression-therapy-title">Depression Therapy</h3>
+          <p>
+            Overcome depression with our specialized <strong>depression therapy</strong> services. We provide compassionate support and effective treatment plans to help you regain control and improve your quality of life. Available in Shepperton, Sunbury-on-Thames, Weybridge, and Egham.
+          </p>
+          <h5>Benefits:</h5>
+          <ul>
+            <li>Alleviation of depressive symptoms</li>
+            <li>Enhanced emotional well-being</li>
+            <li>Improved daily functioning</li>
+          </ul>
+          <h5>Methodologies:</h5>
+          <p>
+            Our depression therapy incorporates evidence-based approaches such as Cognitive Behavioural Therapy (CBT) and mindfulness techniques to address the root causes of depression and promote lasting change.
+          </p>
+          <h5>Why Choose This Service:</h5>
+          <p>
+            Our dedicated therapists are trained to provide personalised care, ensuring that each therapy session is tailored to your specific needs and goals.
+          </p>
+          <a href="contact.html" class="btn btn-primary" id="start-depression-therapy-btn">Start Depression Therapy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /SECTION 3 ===== -->
+
+  <!-- ===== SECTION 4: ANXIETY THERAPY ===== -->
+  <section id="anxiety-therapy-section" class="mental-health-section">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-6 order-md-2" id="anxiety-therapy-image">
+          <img
+            src="https://via.placeholder.com/700x450?text=Anxiety+Therapy"
+            alt="Anxiety Therapy"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6 order-md-1" id="anxiety-therapy-content">
+          <h3 id="anxiety-therapy-title">Anxiety Therapy</h3>
+          <p>
+            Manage and reduce anxiety with our effective <strong>anxiety therapy</strong> programmes. We offer tailored solutions to help you navigate anxiety and lead a more balanced life. Available in Shepperton, Sunbury-on-Thames, Weybridge, and Egham.
+          </p>
+          <h5>Benefits:</h5>
+          <ul>
+            <li>Reduction in anxiety symptoms</li>
+            <li>Improved stress management</li>
+            <li>Enhanced coping mechanisms</li>
+          </ul>
+          <h5>Methodologies:</h5>
+          <p>
+            Combining Cognitive Behavioural Therapy (CBT) with relaxation techniques, our anxiety therapy focuses on identifying and changing negative thought patterns that contribute to anxiety.
+          </p>
+          <h5>Why Choose This Service:</h5>
+          <p>
+            Our experienced therapists provide a supportive environment where you can explore the causes of your anxiety and develop effective strategies to overcome it.
+          </p>
+          <a href="contact.html" class="btn btn-primary" id="begin-anxiety-therapy-btn">Begin Anxiety Therapy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /SECTION 4 ===== -->
+
+  <!-- ===== RELATED SERVICES SECTION ===== -->
+  <section id="related-services-section" class="related-services-section py-5">
+    <div class="container">
+      <h4 id="related-services-title">Discover More Services</h4>
+      <div class="d-flex flex-wrap gap-3 mt-3">
+        <a href="services-1.html#professional-therapy" class="btn btn-outline-primary">Therapist Services</a>
+        <a href="services-2.html#hypnosis-and-hypnotism" class="btn btn-outline-primary">Hypnotherapy Services</a>
+        <a href="services-3.html#couples-therapy" class="btn btn-outline-primary">Couples Therapy Services</a>
+        <a href="services-4.html#life-coaching" class="btn btn-outline-primary">Life Coaching Services</a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /RELATED SERVICES SECTION ===== -->
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section id="testimonials-section" class="testimonials-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4" id="testimonials-title">Client Success Stories</h2>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="testimonial-box p-4 shadow-sm" id="testimonial-1">
+            <p class="testimonial mb-2">
+              "The depression therapy sessions at Hugh Helps Alpha Consultancy provided the support I needed to manage my anxiety effectively."
+            </p>
+            <small class="text-muted">- Emma Johnson, Weybridge</small>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-box p-4 shadow-sm" id="testimonial-2">
+            <p class="testimonial mb-2">
+              "Accessing mental health therapies through Hugh Helps Alpha Consultancy has been a lifesaver in my journey towards mental wellness."
+            </p>
+            <small class="text-muted">- Liam Brown, Sunbury-on-Thames</small>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-box p-4 shadow-sm" id="testimonial-3">
+            <p class="testimonial mb-2">
+              "The comprehensive therapies offered by Hugh Helps Alpha Consultancy have significantly improved my mental health."
+            </p>
+            <small class="text-muted">- Ava Davis, Shepperton</small>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-box p-4 shadow-sm" id="testimonial-4">
+            <p class="testimonial mb-2">
+              "The kids therapist near me services provided by Hugh Helps Alpha Consultancy have been instrumental in my child's emotional development."
+            </p>
+            <small class="text-muted">- Olivia Martin, Addlestone</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /TESTIMONIALS SECTION ===== -->
+
+  <!-- ===== FOOTER ===== -->
   <footer class="bg-dark text-white py-4">
     <div class="container text-center">
       <p>&copy; 2025 Hugh Helps Alpha Consultancy. All Rights Reserved.</p>
@@ -258,6 +380,7 @@
       </p>
     </div>
   </footer>
+  <!-- ===== /FOOTER ===== -->
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

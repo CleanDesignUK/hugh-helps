@@ -3,26 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Life Coaching Services - Hugh Helps Alpha Consultancy</title>
+  <title>Life Coaching Services in Shepperton, Addlestone, Thames Ditton, Cobham - Hugh Helps Alpha Consultancy</title>
   <meta
     name="description"
-    content="Professional life coaching, coaching life services, certified life coach, and advanced coaching solutions for adult ADHD, bereavement counselling, and seasonal affective disorder. Serving Shepperton, Addlestone, Thames Ditton, Cobham, and surrounding areas."
+    content="Professional life coaching services, certified life coach, and advanced coaching solutions for adult ADHD, bereavement counselling, and seasonal affective disorder in Shepperton, Addlestone, Thames Ditton, Cobham, and surrounding areas."
   />
+
   <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
-  <!-- Custom CSS -->
-  <style>
-    /* Custom Styles */
-    body {
-      padding-top: 70px;
-    }
-    .service-section {
-      margin-bottom: 50px;
-    }
-  </style>
+
+  <!-- Global Styles (Matching index.html) -->
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- Page-Specific Styles for Life Coaching Services Page -->
+  <link rel="stylesheet" href="services-4.css" />
+
   <!-- Schema Markup -->
   <script type="application/ld+json">
   {
@@ -43,287 +41,349 @@
       "telephone": "07443 625 032",
       "email": "hugh@hughhelps.com",
       "url": "https://www.hughhelpsalpha.com"
-    }
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Shepperton, Addlestone, Thames Ditton, Cobham"
+    },
+    "sameAs": [
+      "https://www.facebook.com/hughhelpsalpha",
+      "https://www.instagram.com/hughhelpsalpha"
+    ]
   }
   </script>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <!-- ===== STICKY NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Hugh Helps</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-title">Hugh Helps</span>
+        <small class="brand-subtitle d-block">Alpha Consultancy</small>
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarContent" 
+        aria-controls="navbarContent" 
+        aria-expanded="false" 
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html"
+            <a class="nav-link active" aria-current="page" href="index.html"
               >Home</a
             >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html"
-              >About Us</a
+              >About Hugh</a
             >
           </li>
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle active"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
+            <a 
+              class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" 
+              data-bs-toggle="dropdown" 
               aria-expanded="false"
             >
               Services
             </a>
             <ul class="dropdown-menu">
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="service-1.html#professional-therapy"
-                  >Therapist Services</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="service-2.html#hypnosis-and-hypnotism"
-                  >Hypnotherapy Services</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="service-3.html#couples-therapy"
-                  >Couples Therapy Services</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item active"
-                  href="service-4.html#certified-life-coach"
-                  >Life Coaching Services</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="service-5.html#nhs-talking-therapies"
-                  >NHS Talking Therapies</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="services-general.html#additional-services"
-                  >Additional Services</a
-                >
-              </li>
+              <li><a class="dropdown-item" href="services-1.html#professional-therapy">Therapist Services</a></li>
+              <li><a class="dropdown-item" href="services-1.html#expert-counselling">Expert Counselling</a></li>
+              <li><a class="dropdown-item" href="services-1.html#local-therapy-sessions">Local Therapy Sessions</a></li>
+
+
+              <li><a class="dropdown-item" href="services-2.html#hypnotherapy-services">Hypnotherapy Services</a></li>
+<li><a class="dropdown-item" href="services-2.html#sleep-improvement-hypnosis">Sleep Improvement Hypnosis</a></li>
+<li><a class="dropdown-item" href="services-2.html#quit-smoking-hypnosis">Quit Smoking Hypnosis</a></li>
+
+
+
+
+              <li><a class="dropdown-item" href="services-3.html#couples-therapy-services">Couples Therapy Services</a></li>
+
+      <li><a class="dropdown-item" href="services-3.html#hypnosis-and-weight-loss">Couples Therapy Services</a></li>
+
+  <li><a class="dropdown-item" href="services-3.html#effective-marriage-counseling">Hypnosis and Weight Lossg</a></li>
+
+
+              <li><a class="dropdown-item" href="services-4.html#life-coaching-services">Life Coaching Services</a></li>
+
+ <li><a class="dropdown-item" href="services-4.html#adult-adhd-therapist">Adult ADHD Therapist</a></li>
+ <li><a class="dropdown-item" href="services-4.html#seasonal-affective-disorder">Seasonal Affective Disorder Therapies</a></li>
+
+ <li><a class="dropdown-item" href="services-4.html#bereavement-counsellor">Bereavement Counsellor</a></li>
+
+              <li><a class="dropdown-item" href="services-5.html#bipolar-disorder-counselling">Bipolar Disorder Counselling</a></li>
+
+      <li><a class="dropdown-item" href="services-5.html#kids-therapist-near-me">Kids Therapist Near Me</a></li>
+
+<li><a class="dropdown-item" href="services-5.html#depression-therapy">Depression Therapy</a></li>
+
+<li><a class="dropdown-item" href="services-5.html#anxiety-therapy">Anxiety Therapy</a></li>
+
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="services-general.html">Additional Services</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html"
-              >Contact Us</a
+              >Contact</a
             >
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- ===== /NAVIGATION BAR ===== -->
 
-  <!-- Life Coaching Services Section -->
-  <section id="life-coaching-services" class="py-5">
-    <div class="container">
-      <h1 class="text-center mb-4">
-        Life Coaching Services in Shepperton and Nearby Areas
+  <!-- ===== HEADER FOR LIFE COACHING ===== -->
+  <header class="life-coaching-header d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+      <h1 class="page-title" id="life-coaching-header-title">
+        Life Coaching Services in Shepperton, Addlestone, Thames Ditton, and Cobham
       </h1>
-      <h2 class="text-center mb-5">
-        Elevate Your Potential with Expert Coaching
-      </h2>
-
-      <!-- ===== FIRST HALF: CORE LIFE COACHING SECTIONS ===== -->
-
-      <!-- Section 1: Certified Life Coach -->
-      <div id="certified-life-coach" class="service-section">
-        <h3>Certified Life Coach</h3>
-        <p>
-          Experience transformative growth with a <strong>certified life coach</strong> who 
-          specializes in helping you define and achieve personal goals. Our life coaching programs 
-          serve clients in <em>Shepperton</em>, <em>Addlestone</em>, <em>Thames Ditton</em>, 
-          <em>Cobham</em>, and beyond.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Personalized action plans for success</li>
-          <li>Improved self-awareness and self-confidence</li>
-          <li>Clarity in both personal and professional endeavors</li>
-        </ul>
-        <h5>Methodologies:</h5>
-        <p>
-          By combining proven coaching life techniques and motivational strategies, we help you 
-          overcome limiting beliefs and discover your full potential.
-        </p>
-        <h5>Why Choose This Service:</h5>
-        <p>
-          With years of experience and an empathetic approach, our certified life coach ensures 
-          that every session is impactful, guiding you step by step toward meaningful change.
-        </p>
-        <a href="contact.html" class="btn btn-primary"
-          >Book a Life Coaching Session</a
-        >
-      </div>
-
-      
-
-    
-
-      
-
-      <!-- ===== SECOND HALF: SPECIALIZED COACHING & THERAPY SECTIONS ===== -->
-      <hr class="my-5" />
-
-      <h2 class="text-center mb-5">Additional Specialised Support</h2>
-      <p>
-        Beyond our core life coaching services, we provide advanced coaching and 
-        counselling options to address specific conditions and challenges. Our 
-        specialized programs aim to support individuals dealing with <strong>adult ADHD</strong>, 
-        grief and loss, as well as <strong>seasonal affective disorder therapies</strong>. 
-        Here’s how we can help:
+      <p class="page-subtitle" id="life-coaching-header-subtitle">
+        Professional Life Coaching &amp; Personal Development Guidance
       </p>
+    </div>
+  </header>
+  <!-- ===== /HEADER ===== -->
 
-      <!-- Section: Adult ADHD Therapist -->
-      <div id="adult-adhd-therapist" class="service-section">
-        <h3><strong>Adult ADHD Therapist</strong></h3>
-        <p>
-          Managing ADHD as an adult can be overwhelming. Our specialized 
-          <strong>adult ADHD therapist</strong> sessions help you develop coping 
-          strategies, improve focus, and enhance daily functioning. Whether you're 
-          facing challenges at work or in your personal life, we tailor our 
-          approach to address your unique needs.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Improved concentration and time management</li>
-          <li>Strategies for organizing tasks and priorities</li>
-          <li>Reduced stress and anxiety</li>
-        </ul>
-        <p>
-          By combining elements of <em>coaching skill</em> frameworks and behavioral 
-          therapies, our sessions offer practical solutions for overcoming ADHD-related 
-          hurdles. 
-        </p>
-        <a href="contact.html" class="btn btn-primary"
-          >Book an Adult ADHD Coaching Session</a
-        >
-      </div>
+  <!-- ===== INTRODUCTION SECTION (Life Coaching) ===== -->
+  <section id="life-coaching-intro" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" id="life-coaching-intro-title">
+        Unlock Your Potential with Expert Life Coaching
+      </h2>
+      <p class="mx-auto text-center" id="life-coaching-intro-text" style="max-width: 700px;">
+        At Hugh Helps Alpha Consultancy, our <strong>life coaching services</strong> are designed to help you achieve your personal and professional goals. Whether you're seeking to improve your career prospects, enhance your personal relationships, or overcome specific challenges, our certified life coaches provide the support and strategies you need to thrive.
+      </p>
+    </div>
+  </section>
+  <!-- ===== /INTRODUCTION SECTION ===== -->
 
-      <!-- Section: Bereavement Counsellor -->
-      <div id="bereavement-counsellor" class="service-section">
-        <h3><strong>Bereavement Counsellor</strong></h3>
-        <p>
-          Dealing with loss can be an emotionally turbulent experience. Our 
-          <strong>bereavement counsellor</strong> provides compassionate support, 
-          offering coping strategies and a safe space to process grief. We serve 
-          Shepperton, Addlestone, Thames Ditton, and Cobham with tailored sessions 
-          aimed at guiding you through the healing process.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Emotional support during a difficult time</li>
-          <li>Guidance through various stages of grief</li>
-          <li>Improved coping mechanisms for the future</li>
-        </ul>
-        <p>
-          Whether you've lost a loved one recently or have been struggling for some time, 
-          our counselling approach fosters understanding, acceptance, and resilience.
-        </p>
-        <a href="contact.html" class="btn btn-primary"
-          >Find Bereavement Support</a
-        >
-      </div>
-
-      <!-- Section: Seasonal Affective Disorder Therapies -->
-      <div id="seasonal-affective-disorder" class="service-section">
-        <h3><strong>Seasonal Affective Disorder Therapies</strong></h3>
-        <p>
-          The change of seasons can significantly impact mood and energy levels. Our 
-          <strong>seasonal affective disorder therapies</strong> leverage a blend of 
-          coaching and therapeutic techniques to help you counteract low mood, fatigue, 
-          and lack of motivation associated with shorter days or changing weather.
-        </p>
-        <h5>Benefits:</h5>
-        <ul>
-          <li>Renewed energy and improved mood</li>
-          <li>Practical strategies for daily routine adjustments</li>
-          <li>Tools for managing stress and anxiety year-round</li>
-        </ul>
-        <p>
-          From light therapy recommendations to lifestyle coaching, we provide a 
-          comprehensive plan to help you stay balanced and productive throughout 
-          every season.
-        </p>
-        <a href="contact.html" class="btn btn-primary"
-          >Learn More About SAD Therapies</a
-        >
-      </div>
-
-      <!-- ===== RELATED SERVICES & TESTIMONIALS ===== -->
-      <div class="mt-5">
-        <h4>Explore More Services</h4>
-        <a
-          href="service-1.html#professional-therapy"
-          class="btn btn-link"
-          >Therapist Services</a
-        >
-        <a
-          href="service-2.html#hypnosis-and-hypnotism"
-          class="btn btn-link"
-          >Hypnotherapy Services</a
-        >
-        <a
-          href="service-3.html#couples-therapy"
-          class="btn btn-link"
-          >Couples Therapy Services</a
-        >
-      </div>
-
-      <div class="mt-5">
-        <h4>Client Success Stories</h4>
-        <blockquote class="blockquote">
+  <!-- ===== SECTION 1: CERTIFIED LIFE COACH ===== -->
+  <section id="certified-life-coach-section" class="life-coaching-section bg-light">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-6" id="certified-life-coach-image">
+          <img
+            src="https://via.placeholder.com/700x450?text=Certified+Life+Coach"
+            alt="Certified Life Coach"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6" id="certified-life-coach-content">
+          <h3 id="certified-life-coach-title">Certified Life Coach</h3>
           <p>
-            "Working with a life coach at Hugh Helps Alpha Consultancy has helped 
-            me achieve my personal goals and improve my overall well-being."
+            Experience transformative growth with a <strong>certified life coach</strong> who specialises in helping you define and achieve personal goals. Our life coaching programmes serve clients in <em>Shepperton</em>, <em>Addlestone</em>, <em>Thames Ditton</em>, <em>Cobham</em>, and beyond.
           </p>
-          <footer class="blockquote-footer">- Olivia Martin, Addlestone</footer>
-        </blockquote>
-        <blockquote class="blockquote">
+          <h5>Benefits:</h5>
+          <ul>
+            <li>Personalised action plans for success</li>
+            <li>Improved self-awareness and self-confidence</li>
+            <li>Clarity in both personal and professional endeavours</li>
+          </ul>
+          <h5>Methodologies:</h5>
           <p>
-            "The personalized coaching sessions provided the motivation I needed 
-            to pursue my dreams."
+            By combining proven life coaching techniques and motivational strategies, we help you overcome limiting beliefs and discover your full potential.
           </p>
-          <footer class="blockquote-footer">- James Wilson, Thames Ditton</footer>
-        </blockquote>
-        <blockquote class="blockquote">
+          <h5>Why Choose This Service:</h5>
           <p>
-            "Hugh Helps Alpha Consultancy's life coaching services have been 
-            instrumental in my personal growth and development."
+            With years of experience and an empathetic approach, our certified life coach ensures that every session is impactful, guiding you step by step toward meaningful change.
           </p>
-          <footer class="blockquote-footer">- Mia Thompson, Shepperton</footer>
-        </blockquote>
+          <a href="contact.html" class="btn btn-primary" id="book-life-coaching-btn">Book a Life Coaching Session</a>
+        </div>
       </div>
     </div>
   </section>
+  <!-- ===== /SECTION 1 ===== -->
 
-  <!-- Footer -->
+  <!-- ===== SECTION 2: ADULT ADHD THERAPIST ===== -->
+  <section id="adult-adhd-therapist-section" class="life-coaching-section">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-6 order-md-2" id="adult-adhd-therapist-image">
+          <img
+            src="https://via.placeholder.com/700x450?text=Adult+ADHD+Therapist"
+            alt="Adult ADHD Therapist"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6 order-md-1" id="adult-adhd-therapist-content">
+          <h3 id="adult-adhd-therapist-title">Adult ADHD Therapist</h3>
+          <p>
+            Managing ADHD as an adult can be overwhelming. Our specialised <strong>adult ADHD therapist</strong> sessions help you develop coping strategies, improve focus, and enhance daily functioning. Whether you're facing challenges at work or in your personal life, we tailor our approach to address your unique needs.
+          </p>
+          <h5>Benefits:</h5>
+          <ul>
+            <li>Improved concentration and time management</li>
+            <li>Strategies for organising tasks and priorities</li>
+            <li>Reduced stress and anxiety</li>
+          </ul>
+          <h5>Methodologies:</h5>
+          <p>
+            By combining elements of coaching skill frameworks and behavioural therapies, our sessions offer practical solutions for overcoming ADHD-related hurdles.
+          </p>
+          <h5>Why Choose This Service:</h5>
+          <p>
+            Our experienced therapists provide a supportive environment where you can learn to manage ADHD effectively, leading to a more organised and fulfilling life.
+          </p>
+          <a href="contact.html" class="btn btn-primary" id="book-adhd-coaching-btn">Book an Adult ADHD Coaching Session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /SECTION 2 ===== -->
+
+  <!-- ===== SECTION 3: BEREAVEMENT COUNSELLOR ===== -->
+  <section id="bereavement-counsellor-section" class="life-coaching-section bg-light">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-6" id="bereavement-counsellor-image">
+          <img
+            src="https://via.placeholder.com/700x450?text=Bereavement+Counsellor"
+            alt="Bereavement Counsellor"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6" id="bereavement-counsellor-content">
+          <h3 id="bereavement-counsellor-title">Bereavement Counsellor</h3>
+          <p>
+            Dealing with loss can be an emotionally turbulent experience. Our <strong>bereavement counsellor</strong> provides compassionate support, offering coping strategies and a safe space to process grief. We serve Shepperton, Addlestone, Thames Ditton, and Cobham with tailored sessions aimed at guiding you through the healing process.
+          </p>
+          <h5>Benefits:</h5>
+          <ul>
+            <li>Emotional support during a difficult time</li>
+            <li>Guidance through various stages of grief</li>
+            <li>Improved coping mechanisms for the future</li>
+          </ul>
+          <h5>Methodologies:</h5>
+          <p>
+            Whether you've lost a loved one recently or have been struggling for some time, our counselling approach fosters understanding, acceptance, and resilience.
+          </p>
+          <h5>Why Choose This Service:</h5>
+          <p>
+            Our bereavement counselling offers a safe and supportive environment where you can navigate your grief journey with professional guidance.
+          </p>
+          <a href="contact.html" class="btn btn-primary" id="find-bereavement-support-btn">Find Bereavement Support</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /SECTION 3 ===== -->
+
+  <!-- ===== SECTION 4: SEASONAL AFFECTIVE DISORDER THERAPIES ===== -->
+  <section id="seasonal-affective-disorder-section" class="life-coaching-section">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-6 order-md-2" id="seasonal-affective-disorder-image">
+          <img
+            src="https://via.placeholder.com/700x450?text=Seasonal+Affective+Disorder+Therapies"
+            alt="Seasonal Affective Disorder Therapies"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6 order-md-1" id="seasonal-affective-disorder-content">
+          <h3 id="seasonal-affective-disorder-title">Seasonal Affective Disorder Therapies</h3>
+          <p>
+            The change of seasons can significantly impact mood and energy levels. Our <strong>seasonal affective disorder therapies</strong> leverage a blend of coaching and therapeutic techniques to help you counteract low mood, fatigue, and lack of motivation associated with shorter days or changing weather.
+          </p>
+          <h5>Benefits:</h5>
+          <ul>
+            <li>Renewed energy and improved mood</li>
+            <li>Practical strategies for daily routine adjustments</li>
+            <li>Tools for managing stress and anxiety year-round</li>
+          </ul>
+          <h5>Methodologies:</h5>
+          <p>
+            From light therapy recommendations to lifestyle coaching, we provide a comprehensive plan to help you stay balanced and productive throughout every season.
+          </p>
+          <h5>Why Choose This Service:</h5>
+          <p>
+            Our holistic approach ensures that you receive tailored support to manage the unique challenges posed by seasonal changes, promoting sustained mental well-being.
+          </p>
+          <a href="contact.html" class="btn btn-primary" id="learn-more-sad-btn">Learn More About SAD Therapies</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /SECTION 4 ===== -->
+
+  <!-- ===== RELATED SERVICES SECTION ===== -->
+  <section id="related-services-section" class="related-services-section py-5">
+    <div class="container">
+      <h4 id="related-services-title">Discover More Services</h4>
+      <div class="d-flex flex-wrap gap-3 mt-3">
+        <a
+          href="services-1.html#professional-therapy"
+          class="btn btn-outline-primary"
+          >Therapist Services</a
+        >
+        <a
+          href="services-2.html#hypnotherapy-and-hypnotism"
+          class="btn btn-outline-primary"
+          >Hypnotherapy Services</a
+        >
+        <a
+          href="services-3.html#couples-therapy"
+          class="btn btn-outline-primary"
+          >Couples Therapy Services</a
+        >
+        <a
+          href="services-5.html#nhs-talking-therapies"
+          class="btn btn-outline-primary"
+          >NHS Talking Therapies</a
+        >
+      </div>
+    </div>
+  </section>
+  <!-- ===== /RELATED SERVICES SECTION ===== -->
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section id="testimonials-section" class="testimonials-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4" id="testimonials-title">Client Success Stories</h2>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="testimonial-box p-4 shadow-sm" id="testimonial-1">
+            <p class="testimonial mb-2">
+              "Working with a life coach at Hugh Helps Alpha Consultancy has helped me achieve my personal goals and improve my overall well-being."
+            </p>
+            <small class="text-muted">- Olivia Martin, Addlestone</small>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-box p-4 shadow-sm" id="testimonial-2">
+            <p class="testimonial mb-2">
+              "The personalized coaching sessions provided the motivation I needed to pursue my dreams."
+            </p>
+            <small class="text-muted">- James Wilson, Thames Ditton</small>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-box p-4 shadow-sm" id="testimonial-3">
+            <p class="testimonial mb-2">
+              "Hugh Helps Alpha Consultancy's life coaching services have been instrumental in my personal growth and development."
+            </p>
+            <small class="text-muted">- Mia Thompson, Shepperton</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /TESTIMONIALS SECTION ===== -->
+
+  <!-- ===== FOOTER ===== -->
   <footer class="bg-dark text-white py-4">
     <div class="container text-center">
       <p>
@@ -333,22 +393,24 @@
         <a 
           href="https://www.facebook.com/hughhelpsalpha" 
           class="text-white me-3"
+          >Facebook</a
         >
-          Facebook
-        </a>
         <a 
           href="https://www.instagram.com/hughhelpsalpha" 
           class="text-white"
+          >Instagram</a
         >
-          Instagram
-        </a>
       </p>
     </div>
   </footer>
+  <!-- ===== /FOOTER ===== -->
 
-  <!-- Bootstrap JS and dependencies -->
+  <!-- ===== JS SCRIPTS ===== -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
   <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  ></script>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
 </body>
 </html>
