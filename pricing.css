@@ -1,0 +1,119 @@
+/* ==========================================================================
+   PAGE-SPECIFIC STYLES FOR pricing.html
+   Ensuring professionalism and consistency with the main styles.css
+========================================================================== */
+
+/* ===== PRICING SECTION ===== */
+#pricing {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-dark);
+}
+
+/* ===== HEADINGS ===== */
+#pricing h1 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  color: var(--color-accent-dark);
+  margin-bottom: 1.5rem;
+}
+
+#pricing .lead {
+  font-family: var(--font-body);
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ===== PRICING CARDS ===== */
+.pricing-card {
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.pricing-card .card-header {
+  background-color: #fff;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.pricing-card h3 {
+  font-family: var(--font-subtitle);
+  font-size: 1.4rem;
+  color: var(--color-accent-dark);
+  margin: 0;
+  padding: 1rem;
+}
+
+.pricing-card .price-tag {
+  font-family: var(--font-title);
+  font-size: 1.75rem;
+  color: var(--color-text-dark);
+}
+
+.pricing-card p {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ===== BUTTONS ===== */
+.pricing-card .btn-primary {
+  background-color: var(--color-accent-dark);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pricing-card .btn-primary:hover,
+.pricing-card .btn-primary:focus {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.pricing-card .btn-outline-primary {
+  border: 2px solid var(--color-accent-dark);
+  color: var(--color-accent-dark);
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pricing-card .btn-outline-primary:hover,
+.pricing-card .btn-outline-primary:focus {
+  background-color: var(--color-accent-dark);
+  color: #fff;
+}
+
+/* ===== RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+  #pricing h1 {
+    font-size: 1.75rem;
+  }
+
+  .pricing-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .pricing-card .price-tag {
+    font-size: 1.5rem;
+  }
+
+  #pricing .lead {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #pricing h1 {
+    font-size: 1.5rem;
+  }
+
+  .pricing-card .price-tag {
+    font-size: 1.4rem;
+  }
+}
