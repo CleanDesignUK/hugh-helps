@@ -126,3 +126,74 @@ body {
     font-size: 0.9rem;
   }
 }
+
+
+/* Ensure the select element is responsive and centered */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem; /* Add some padding for better spacing on mobile */
+}
+
+.contact-form .form-select {
+  width: 100%;
+  max-width: 500px; /* Adjust max-width as needed */
+  box-sizing: border-box;
+  margin: 0 auto 1rem auto; /* Center and add bottom margin */
+  padding: 0.5rem; /* Adjust padding for better touch targets */
+  font-size: 1rem;
+}
+
+/* Prevent horizontal overflow on mobile */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Adjust select dropdown for smaller screens */
+@media (max-width: 768px) {
+  .contact-form .form-select {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form .form-select {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  
+  /* Center the form on very small screens */
+  .contact-form {
+    padding: 0.5rem;
+  }
+}
+
+/* Ensure the close button remains visible and clickable */
+.close-button-class { /* Replace with your actual close button class or ID */
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1050; /* Ensure it's above other elements */
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Optional: If using a modal, ensure it is responsive */
+.modal-dialog {
+  max-width: 100%;
+  margin: 1.75rem auto;
+}
+
+.modal-content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Enhance touch target size for mobile */
+.contact-form .form-select option {
+  padding: 10px;
+}

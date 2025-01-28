@@ -6,28 +6,41 @@
   <title>Contact Our Shepperton Therapist | Hugh Helps Alpha</title>
 
   <meta name="description" content="Get in touch with Hugh Helps for therapy, counselling, or hypnotherapy in Shepperton. Schedule your free consultation and start your journey.">
-<meta name="keywords" content="Shepperton therapist, contact, counselling, hypnotherapy, free consultation">
+  <meta name="keywords" content="Shepperton therapist, contact, counselling, hypnotherapy, free consultation">
 
-<link rel="icon" href="hugh-helps-logo.jpg" type="image/jpeg">
+  <link rel="icon" href="hugh-helps-logo.jpg" type="image/jpeg">
 
   <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
- <link 
-  rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
->
-  <!-- Global Styles (Matching index.html) -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  >
+
+  <!-- Google Fonts (Matching index.html) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Quicksand:wght@400;600&family=Source+Serif+4:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Global Styles (Matching styles.css) -->
   <link rel="stylesheet" href="index.css" />
 
   <!-- Page-Specific Styles for Contact Page -->
   <link rel="stylesheet" href="contact.css" />
 
+  <!-- SweetAlert2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+  <!-- ===== STICKY NAVBAR ===== -->
+   <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
   <div class="container-fluid">
      <a class="navbar-brand d-flex align-items-center" href="index.html">
       <!-- Logo Image -->
@@ -122,6 +135,7 @@
     </div>
   </div>
 </nav>
+  <!-- ===== /STICKY NAVBAR ===== -->
 
   <!-- ===== CONTACT SECTION ===== -->
   <section id="contact" class="py-5 bg-light">
@@ -136,76 +150,109 @@
         <div class="col-lg-8">
           <!-- Contact Form -->
           <div class="contact-form mb-5 p-4 rounded shadow bg-white">
-            <form action="submit_form_endpoint" method="POST">
+            <form id="contactForm" class="needs-validation" novalidate>
+              <h2>Get in Touch</h2>
               <div class="mb-3">
-                <label for="name" class="form-label fw-semibold">
-                  Full Name <span class="text-danger">*</span>
-                </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="e.g. Jane Doe"
-                  required
-                />
+                <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name" />
+                <div class="invalid-feedback">
+                  Please enter your full name.
+                </div>
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label fw-semibold">
-                  Email Address <span class="text-danger">*</span>
-                </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="e.g. jane.doe@example.com"
-                  required
-                />
+                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address" />
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
               </div>
               <div class="mb-3">
-                <label for="phone" class="form-label fw-semibold">Phone Number</label>
+                <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
                 <input
                   type="tel"
                   class="form-control"
                   id="phone"
                   name="phone"
-                  placeholder="e.g. 07443 625 032"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="service" class="form-label fw-semibold">
-                  Service Interested In
-                </label>
-                <select
-                  class="form-select"
-                  id="service"
-                  name="service"
-                >
-                  <option value="" selected disabled>Choose a service</option>
-                  <option value="Therapist Services">Therapist Services</option>
-                  <option value="Hypnotherapy Services">Hypnotherapy Services</option>
-                  <option value="Couples Therapy Services">Couples Therapy Services</option>
-                  <option value="Life Coaching Services">Life Coaching Services</option>
-                  <option value="Mental Health Therapies">Mental Health Therapies</option>
-                  <option value="Additional Services">Additional Services</option>
-                </select>
-              </div>
-              <div class="mb-4">
-                <label for="message" class="form-label fw-semibold">
-                  Your Message <span class="text-danger">*</span>
-                </label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  name="message"
-                  rows="5"
-                  placeholder="Tell us how we can help..."
                   required
-                ></textarea>
+                  pattern="^\+44\s?7\d{3}\s?\d{3}\s?\d{3}$"
+                  title="Please enter a valid UK phone number starting with +44 (e.g., +44 7915 578568)"
+                  placeholder="+44 7915 578568"
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid UK phone number starting with +44 (e.g., +44 7915 578568).
+                </div>
               </div>
-              <button type="submit" class="btn btn-primary w-100">
-                Submit Enquiry
+           <div class="mb-3">
+  <label for="service" class="form-label">Service Required <span class="text-danger">*</span></label>
+  <select class="form-select" id="service" name="service" required>
+    <option value="" disabled selected>Select a service</option>
+    <option value="Adult ADHD Therapist">Adult ADHD Therapist</option>
+    <option value="Anger Issues Therapy">Anger Issues Therapy</option>
+    <option value="Anxiety Therapy">Anxiety Therapy</option>
+    <option value="Bipolar Disorder Counselling">Bipolar Disorder Counselling</option>
+    <option value="Bereavement Counsellor">Bereavement Counsellor</option>
+    <option value="Career Problems Coaching">Career Problems Coaching</option>
+    <option value="Certified Life Coach">Certified Life Coach</option>
+    <option value="Chronic Fatigue (ME) Therapy">Chronic Fatigue (ME) Therapy</option>
+    <option value="Confidence Building Therapy">Confidence Building Therapy</option>
+    <option value="Couples Therapy: Communication & Understanding">Couples Therapy: Communication & Understanding</option>
+    <option value="Depression Therapy">Depression Therapy</option>
+    <option value="Driving Test Nerves Coaching">Driving Test Nerves Coaching</option>
+    <option value="Emotions Therapy">Emotions Therapy</option>
+    <option value="Exam Nerves Coaching">Exam Nerves Coaching</option>
+    <option value="Feeling Down Therapy">Feeling Down Therapy</option>
+    <option value="Habit Correction Therapy">Habit Correction Therapy</option>
+    <option value="Hypnobirthing">Hypnobirthing</option>
+    <option value="Hypnosis & Hypnotism">Hypnosis & Hypnotism</option>
+    <option value="Hypnosis and Weight Loss">Hypnosis and Weight Loss</option>
+    <option value="IBS (Irritable Bowel Syndrome) Therapy">IBS (Irritable Bowel Syndrome) Therapy</option>
+    <option value="Job Interview Nerves Coaching">Job Interview Nerves Coaching</option>
+    <option value="Kids Therapy">Kids Therapy</option>
+    <option value="Marriage Counselling: Rebuilding Trust">Marriage Counselling: Rebuilding Trust</option>
+    <option value="Nail Biting Therapy">Nail Biting Therapy</option>
+    <option value="Other Coaching">Other Coaching</option>
+    <option value="Other Counselling">Other Counselling</option>
+    <option value="Other Hypnosis">Other Hypnosis</option>
+    <option value="Other Therapy">Other Therapy</option>
+    <option value="Pain Relief Hypnotherapy">Pain Relief Hypnotherapy</option>
+    <option value="Pricing">Pricing</option>
+    <option value="Professional Hypnotherapy">Professional Hypnotherapy</option>
+    <option value="Public Speaking Coaching">Public Speaking Coaching</option>
+    <option value="Questions">Questions</option>
+    <option value="Quit Smoking Hypnosis">Quit Smoking Hypnosis</option>
+    <option value="Relationship Counselling">Relationship Counselling</option>
+    <option value="Relationship Problems Therapy">Relationship Problems Therapy</option>
+    <option value="Relaxation Therapy">Relaxation Therapy</option>
+    <option value="Seasonal Affective Disorder Therapy">Seasonal Affective Disorder Therapy</option>
+    <option value="Self-Consciousness Therapy">Self-Consciousness Therapy</option>
+    <option value="Skin Problems Therapy">Skin Problems Therapy</option>
+    <option value="Sleep Improvement Hypnosis">Sleep Improvement Hypnosis</option>
+    <option value="Sporting Performance Hypnotherapy">Sporting Performance Hypnotherapy</option>
+    <option value="Stage Fright Coaching">Stage Fright Coaching</option>
+    <option value="Tinnitus Therapy">Tinnitus Therapy</option>
+    <option value="Weight and Food Issues Therapy">Weight and Food Issues Therapy</option>
+  </select>
+  <div class="invalid-feedback">
+    Please select a service.
+  </div>
+</div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Project Details <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Please provide details about your project..."></textarea>
+                <div class="invalid-feedback">
+                  Please provide details about your project.
+                </div>
+              </div>
+              <!-- Honeypot Spam Protection -->
+              <div style="display: none;">
+                <label for="botcheck">Do not fill this out if you're human:</label>
+                <input type="text" name="botcheck" id="botcheck">
+              </div>
+              <!-- Web3Forms Hidden Fields -->
+              <input type="hidden" name="access_key" value="bbadcb6e-1c9b-4749-92b6-8d8ef4dd120d">
+              <!-- No third-party trackers or cookies -->
+              <button type="submit" class="btn btn-primary btn-lg">
+                Submit
               </button>
             </form>
           </div>
@@ -216,21 +263,13 @@
             <h4>Contact Details</h4>
             <p class="mb-2">
               <strong>Phone:</strong>
-              <a href="tel:07443625032" class="text-decoration-none"
-                >07443 625 032</a
-              > |
-              <a href="tel:01932252777" class="text-decoration-none"
-                >01932 252 777</a
-              >
+              <a href="tel:+447915578568" class="text-decoration-none">+44 7915 578568</a> |
+              <a href="tel:01932252777" class="text-decoration-none">01932 252 777</a>
             </p>
             <p class="mb-2">
               <strong>Email:</strong>
-              <a href="mailto:hugh@hughhelps.com" class="text-decoration-none"
-                >hugh@hughhelps.com</a
-              > |
-              <a href="mailto:hypnotherapygb@aol.com" class="text-decoration-none"
-                >hypnotherapygb@aol.com</a
-              >
+              <a href="mailto:hugh@hughhelps.com" class="text-decoration-none">hugh@hughhelps.com</a> |
+              <a href="mailto:hypnotherapygb@aol.com" class="text-decoration-none">hypnotherapygb@aol.com</a>
             </p>
             <p class="mb-4">
               <strong>Business Hours:</strong>
@@ -252,17 +291,14 @@
             </p>
 
             <!-- Embedded Map (Replace src with your own Google Map link) -->
-         <div class="map-container ratio ratio-16x9 shadow-sm rounded">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19848.610134927355!2d-0.4526764!3d51.3933959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876772a55f15023%3A0xa3182b17345ddf2e!2sShepperton%2C%20Middlesex%2C%20TW17%2C%20UK!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-    width="600"
-    height="450"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-  ></iframe>
-</div>
+            <div class="map-container ratio ratio-16x9 shadow-sm rounded">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19848.610134927355!2d-0.4526764!3d51.3933959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876772a55f15023%3A0xa3182b17345ddf2e!2sShepperton%2C%20Middlesex%2C%20TW17%2C%20UK!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
           </div>
           <!-- /Contact Details -->
         </div>
@@ -272,7 +308,7 @@
   <!-- ===== /CONTACT SECTION ===== -->
 
   <!-- ===== FOOTER ===== -->
- <footer class="custom-footer py-4">
+<footer class="custom-footer py-4">
 <div class="row d-flex justify-content-center align-items-center">
 <div class="d-none  d-md-flex col-md-6 col-lg-4">
 
@@ -317,13 +353,141 @@
     </div>
   </div>
 </footer>
+  <!-- ===== /FOOTER ===== -->
 
   <!-- ===== JS SCRIPTS ===== -->
+  <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Bootstrap Bundle (Bootstrap 5.3.0) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JavaScript for Form Validation and Submission -->
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Bootstrap Form Validation
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            event.preventDefault()
+            event.stopPropagation()
+
+            if (form.checkValidity()) {
+              // Additional custom validations
+              handleFormSubmission(form)
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+
+    function handleFormSubmission(form) {
+      // Retrieve form values
+      const name = form.name.value.trim()
+      const email = form.email.value.trim()
+      const phone = form.phone.value.trim()
+      const service = form.service.value.trim()
+      const message = form.message.value.trim()
+      const botcheck = form.botcheck.value.trim()
+
+      // Define banned words
+      const bannedWords = ['SEO', 'top of google', 'agency', 'top agency', 'google agency']
+
+      // Function to check for banned words
+      function containsBannedWords(text) {
+        return bannedWords.some(word => text.toLowerCase().includes(word.toLowerCase()))
+      }
+
+      // Validate honeypot field
+      if (botcheck !== "") {
+        // Detected as bot
+        Swal.fire({
+          icon: 'error',
+          title: 'Submission Failed',
+          text: 'Invalid form submission.',
+        })
+        return
+      }
+
+      // Validate UK phone number using regex (must start with +44)
+      const ukPhoneRegex = /^\+44\s?7\d{3}\s?\d{3}\s?\d{3}$/
+      if (!ukPhoneRegex.test(phone)) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Invalid Phone Number',
+          text: 'Please enter a valid UK phone number starting with +44 (e.g., +44 7915 578568).',
+        })
+        return
+      }
+
+      // Check for banned words in name, service, and message
+      if (containsBannedWords(name) || containsBannedWords(service) || containsBannedWords(message)) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Invalid Input',
+          text: 'Your message contains inappropriate language. Please remove any SEO-related terms or agency mentions.',
+        })
+        return
+      }
+
+      // Simple email format validation (optional, already handled by HTML5)
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      if (!emailRegex.test(email)) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Invalid Email',
+          text: 'Please enter a valid email address.',
+        })
+        return
+      }
+
+      // Prepare form data for submission
+      const formData = new FormData()
+      formData.append('access_key', 'bbadcb6e-1c9b-4749-92b6-8d8ef4dd120d') // Your Web3Forms access key
+      formData.append('name', name)
+      formData.append('email', email)
+      formData.append('phone', phone)
+      formData.append('service', service)
+      formData.append('message', message)
+
+      // Send form data via Fetch API to Web3Forms
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      })
+      .then(async response => {
+        if (response.status === 200) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Thank You!',
+            text: 'Your request has been submitted successfully. We will contact you shortly.',
+            confirmButtonText: 'OK'
+          }).then(() => {
+            // Reset the form after successful submission
+            form.reset()
+            form.classList.remove('was-validated')
+          })
+        } else {
+          const data = await response.json()
+          throw new Error(data.message || 'Something went wrong!')
+        }
+      })
+      .catch(error => {
+        Swal.fire({
+          icon: 'error',
+          title: 'Submission Failed',
+          text: error.message || 'There was an issue submitting your request. Please try again later.',
+        })
+        console.error('Error:', error)
+      })
+    }
   </script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  ></script>
 </body>
 </html>
