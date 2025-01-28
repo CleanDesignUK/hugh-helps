@@ -240,3 +240,18 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
   
+
+@media (min-width: 576px) {
+  .nav-item.dropdown .dropdown-menu {
+    max-height: 50vh;       /* Limit the height of the dropdown to 80% of the viewport */
+    overflow-y: auto;       /* Enable vertical scrolling */
+    overflow-x: hidden;     /* Hide any horizontal overflow just in case */
+       /* Prevent it from sticking to the right side */
+  }
+}
+@media (min-width: 992px) {
+  .nav-item.dropdown .dropdown-menu {    transform: translateX(-50%); /* Adjust position by moving it 50% to the left */
+    left: 0;                /* Align it to the parent container */
+    right: auto;            /* Prevent it from sticking to the right side */
+  }
+}
