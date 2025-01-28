@@ -36,105 +36,103 @@
 
   <!-- SweetAlert2 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
-
 </head>
 <body>
   <!-- ===== STICKY NAVBAR ===== -->
-   <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
-  <div class="container-fluid">
-     <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <!-- Logo Image -->
-      <img src="hugh-helps-logo.jpg" alt="Hugh Helps Logo" class="navbar-logo me-2">
-      
-      <!-- Brand Title and Subtitle -->
-      <div>
-        <span class="brand-title">Hugh Helps</span>
-        <small class="brand-subtitle d-block">Alpha Consultancy</small>
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <!-- Logo Image -->
+        <img src="hugh-helps-logo.jpg" alt="Hugh Helps Logo" class="navbar-logo me-2">
+        <!-- Brand Title and Subtitle -->
+        <div>
+          <span class="brand-title">Hugh Helps</span>
+          <small class="brand-subtitle d-block">Alpha Consultancy</small>
+        </div>
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarContent" 
+        aria-controls="navbarContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav">
+          <!-- Home Link -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <!-- About Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="about-therapist-shepperton.html">About Hugh</a>
+          </li>
+
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown">
+            <a 
+              class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" 
+              data-bs-toggle="dropdown" 
+              aria-expanded="false"
+            >
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Therapist Services -->
+              <li><a class="dropdown-item" href="professional-therapist-shepperton.html#professional-therapy">Therapist Services</a></li>
+              <li><a class="dropdown-item" href="professional-therapist-shepperton.html#expert-counselling">Expert Counselling</a></li>
+              <li><a class="dropdown-item" href="professional-therapist-shepperton.html#local-therapy-sessions">Local Therapy Sessions</a></li>
+
+              <!-- Hypnotherapy Services -->
+              <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#hypnotherapy-services">Hypnotherapy Services</a></li>
+              <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#sleep-improvement-hypnosis">Sleep Improvement Hypnosis</a></li>
+              <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#quit-smoking-hypnosis">Quit Smoking Hypnosis</a></li>
+              <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#hypnosis-and-weight-loss">Weight-loss Hypnosis</a></li>
+
+              <!-- Couples Therapy Services -->
+              <li><a class="dropdown-item" href="couples-therapy-cobham.html#couples-therapy-services">Couples Therapy Services</a></li>
+              <li><a class="dropdown-item" href="couples-therapy-cobham.html#effective-marriage-counseling">Effective Marriage Counseling</a></li>
+
+              <!-- Life Coaching Services -->
+              <li><a class="dropdown-item" href="life-coaching-addlestone.html#life-coaching-services">Life Coaching Services</a></li>
+              <li><a class="dropdown-item" href="life-coaching-addlestone.html#adult-adhd-therapist">Adult ADHD Therapist</a></li>
+              <li><a class="dropdown-item" href="life-coaching-addlestone.html#seasonal-affective-disorder">Seasonal Affective Disorder Therapies</a></li>
+              <li><a class="dropdown-item" href="life-coaching-addlestone.html#bereavement-counsellor">Bereavement Counsellor</a></li>
+
+              <!-- Mental Health Therapies -->
+              <li><a class="dropdown-item" href="mental-health-cobham.html#bipolar-disorder-counselling">Bipolar Disorder Counselling</a></li>
+              <li><a class="dropdown-item" href="mental-health-cobham.html#kids-therapist-near-me">Kids Therapist Near Me</a></li>
+              <li><a class="dropdown-item" href="mental-health-cobham.html#depression-therapy">Depression Therapy</a></li>
+              <li><a class="dropdown-item" href="mental-health-cobham.html#anxiety-therapy">Anxiety Therapy</a></li>
+
+              <li><hr class="dropdown-divider" /></li>
+
+              <!-- Additional Services -->
+              <li><a class="dropdown-item" href="additional-mental-health-services-shepperton.html">Additional Services</a></li>
+            </ul>
+          </li>
+
+          <!-- Contact Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+          <!-- Pricing Link -->
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="pricing-therapy-shepperton.html">Pricing</a>
+          </li>
+        </ul>
       </div>
-    </a>
-    <button 
-      class="navbar-toggler" 
-      type="button" 
-      data-bs-toggle="collapse" 
-      data-bs-target="#navbarContent" 
-      aria-controls="navbarContent" 
-      aria-expanded="false" 
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-      <ul class="navbar-nav">
-        <!-- Home Link -->
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-
-        <!-- About Link -->
-        <li class="nav-item">
-          <a class="nav-link" href="about-therapist-shepperton.html">About Hugh</a>
-        </li>
-
-        <!-- Services Dropdown -->
-        <li class="nav-item dropdown">
-          <a 
-            class="nav-link dropdown-toggle" 
-            href="#" 
-            role="button" 
-            data-bs-toggle="dropdown" 
-            aria-expanded="false"
-          >
-            Services
-          </a>
-          <ul class="dropdown-menu">
-            <!-- Therapist Services -->
-            <li><a class="dropdown-item" href="professional-therapist-shepperton.html#professional-therapy">Therapist Services</a></li>
-            <li><a class="dropdown-item" href="professional-therapist-shepperton.html#expert-counselling">Expert Counselling</a></li>
-            <li><a class="dropdown-item" href="professional-therapist-shepperton.html#local-therapy-sessions">Local Therapy Sessions</a></li>
-
-            <!-- Hypnotherapy Services -->
-            <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#hypnotherapy-services">Hypnotherapy Services</a></li>
-            <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#sleep-improvement-hypnosis">Sleep Improvement Hypnosis</a></li>
-            <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#quit-smoking-hypnosis">Quit Smoking Hypnosis</a></li>
-            <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#hypnosis-and-weight-loss">Weight-loss Hypnosis</a></li>
-
-            <!-- Couples Therapy Services -->
-            <li><a class="dropdown-item" href="couples-therapy-cobham.html#couples-therapy-services">Couples Therapy Services</a></li>
-            <li><a class="dropdown-item" href="couples-therapy-cobham.html#effective-marriage-counseling">Effective Marriage Counseling</a></li>
-
-            <!-- Life Coaching Services -->
-            <li><a class="dropdown-item" href="life-coaching-addlestone.html#life-coaching-services">Life Coaching Services</a></li>
-            <li><a class="dropdown-item" href="life-coaching-addlestone.html#adult-adhd-therapist">Adult ADHD Therapist</a></li>
-            <li><a class="dropdown-item" href="life-coaching-addlestone.html#seasonal-affective-disorder">Seasonal Affective Disorder Therapies</a></li>
-            <li><a class="dropdown-item" href="life-coaching-addlestone.html#bereavement-counsellor">Bereavement Counsellor</a></li>
-
-            <!-- Mental Health Therapies -->
-            <li><a class="dropdown-item" href="mental-health-cobham.html#bipolar-disorder-counselling">Bipolar Disorder Counselling</a></li>
-            <li><a class="dropdown-item" href="mental-health-cobham.html#kids-therapist-near-me">Kids Therapist Near Me</a></li>
-            <li><a class="dropdown-item" href="mental-health-cobham.html#depression-therapy">Depression Therapy</a></li>
-            <li><a class="dropdown-item" href="mental-health-cobham.html#anxiety-therapy">Anxiety Therapy</a></li>
-
-            <li><hr class="dropdown-divider" /></li>
-
-            <!-- Additional Services -->
-            <li><a class="dropdown-item" href="additional-mental-health-services-shepperton.html">Additional Services</a></li>
-          </ul>
-        </li>
-
-        <!-- Contact Link -->
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-
-        <!-- Pricing Link -->
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="pricing-therapy-shepperton.html">Pricing</a>
-        </li>
-      </ul>
     </div>
-  </div>
-</nav>
+  </nav>
   <!-- ===== /STICKY NAVBAR ===== -->
 
   <!-- ===== CONTACT SECTION ===== -->
@@ -152,20 +150,42 @@
           <div class="contact-form mb-5 p-4 rounded shadow bg-white">
             <form id="contactForm" class="needs-validation" novalidate>
               <h2>Get in Touch</h2>
+              
+              <!-- Full Name -->
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name" />
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="name" 
+                  name="name" 
+                  required 
+                  placeholder="Enter your full name" 
+                  autocomplete="name"
+                />
                 <div class="invalid-feedback">
                   Please enter your full name.
                 </div>
               </div>
+
+              <!-- Email -->
               <div class="mb-3">
                 <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
-                <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address" />
+                <input 
+                  type="email" 
+                  class="form-control" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  placeholder="Enter your email address" 
+                  autocomplete="email"
+                />
                 <div class="invalid-feedback">
                   Please enter a valid email address.
                 </div>
               </div>
+
+              <!-- Phone Number -->
               <div class="mb-3">
                 <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
                 <input
@@ -174,82 +194,104 @@
                   id="phone"
                   name="phone"
                   required
-                  pattern="^\+44\s?7\d{3}\s?\d{3}\s?\d{3}$"
-                  title="Please enter a valid UK phone number starting with +44 (e.g., +44 7915 578568)"
-                  placeholder="+44 7915 578568"
+                  pattern="^(?:\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$|^(?:\+44\s?1\d{3}|\(?01\d{3}\)?)\s?\d{3}\s?\d{4}$|^(?:\+44\s?2\d{3}|\(?02\d{3}\)?)\s?\d{3}\s?\d{4}$"
+                  title="Please enter a valid UK phone number (e.g., +44 7915 578568, +44 1234 567890, 07915 578568, 01234 567890, 020 1234 5678)"
+                  placeholder="+44 7915 578568 or 01932 252777"
+                  autocomplete="tel"
                 />
                 <div class="invalid-feedback">
-                  Please enter a valid UK phone number starting with +44 (e.g., +44 7915 578568).
+                  Please enter a valid UK phone number (e.g., +44 7915 578568 or 01932 252777).
                 </div>
               </div>
-           <div class="mb-3">
-  <label for="service" class="form-label">Service Required <span class="text-danger">*</span></label>
-  <select class="form-select" id="service" name="service" required>
-    <option value="" disabled selected>Select a service</option>
-    <option value="Adult ADHD Therapist">Adult ADHD Therapist</option>
-    <option value="Anger Issues Therapy">Anger Issues Therapy</option>
-    <option value="Anxiety Therapy">Anxiety Therapy</option>
-    <option value="Bipolar Disorder Counselling">Bipolar Disorder Counselling</option>
-    <option value="Bereavement Counsellor">Bereavement Counsellor</option>
-    <option value="Career Problems Coaching">Career Problems Coaching</option>
-    <option value="Certified Life Coach">Certified Life Coach</option>
-    <option value="Chronic Fatigue (ME) Therapy">Chronic Fatigue (ME) Therapy</option>
-    <option value="Confidence Building Therapy">Confidence Building Therapy</option>
-    <option value="Couples Therapy: Communication & Understanding">Couples Therapy: Communication & Understanding</option>
-    <option value="Depression Therapy">Depression Therapy</option>
-    <option value="Driving Test Nerves Coaching">Driving Test Nerves Coaching</option>
-    <option value="Emotions Therapy">Emotions Therapy</option>
-    <option value="Exam Nerves Coaching">Exam Nerves Coaching</option>
-    <option value="Feeling Down Therapy">Feeling Down Therapy</option>
-    <option value="Habit Correction Therapy">Habit Correction Therapy</option>
-    <option value="Hypnobirthing">Hypnobirthing</option>
-    <option value="Hypnosis & Hypnotism">Hypnosis & Hypnotism</option>
-    <option value="Hypnosis and Weight Loss">Hypnosis and Weight Loss</option>
-    <option value="IBS (Irritable Bowel Syndrome) Therapy">IBS (Irritable Bowel Syndrome) Therapy</option>
-    <option value="Job Interview Nerves Coaching">Job Interview Nerves Coaching</option>
-    <option value="Kids Therapy">Kids Therapy</option>
-    <option value="Marriage Counselling: Rebuilding Trust">Marriage Counselling: Rebuilding Trust</option>
-    <option value="Nail Biting Therapy">Nail Biting Therapy</option>
-    <option value="Other Coaching">Other Coaching</option>
-    <option value="Other Counselling">Other Counselling</option>
-    <option value="Other Hypnosis">Other Hypnosis</option>
-    <option value="Other Therapy">Other Therapy</option>
-    <option value="Pain Relief Hypnotherapy">Pain Relief Hypnotherapy</option>
-    <option value="Pricing">Pricing</option>
-    <option value="Professional Hypnotherapy">Professional Hypnotherapy</option>
-    <option value="Public Speaking Coaching">Public Speaking Coaching</option>
-    <option value="Questions">Questions</option>
-    <option value="Quit Smoking Hypnosis">Quit Smoking Hypnosis</option>
-    <option value="Relationship Counselling">Relationship Counselling</option>
-    <option value="Relationship Problems Therapy">Relationship Problems Therapy</option>
-    <option value="Relaxation Therapy">Relaxation Therapy</option>
-    <option value="Seasonal Affective Disorder Therapy">Seasonal Affective Disorder Therapy</option>
-    <option value="Self-Consciousness Therapy">Self-Consciousness Therapy</option>
-    <option value="Skin Problems Therapy">Skin Problems Therapy</option>
-    <option value="Sleep Improvement Hypnosis">Sleep Improvement Hypnosis</option>
-    <option value="Sporting Performance Hypnotherapy">Sporting Performance Hypnotherapy</option>
-    <option value="Stage Fright Coaching">Stage Fright Coaching</option>
-    <option value="Tinnitus Therapy">Tinnitus Therapy</option>
-    <option value="Weight and Food Issues Therapy">Weight and Food Issues Therapy</option>
-  </select>
-  <div class="invalid-feedback">
-    Please select a service.
-  </div>
-</div>
+
+              <!-- Service Required -->
+              <div class="mb-3">
+                <label for="service" class="form-label">Service Required <span class="text-danger">*</span></label>
+                <select 
+                  class="form-select" 
+                  id="service" 
+                  name="service" 
+                  required 
+                  autocomplete="off"
+                >
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="Adult ADHD Therapist">Adult ADHD Therapist</option>
+                  <option value="Anger Issues Therapy">Anger Issues Therapy</option>
+                  <option value="Anxiety Therapy">Anxiety Therapy</option>
+                  <option value="Bipolar Disorder Counselling">Bipolar Disorder Counselling</option>
+                  <option value="Bereavement Counsellor">Bereavement Counsellor</option>
+                  <option value="Career Problems Coaching">Career Problems Coaching</option>
+                  <option value="Certified Life Coach">Certified Life Coach</option>
+                  <option value="Chronic Fatigue (ME) Therapy">Chronic Fatigue (ME) Therapy</option>
+                  <option value="Confidence Building Therapy">Confidence Building Therapy</option>
+                  <option value="Couples Therapy: Communication & Understanding">Couples Therapy: Communication & Understanding</option>
+                  <option value="Depression Therapy">Depression Therapy</option>
+                  <option value="Driving Test Nerves Coaching">Driving Test Nerves Coaching</option>
+                  <option value="Emotions Therapy">Emotions Therapy</option>
+                  <option value="Exam Nerves Coaching">Exam Nerves Coaching</option>
+                  <option value="Feeling Down Therapy">Feeling Down Therapy</option>
+                  <option value="Habit Correction Therapy">Habit Correction Therapy</option>
+                  <option value="Hypnobirthing">Hypnobirthing</option>
+                  <option value="Hypnosis & Hypnotism">Hypnosis & Hypnotism</option>
+                  <option value="Hypnosis and Weight Loss">Hypnosis and Weight Loss</option>
+                  <option value="IBS (Irritable Bowel Syndrome) Therapy">IBS (Irritable Bowel Syndrome) Therapy</option>
+                  <option value="Job Interview Nerves Coaching">Job Interview Nerves Coaching</option>
+                  <option value="Kids Therapy">Kids Therapy</option>
+                  <option value="Marriage Counselling: Rebuilding Trust">Marriage Counselling: Rebuilding Trust</option>
+                  <option value="Nail Biting Therapy">Nail Biting Therapy</option>
+                  <option value="Other Coaching">Other Coaching</option>
+                  <option value="Other Counselling">Other Counselling</option>
+                  <option value="Other Hypnosis">Other Hypnosis</option>
+                  <option value="Other Therapy">Other Therapy</option>
+                  <option value="Pain Relief Hypnotherapy">Pain Relief Hypnotherapy</option>
+                  <option value="Pricing">Pricing</option>
+                  <option value="Professional Hypnotherapy">Professional Hypnotherapy</option>
+                  <option value="Public Speaking Coaching">Public Speaking Coaching</option>
+                  <option value="Questions">Questions</option>
+                  <option value="Quit Smoking Hypnosis">Quit Smoking Hypnosis</option>
+                  <option value="Relationship Counselling">Relationship Counselling</option>
+                  <option value="Relationship Problems Therapy">Relationship Problems Therapy</option>
+                  <option value="Relaxation Therapy">Relaxation Therapy</option>
+                  <option value="Seasonal Affective Disorder Therapy">Seasonal Affective Disorder Therapy</option>
+                  <option value="Self-Consciousness Therapy">Self-Consciousness Therapy</option>
+                  <option value="Skin Problems Therapy">Skin Problems Therapy</option>
+                  <option value="Sleep Improvement Hypnosis">Sleep Improvement Hypnosis</option>
+                  <option value="Sporting Performance Hypnotherapy">Sporting Performance Hypnotherapy</option>
+                  <option value="Stage Fright Coaching">Stage Fright Coaching</option>
+                  <option value="Tinnitus Therapy">Tinnitus Therapy</option>
+                  <option value="Weight and Food Issues Therapy">Weight and Food Issues Therapy</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a service.
+                </div>
+              </div>
+
+              <!-- Project Details -->
               <div class="mb-3">
                 <label for="message" class="form-label">Project Details <span class="text-danger">*</span></label>
-                <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Please provide details about your project..."></textarea>
+                <textarea 
+                  class="form-control" 
+                  id="message" 
+                  name="message" 
+                  rows="5" 
+                  required 
+                  placeholder="Please provide details about your project..."
+                  autocomplete="off"
+                ></textarea>
                 <div class="invalid-feedback">
                   Please provide details about your project.
                 </div>
               </div>
+
               <!-- Honeypot Spam Protection -->
               <div style="display: none;">
                 <label for="botcheck">Do not fill this out if you're human:</label>
                 <input type="text" name="botcheck" id="botcheck">
               </div>
+
               <!-- Web3Forms Hidden Fields -->
-              <input type="hidden" name="access_key" value="bbadcb6e-1c9b-4749-92b6-8d8ef4dd120d">
+              <input type="hidden" name="access_key" value="60cd9d00-8f9c-4242-92d9-11fd51538f93">
+
               <!-- No third-party trackers or cookies -->
               <button type="submit" class="btn btn-primary btn-lg">
                 Submit
@@ -308,51 +350,47 @@
   <!-- ===== /CONTACT SECTION ===== -->
 
   <!-- ===== FOOTER ===== -->
-<footer class="custom-footer py-4">
-<div class="row d-flex justify-content-center align-items-center">
-<div class="d-none  d-md-flex col-md-6 col-lg-4">
-
-  <img src="the-royal-society-of-medicine-logo.png" alt="The Royal Society of Medicine Logo" class="img-fluid">
-</div>
-<div class="col-12 col-md-6 col-lg-6">
-  <div class="container text-center">
-    <!-- Favicon Image -->
-    <img src="hugh-helps-logo.jpg" alt="Hugh Helps Logo" class="footer-logo mb-3">
-    
-    <!-- Social Media Icons -->
-    <div class="social-icons mb-3">
-      <a href="https://www.facebook.com/hughhelpsalpha" class="text-white me-3" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-facebook" aria-label="Facebook"></i>
-      </a>
-      <a href="https://www.linkedin.com/company/hughhelpsalpha" class="text-white me-3 me-md-0 ms-md-3" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-linkedin" aria-label="LinkedIn"></i>
-      </a>
+  <footer class="custom-footer py-4">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="d-none d-md-flex col-md-6 col-lg-4">
+        <img src="the-royal-society-of-medicine-logo.png" alt="The Royal Society of Medicine Logo" class="img-fluid">
+      </div>
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="container text-center">
+          <!-- Favicon Image -->
+          <img src="hugh-helps-logo.jpg" alt="Hugh Helps Logo" class="footer-logo mb-3">
+          
+          <!-- Social Media Icons -->
+          <div class="social-icons mb-3">
+            <a href="https://www.facebook.com/hughhelpsalpha" class="text-white me-3" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook" aria-label="Facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/hughhelpsalpha" class="text-white me-3 me-md-0 ms-md-3" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin" aria-label="LinkedIn"></i>
+            </a>
+          </div>
+          
+          <!-- Privacy and Cookie Policy Links -->
+          <div class="policy-links mb-3">
+            <a href="privacy.html" class="text-white me-1">Privacy Policy</a>
+            <a href="cookie-policy.html" class="text-white ms-1 ms-lg-2">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="mt-3">
+        <p class="mb-2 text-center">&copy; 2025 Hugh Helps Alpha Consultancy. All Rights Reserved.</p>
+      </div>
+      <div class="designed-by">
+        <p class="mb-0 text-center">
+          Website designed by 
+          <a href="https://www.cleandesignuk.com" class="text-white" target="_blank" rel="noopener noreferrer">
+            Clean Design UK
+          </a>
+        </p>
+      </div>
     </div>
-    
-    <!-- Privacy and Cookie Policy Links -->
-    <div class="policy-links mb-3">
-      <a href="privacy.html" class="text-white me-1 ">Privacy Policy</a>
-      <a href="cookie-policy.html" class="text-white ms-1 ms-lg-2">Cookie Policy</a>
-    </div>
-    
-    <!-- Designed By Link -->
-   
-    </div>
-</div>
-    <!-- Copyright -->
-    <div class="mt-3">
-      <p class="mb-2 text-center">&copy; 2025 Hugh Helps Alpha Consultancy. All Rights Reserved.</p>
-    </div>
- <div class="designed-by">
-      <p class="mb-0 text-center">
-        Website designed by 
-        <a href="https://www.cleandesignuk.com" class="text-white" target="_blank" rel="noopener noreferrer">
-          Clean Design UK
-        </a>
-      </p>
-    </div>
-  </div>
-</footer>
+  </footer>
   <!-- ===== /FOOTER ===== -->
 
   <!-- ===== JS SCRIPTS ===== -->
@@ -378,9 +416,14 @@
             event.preventDefault()
             event.stopPropagation()
 
+            console.log('Form submission initiated.')
+
             if (form.checkValidity()) {
+              console.log('Form is valid. Proceeding with submission.')
               // Additional custom validations
               handleFormSubmission(form)
+            } else {
+              console.log('Form is invalid. Displaying validation errors.')
             }
 
             form.classList.add('was-validated')
@@ -389,6 +432,8 @@
     })()
 
     function handleFormSubmission(form) {
+      console.log('Handling form submission...')
+
       // Retrieve form values
       const name = form.name.value.trim()
       const email = form.email.value.trim()
@@ -396,6 +441,8 @@
       const service = form.service.value.trim()
       const message = form.message.value.trim()
       const botcheck = form.botcheck.value.trim()
+
+      console.log('Form Values:', { name, email, phone, service, message, botcheck })
 
       // Define banned words
       const bannedWords = ['SEO', 'top of google', 'agency', 'top agency', 'google agency']
@@ -407,7 +454,7 @@
 
       // Validate honeypot field
       if (botcheck !== "") {
-        // Detected as bot
+        console.warn('Bot detected via honeypot field.')
         Swal.fire({
           icon: 'error',
           title: 'Submission Failed',
@@ -416,19 +463,21 @@
         return
       }
 
-      // Validate UK phone number using regex (must start with +44)
-      const ukPhoneRegex = /^\+44\s?7\d{3}\s?\d{3}\s?\d{3}$/
+      // Validate UK phone number using regex (flexible formats)
+      const ukPhoneRegex = /^(?:\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$|^(?:\+44\s?1\d{3}|\(?01\d{3}\)?)\s?\d{3}\s?\d{4}$|^(?:\+44\s?2\d{3}|\(?02\d{3}\)?)\s?\d{3}\s?\d{4}$/
       if (!ukPhoneRegex.test(phone)) {
+        console.warn('Invalid phone number format:', phone)
         Swal.fire({
           icon: 'error',
           title: 'Invalid Phone Number',
-          text: 'Please enter a valid UK phone number starting with +44 (e.g., +44 7915 578568).',
+          text: 'Please enter a valid UK phone number (e.g., +44 7915 578568, +44 1234 567890, 07915 578568, 01234 567890, 020 1234 5678).',
         })
         return
       }
 
       // Check for banned words in name, service, and message
       if (containsBannedWords(name) || containsBannedWords(service) || containsBannedWords(message)) {
+        console.warn('Banned words detected in input fields.')
         Swal.fire({
           icon: 'error',
           title: 'Invalid Input',
@@ -437,9 +486,10 @@
         return
       }
 
-      // Simple email format validation (optional, already handled by HTML5)
+      // Simple email format validation (redundant due to HTML5 validation, but added for robustness)
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
       if (!emailRegex.test(email)) {
+        console.warn('Invalid email format:', email)
         Swal.fire({
           icon: 'error',
           title: 'Invalid Email',
@@ -449,13 +499,9 @@
       }
 
       // Prepare form data for submission
-      const formData = new FormData()
-      formData.append('access_key', 'bbadcb6e-1c9b-4749-92b6-8d8ef4dd120d') // Your Web3Forms access key
-      formData.append('name', name)
-      formData.append('email', email)
-      formData.append('phone', phone)
-      formData.append('service', service)
-      formData.append('message', message)
+      const formData = new FormData(form) // Automatically includes all form fields, including hidden access_key
+
+      console.log('FormData prepared for submission.')
 
       // Send form data via Fetch API to Web3Forms
       fetch('https://api.web3forms.com/submit', {
@@ -463,7 +509,9 @@
         body: formData
       })
       .then(async response => {
+        console.log('Received response from Web3Forms:', response)
         if (response.status === 200) {
+          console.log('Form submitted successfully.')
           Swal.fire({
             icon: 'success',
             title: 'Thank You!',
@@ -473,9 +521,11 @@
             // Reset the form after successful submission
             form.reset()
             form.classList.remove('was-validated')
+            console.log('Form has been reset.')
           })
         } else {
           const data = await response.json()
+          console.error('Submission error:', data)
           throw new Error(data.message || 'Something went wrong!')
         }
       })
@@ -485,7 +535,7 @@
           title: 'Submission Failed',
           text: error.message || 'There was an issue submitting your request. Please try again later.',
         })
-        console.error('Error:', error)
+        console.error('Error during form submission:', error)
       })
     }
   </script>
