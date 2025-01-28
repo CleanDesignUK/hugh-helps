@@ -5,7 +5,7 @@
 
 /* ===== HERO SECTION ===== */
 .hero-section {
-    background: url('https://via.placeholder.com/1200x800?text=Therapy+Counselling+Hypnotherapy')
+    background: url('')
       no-repeat center center / cover;
     min-height: 65vh;
     display: flex;
@@ -13,7 +13,7 @@
     justify-content: center;
     text-align: center;
     padding: 100px 15px;
-    color: #fff;
+    color: black;
   }
   .hero-title {
     font-family: var(--font-title);
