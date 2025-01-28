@@ -30,7 +30,34 @@
     line-height: 1.6;
     padding-top: 70px; /* Offset for fixed navbar */
   }
-  
+  /* Navbar Logo Styling */
+.navbar-logo {
+  width: 60px !important;
+  height: 60px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  /* Optional: Add a border for better visibility */
+  border: 2px solid #ffffff !important;
+}
+
+/* Ensure the brand text aligns vertically with the logo */
+.navbar-brand .brand-title,
+.navbar-brand .brand-subtitle {
+  margin-left: 10px !important;
+}
+
+/* Adjust the alignment on smaller screens */
+@media (max-width: 992px) {
+  .navbar-brand {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px !important;
+  }
+}
+
   /* Remove default link underlines in a consistent way */
   a,
   a:hover,
@@ -111,7 +138,12 @@
     font-size: 1.25rem;
     color: #fff;
   }
-  
+  .navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
   /* ===== FOOTER ===== */
   .footer {
     background-color: var(--color-accent-light);
@@ -124,6 +156,70 @@
     font-family: var(--font-body);
   }
   
+/* Match the navbar's background color */
+.custom-footer {
+  background-color: #343a40 !important; /* Example: Dark Gray - adjust as needed */
+  color: #ffffff !important;
+}
+
+/* Footer Logo Styling */
+.footer-logo {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  border: 2px solid #ffffff !important; /* Optional: White border for visibility */
+}
+
+/* Social Media Icons Styling */
+.social-icons a {
+  font-size: 1.5rem !important;
+  transition: color 0.3s ease !important;
+}
+
+.social-icons a:hover {
+  color: #0d6efd !important; /* Example: Bootstrap Primary Color on hover */
+}
+
+/* Policy Links Styling */
+.policy-links a {
+  font-size: 0.9rem !important;
+  transition: color 0.3s ease !important;
+}
+
+.policy-links a:hover {
+  color: #0d6efd !important; /* Example: Bootstrap Primary Color on hover */
+}
+
+/* Designed By Link Styling */
+.designed-by a {
+  text-decoration: underline !important;
+  transition: color 0.3s ease !important;
+}
+
+.designed-by a:hover {
+  color: #0d6efd !important; /* Example: Bootstrap Primary Color on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .footer-logo {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .social-icons a {
+    font-size: 1.2rem !important;
+    margin: 0 10px !important;
+  }
+  
+  .policy-links a {
+    display: block !important;
+    margin: 5px 0 !important;
+  }
+}
+
+
   /* ===== CARD UTILS ===== */
   .card {
     border: none;
