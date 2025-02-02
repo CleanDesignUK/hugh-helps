@@ -226,6 +226,13 @@
     border-radius: 6px;
     overflow: hidden;
   }
+
+  .service-preview-card .card-img-top {
+    height: 296px;       /* Set a fixed height for all images */
+    object-fit: cover;   /* Ensures the image covers the area without distortion */
+  }
+
+
   .card-img-top {
     border-bottom: 3px solid var(--color-accent);
   }
