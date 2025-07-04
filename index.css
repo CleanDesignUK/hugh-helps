@@ -301,3 +301,12 @@
 .mental-health-focus .btn-primary:focus {
   background-color: var(--color-accent) !important;
 }
+
+/* ==========================================================================
+   CENTER & NARROW THE ACCORDION
+   ========================================================================== */
+.additional-services .accordion {
+  max-width: 700px;    /* or whatever width fits your design */
+  margin: 0 auto;      /* center horizontally */
+  padding: 0 1rem;     /* small side padding on very narrow viewports */
+}
