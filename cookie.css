@@ -48,3 +48,22 @@
   background: #fff;
   color: #000;
 }
+/* keep buttons side-by-side and same shape */
+#cookie-banner .buttons {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 0.5rem;           /* small gap between buttons */
+}
+
+#cookie-banner .btn {
+  white-space: nowrap;   /* prevent button text from wrapping */
+}
+
+/* ensure the banner isn’t too wide on tiny phones */
+@media (max-width: 400px) {
+  #cookie-banner {
+    max-width: 100%;      /* shrink to 90% of viewport width */
+    padding: 0.75rem;     /* slightly less padding on mobile */
+  }
+}
