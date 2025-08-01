@@ -1,0 +1,50 @@
+/* cookie.css */
+#cookie-banner {
+  display: none;               /* shown by JS if no consent found */
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #c2e2ff;
+  color: #000;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 450px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-family: sans-serif;
+  z-index: 10000;
+}
+
+#cookie-banner p {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+#cookie-banner a {
+  color: #1f4e79;
+  text-decoration: underline;
+}
+
+#cookie-banner .buttons {
+  text-align: right;
+}
+
+#cookie-banner .btn {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+#cookie-banner .btn.accept {
+  background: #1f4e79;
+  color: #fff;
+}
+
+#cookie-banner .btn.decline {
+  background: #fff;
+  color: #000;
+}

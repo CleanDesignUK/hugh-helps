@@ -41,11 +41,21 @@
 
   <!-- Page-Specific Styles for Contact Page -->
   <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="cookie.css">
+
 
   <!-- SweetAlert2 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
 </head>
 <body>
+  <div id="cookie-banner">
+  <p>🍪 We use cookies to improve your browsing experience, deliver personalised content, and analyse our traffic. By clicking “<strong>Accept All</strong>”, you consent to our use of cookies. See our <a href="cookie-policy.html">Cookie Policy</a> for details.</p>
+  <div class="buttons">
+    <button id="accept-cookies" class="btn accept">Accept All 🍪</button>
+    <button id="decline-cookies" class="btn decline">Decline</button>
+  </div>
+</div>
+
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container-fluid">
@@ -417,5 +427,7 @@
       })
     }
   </script>
+  <script src="cookie.js"></script>
+
 </body>
 </html>

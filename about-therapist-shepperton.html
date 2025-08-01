@@ -29,12 +29,22 @@
 
   <!-- Page-Specific Styles for the About Page -->
   <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="cookie.css">
+
  <link 
   rel="stylesheet" 
   href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
 >
 </head>
 <body>
+  <div id="cookie-banner">
+  <p>🍪 We use cookies to improve your browsing experience, deliver personalised content, and analyse our traffic. By clicking “<strong>Accept All</strong>”, you consent to our use of cookies. See our <a href="cookie-policy.html">Cookie Policy</a> for details.</p>
+  <div class="buttons">
+    <button id="accept-cookies" class="btn accept">Accept All 🍪</button>
+    <button id="decline-cookies" class="btn decline">Decline</button>
+  </div>
+</div>
+
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
       <div class="container-fluid">
@@ -214,5 +224,7 @@
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
   ></script>
+  <script src="cookie.js"></script>
+
 </body>
 </html>
