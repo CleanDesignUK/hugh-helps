@@ -219,6 +219,55 @@
   }
 }
 
+.google-review-badge{
+  background: rgba(255,255,255,0.92);
+  border-radius: 9999px;
+  padding: .5rem .75rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+  white-space: nowrap;             /* keeps it on one line for a neat pill */
+}
+
+.google-badge-logo{ width: 22px; height: 22px; }
+
+.google-review-badge .google-stars{
+  color: #fbbc05;                  /* Google star gold */
+  letter-spacing: 2px;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+/* Small screens */
+@media (max-width: 576px){
+  .google-review-badge{
+    padding: .4rem .6rem;
+  }
+  .google-badge-logo{
+    width: 18px; height: 18px;
+  }
+  .google-review-badge .google-stars{
+    letter-spacing: 1px;
+    font-size: .95rem;
+  }
+}
+
+/* Very small screens or narrow viewports */
+@media (max-width: 360px){
+  .google-review-badge{
+    padding: .35rem .5rem;
+  }
+  .google-badge-logo{
+    width: 16px; height: 16px;
+  }
+  .google-review-badge .google-stars{
+    font-size: .9rem;
+  }
+}
+
+/* Dark mode tweak */
+@media (prefers-color-scheme: dark){
+  .google-review-badge{ background: rgba(255,255,255,0.85); }
+}
+
 
   /* ===== CARD UTILS ===== */
   .card {
