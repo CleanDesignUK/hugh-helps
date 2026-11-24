@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-715C5VPZCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-715C5VPZCM');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hypnotherapy Services in Weybridge | Hugh Helps</title>
+  <title>Professional Hypnotherapy by a Trusted Hypnosis Therapist in Shepperton | Hugh Helps</title>
 
-  <meta name="description" content="Effective, professional hypnotherapy in Weybridge, Hampton, Egham, Staines-upon-Thames, and Cobham. Achieve real results with Hugh Helps Alpha Consultancy.">
-  <meta name="keywords" content="hypnotherapy services, professional hypnosis, results-focused hypnosis, Weybridge hypnosis, Egham hypnotherapist, sleep improvement, quit smoking, weight-loss hypnosis">
+  <meta name="description" content="Effective, professional hypnotherapy services from Hugh Helps – your trusted hypnosis therapist offering innovative solutions including quit smoking therapy, weight loss hypnosis, and emotional freedom therapy. Serving Weybridge, Hampton, Egham, Staines-upon-Thames, Cobham, and beyond.">
+  <meta name="keywords" content="hypnotherapy services, trusted hypnosis therapist, professional hypnosis, Weybridge hypnotherapy, quit smoking therapy, weight loss hypnosis, emotional freedom therapy, sleep improvement, Egham hypnotherapist">
 
   <link rel="icon" href="hugh-helps-logo.jpg" type="image/jpeg">
   <!-- Google Fonts -->
@@ -25,6 +33,7 @@
 
   <!-- Page-Specific Styles for Hypnotherapy Services Page -->
   <link rel="stylesheet" href="services-2.css" />
+<link rel="stylesheet" href="cookie.css">
 
   <!-- Bootstrap CSS -->
   <link
@@ -34,27 +43,25 @@
 
 </head>
 <body>
+  <div id="cookie-banner">
+  <p>🍪 We use cookies to improve your browsing experience, deliver personalised content, and analyse our traffic. By clicking “<strong>Accept All</strong>”, you consent to our use of cookies. See our <a href="cookie-policy.html">Cookie Policy</a> for details.</p>
+  <div class="buttons">
+    <button id="accept-cookies" class="btn accept">Accept All 🍪</button>
+    <button id="decline-cookies" class="btn decline">Decline</button>
+  </div>
+</div>
+
+  <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <!-- Logo Image -->
         <img src="hugh-helps-logo.jpg" alt="Hugh Helps Logo" class="navbar-logo me-2">
-        
-        <!-- Brand Title and Subtitle -->
         <div>
           <span class="brand-title">Hugh Helps</span>
-          <small class="brand-subtitle d-block">Alpha Consultancy</small>
         </div>
       </a>
-      <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarContent" 
-        aria-controls="navbarContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
   
@@ -62,23 +69,15 @@
         <ul class="navbar-nav">
           <!-- Home Link -->
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
-  
           <!-- About Link -->
           <li class="nav-item">
             <a class="nav-link" href="about-therapist-shepperton.html">About Hugh</a>
           </li>
-  
           <!-- Services Dropdown -->
           <li class="nav-item dropdown">
-            <a 
-              class="nav-link dropdown-toggle" 
-              href="#" 
-              role="button" 
-              data-bs-toggle="dropdown" 
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
             <ul class="dropdown-menu">
@@ -86,42 +85,39 @@
               <li><a class="dropdown-item" href="professional-therapist-shepperton.html#professional-therapy">Therapist Services</a></li>
               <li><a class="dropdown-item" href="professional-therapist-shepperton.html#expert-counselling">Expert Counselling</a></li>
               <li><a class="dropdown-item" href="professional-therapist-shepperton.html#local-therapy-sessions">Local Therapy Sessions</a></li>
-  
               <!-- Hypnotherapy Services -->
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#hypnotherapy-services">Hypnotherapy Services</a></li>
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#sleep-improvement-hypnosis">Sleep Improvement Hypnosis</a></li>
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#quit-smoking-hypnosis">Quit Smoking Hypnosis</a></li>
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#hypnosis-and-weight-loss">Weight-loss Hypnosis</a></li>
-  
-              <!-- EFT & Tapping Services -->
+              <!-- Emotional Freedom Technique (excluded on this page) -->
               <li><a class="dropdown-item" href="emotional-freedom-technique.html">Emotional Freedom Technique</a></li>
               <li><a class="dropdown-item" href="emotional-freedom-technique.html">Tapping</a></li>
-  
               <!-- Life Coaching Services -->
               <li><a class="dropdown-item" href="life-coaching-addlestone.html#life-coaching-services">Life Coaching Services</a></li>
-              <li><a class="dropdown-item" href="life-coaching-addlestone.html#adult-adhd-therapist">Adult ADHD Therapist</a></li>
+              
               <li><a class="dropdown-item" href="life-coaching-addlestone.html#bereavement-counsellor">Bereavement Counsellor</a></li>
-  
-              <!-- Mental Health Therapies -->
-              <li><a class="dropdown-item" href="mental-health-cobham.html#kids-therapist-near-me">Kids Therapist Near Me</a></li>
-              <li><a class="dropdown-item" href="mental-health-cobham.html#depression-therapy">Depression Therapy</a></li>
-              <li><a class="dropdown-item" href="mental-health-cobham.html#anxiety-therapy">Anxiety Therapy</a></li>
-  
-              <li><hr class="dropdown-divider" /></li>
-  
-              <!-- Additional Services -->
-              <li><a class="dropdown-item" href="additional-mental-health-services-shepperton.html">Additional Services</a></li>
+              <!-- Mental Health: Phobias, Anxiety & Stress (current page) -->
+              <li><a class="dropdown-item active" href="mental-health-phobias-anxiety-stress.html">Mental Health: Phobias, Anxiety &amp; Stress</a></li>
+              <li><a class="dropdown-item" href="mental-health-phobias-anxiety-stress.html#phobias">Phobias</a></li>
+              <li><a class="dropdown-item" href="mental-health-phobias-anxiety-stress.html#anxiety">Anxiety</a></li>
+              <li><a class="dropdown-item" href="mental-health-phobias-anxiety-stress.html#stress">Stress</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <!-- Additional Mental Health Services -->
+              <li><a class="dropdown-item" href="additional-mental-health-services-shepperton.html">Additional Mental Health Services</a></li>
             </ul>
           </li>
-  
+                   <!-- Testimonial Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="testimonial.html">Testimonials</a>
+          </li>
           <!-- Contact Link -->
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-  
           <!-- Pricing Link -->
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="pricing-therapy-shepperton.html">Pricing</a>
+            <a class="nav-link" href="pricing-therapy-shepperton.html">Pricing</a>
           </li>
         </ul>
       </div>
@@ -133,18 +129,9 @@
   <section id="hypnotherapy-intro" class="py-5">
     <div class="container">
       <h1 class="section-title text-centre mb-4">
-        Transform Your Life with Professional Hypnotherapy
-      </h1>
+        Hypnotherapy for Immediate, Lasting Results</h1>
       <p class="intro-text text-centre mx-auto mb-5">
-        Hypnosis is a proven, results-focused approach that harnesses a unique,
-        deeply relaxed yet alert state—similar to the moment just before you
-        fully wake up. Contrary to common misconceptions, you remain awake,
-        aware, and always in control during hypnosis. At Hugh Helps Alpha
-        Consultancy, we use this powerful state to help you overcome challenges
-        and achieve meaningful personal growth. Whether you're struggling with
-        insomnia, unwanted habits, stress, or other issues, we provide
-        professional, tailored hypnotherapy in Shepperton, Weybridge, Hampton,
-        Egham, Staines-upon-Thames, Cobham, and beyond.
+        Discover how professional hypnotherapy from your trusted hypnosis therapist at Hugh Helps can transform your life. Using a deeply relaxed yet alert state—akin to that peaceful moment before fully waking—you can overcome challenges like insomnia, unwanted habits, and stress. Whether you’re looking to quit smoking, manage your weight, or achieve emotional freedom, experience tailored hypnotherapy in Weybridge, Hampton, Egham, Staines-upon-Thames, Cobham, and beyond.
       </p>
     </div>
   </section>
@@ -193,112 +180,406 @@
     </div>
   </section>
   <!-- ===== /SECTION 1 ===== -->
-<!-- FAQ Section (Bootstrap 5 Accordion) -->
-<div class="container" style="margin: 50px auto; max-width: 800px;">
-  <h2 class="text-center" style="margin-bottom: 30px;">Frequently Asked Questions</h2>
-  
-  <div class="accordion" id="faqAccordion" style="border: 1px solid #ddd; border-radius: 5px; padding: 15px;">
-    
-    <!-- FAQ Item 1 -->
-    <div class="accordion-item" style="border: none;">
-      <h2 class="accordion-header" id="headingOne" style="margin-bottom: 0;">
-        <button 
-          class="accordion-button collapsed" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#collapseOne" 
-          aria-expanded="false" 
-          aria-controls="collapseOne"
-          style="background-color: #f9f9f9; border: none;"
-        >
-          How do you hypnotize someone?
-        </button>
-      </h2>
-      <div 
-        id="collapseOne" 
-        class="accordion-collapse collapse" 
-        aria-labelledby="headingOne" 
-        data-bs-parent="#faqAccordion"
-      >
-        <div class="accordion-body" style="background-color: #fff;">
-          Hypnosis often feels far more natural than people expect. In everyday life, our minds 
-          slip into trance-like states—like getting engrossed in a book or daydreaming. In a 
-          hypnotherapy session, we guide you into a similar state of focused relaxation. By 
-          using soothing language patterns and proven techniques, we help your subconscious 
-          mind open up to positive suggestions, making it easier to address habits, reduce stress, 
-          or pursue personal goals.
+<!-- ===== FAQ SECTION ===== -->
+<section id="faq" class="py-5 bg-light">
+  <div class="container" style="max-width: 900px;">
+
+    <h2 class="section-title text-center mb-3">
+      Frequently Asked Questions About Hypnotherapy
+    </h2>
+
+    <p class="text-center mb-4">
+      Considering hypnotherapy in Shepperton, Weybridge or the
+      surrounding areas of Surrey? Hugh Helps answers common
+      questions about hypnosis, treatment options, appointments
+      and what to expect from your first session.
+    </p>
+
+    <div class="accordion shadow-sm" id="faqAccordion">
+
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading1">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse1"
+            aria-expanded="false" aria-controls="faqCollapse1">
+            Where can I find a hypnotherapist near Weybridge and Shepperton?
+          </button>
+        </h3>
+        <div id="faqCollapse1" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Hugh Helps provides personalised hypnotherapy sessions
+            from Shepperton, serving clients from Weybridge,
+            Walton-on-Thames, Sunbury-on-Thames, Addlestone,
+            Hampton, Chertsey, Egham, Staines-upon-Thames and
+            surrounding areas of Surrey. With over 25 years of
+            experience, Hugh offers individual support tailored
+            to your circumstances and personal goals.
+            <a href="about-therapist-shepperton.html">Learn more about Hugh</a>.
+          </div>
         </div>
       </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading2">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse2"
+            aria-expanded="false" aria-controls="faqCollapse2">
+            What is hypnotherapy and how does it work?
+          </button>
+        </h3>
+        <div id="faqCollapse2" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Hypnotherapy uses focused attention, relaxation and
+            therapeutic suggestions to help individuals explore
+            their thoughts, behaviours and emotional responses.
+            Sessions may focus on developing healthier habits,
+            managing difficult emotions or working towards personal
+            goals. The approach is adapted to each individual.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading3">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse3"
+            aria-expanded="false" aria-controls="faqCollapse3">
+            What can hypnotherapy help with?
+          </button>
+        </h3>
+        <div id="faqCollapse3" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Hugh Helps offers hypnotherapy for people seeking support
+            with anxiety, stress, phobias, unwanted habits, smoking,
+            vaping, sleep difficulties, weight management and personal
+            development. Its suitability and effectiveness depend on
+            individual circumstances and the concern being addressed.
+            Hypnotherapy is not a replacement for necessary medical
+            or psychological treatment.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading4">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse4"
+            aria-expanded="false" aria-controls="faqCollapse4">
+            How much does hypnotherapy cost in Surrey?
+          </button>
+        </h3>
+        <div id="faqCollapse4" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            The cost of hypnotherapy depends on the type of support
+            required and the sessions recommended. Hugh Helps offers
+            a free initial consultation to discuss your needs before
+            you commit to treatment. For current fees, please visit
+            our <a href="pricing-therapy-shepperton.html">
+            hypnotherapy pricing page</a>.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading5">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse5"
+            aria-expanded="false" aria-controls="faqCollapse5">
+            Does Hugh Helps offer a free hypnotherapy consultation?
+          </button>
+        </h3>
+        <div id="faqCollapse5" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes. Hugh Helps offers a free initial consultation to
+            discuss your concerns, explain the hypnotherapy process
+            and explore whether it is suitable for your needs.
+            This is also an opportunity to ask questions before
+            deciding whether to proceed.
+            <a href="contact.html">Contact Hugh to arrange your
+            free consultation</a>.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading6">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse6"
+            aria-expanded="false" aria-controls="faqCollapse6">
+            What happens during your first hypnotherapy session?
+          </button>
+        </h3>
+        <div id="faqCollapse6" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Your first session involves discussing your concerns,
+            personal circumstances and what you hope to achieve.
+            Hugh will explain the techniques involved and guide you
+            through the agreed approach. You can ask questions,
+            communicate any concerns and stop the process at any time.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 7 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading7">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse7"
+            aria-expanded="false" aria-controls="faqCollapse7">
+            How many hypnotherapy sessions will I need?
+          </button>
+        </h3>
+        <div id="faqCollapse7" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading7" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            There is no fixed number of hypnotherapy sessions that
+            suits everyone. Some individuals may require only a small
+            number of appointments, while others may benefit from
+            longer-term support. Hugh will discuss a suitable approach
+            during your initial consultation and review your progress
+            as sessions continue.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 8 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading8">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse8"
+            aria-expanded="false" aria-controls="faqCollapse8">
+            Can hypnotherapy help with anxiety, stress and phobias?
+          </button>
+        </h3>
+        <div id="faqCollapse8" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading8" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Hypnotherapy may help some people manage stress, anxiety
+            and fears by exploring emotional responses and developing
+            coping strategies. Results vary, and appropriate medical
+            or psychological care may also be necessary.
+            Find out more about our
+            <a href="mental-health-phobias-anxiety-stress.html">
+            anxiety, stress and phobia support</a>.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 9 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading9">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse9"
+            aria-expanded="false" aria-controls="faqCollapse9">
+            Can hypnosis help me stop smoking or vaping?
+          </button>
+        </h3>
+        <div id="faqCollapse9" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading9" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Stop-smoking hypnotherapy focuses on the habits,
+            motivations and emotional triggers associated with
+            smoking or vaping. It may support some individuals in
+            changing their behaviour, although success is not
+            guaranteed and evidence for its effectiveness is limited.
+            NHS stop-smoking services can also provide evidence-based
+            cessation support.
+            <a href="#quit-smoking-hypnosis">
+            Explore quit-smoking hypnotherapy</a>.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 10 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading10">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse10"
+            aria-expanded="false" aria-controls="faqCollapse10">
+            Can hypnotherapy help with weight management?
+          </button>
+        </h3>
+        <div id="faqCollapse10" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading10" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Weight management hypnotherapy may support behavioural
+            changes by exploring emotional eating, habits and
+            motivations. It is intended to complement healthy,
+            sustainable lifestyle changes rather than replace
+            nutritional advice or medical care.
+            <a href="#hypnosis-and-weight-loss">
+            Learn more about weight management hypnosis</a>.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 11 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading11">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse11"
+            aria-expanded="false" aria-controls="faqCollapse11">
+            Will I lose control or fall asleep during hypnosis?
+          </button>
+        </h3>
+        <div id="faqCollapse11" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading11" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Hypnosis does not require you to become unconscious
+            or surrender control. You can usually remain aware of
+            your surroundings, communicate with your hypnotherapist
+            and choose whether to accept suggestions. You can stop
+            the session whenever you wish.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 12 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading12">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse12"
+            aria-expanded="false" aria-controls="faqCollapse12">
+            Is hypnotherapy safe and suitable for everyone?
+          </button>
+        </h3>
+        <div id="faqCollapse12" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading12" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Hypnotherapy is not appropriate for everyone, particularly
+            people with psychosis or certain psychiatric conditions.
+            It is important to discuss your medical history, medication
+            and any existing treatment before starting. If you have
+            an underlying medical or mental health condition, seek
+            advice from your GP about its suitability.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 13 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading13">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse13"
+            aria-expanded="false" aria-controls="faqCollapse13">
+            Is online hypnotherapy available?
+          </button>
+        </h3>
+        <div id="faqCollapse13" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading13" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Online hypnotherapy may provide a convenient alternative
+            for individuals who cannot travel to Shepperton.
+            Its suitability depends on your circumstances, the type
+            of support required and your access to a quiet, private
+            environment. Please contact Hugh to discuss current
+            online appointment options.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 14 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading14">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse14"
+            aria-expanded="false" aria-controls="faqCollapse14">
+            Is hypnotherapy regulated in the UK?
+          </button>
+        </h3>
+        <div id="faqCollapse14" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading14" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Hypnotherapy is not subject to statutory professional
+            regulation as a standalone profession in the UK.
+            When choosing a hypnotherapist, consider their training,
+            experience, professional memberships, insurance and
+            approach to client confidentiality and wellbeing.
+            You can discuss these matters with Hugh during your
+            initial consultation.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 15 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading15">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse15"
+            aria-expanded="false" aria-controls="faqCollapse15">
+            Are hypnotherapy results guaranteed?
+          </button>
+        </h3>
+        <div id="faqCollapse15" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading15" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            No responsible hypnotherapist can guarantee a particular
+            outcome. Everyone responds differently, and progress
+            depends on several individual factors. Hugh Helps
+            provides personalised support, realistic expectations
+            and an approach centred on your wellbeing.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 16 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqHeading16">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faqCollapse16"
+            aria-expanded="false" aria-controls="faqCollapse16">
+            How do I book a hypnotherapy appointment with Hugh Helps?
+          </button>
+        </h3>
+        <div id="faqCollapse16" class="accordion-collapse collapse"
+          aria-labelledby="faqHeading16" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can arrange your free initial consultation by calling
+            <a href="tel:+447443625032">07443 625032</a>
+            or <a href="tel:+441932252777">01932 252777</a>,
+            or emailing
+            <a href="mailto:hugh@hughhelps.com">hugh@hughhelps.com</a>.
+            The practice is located in Shepperton, within easy reach
+            of Weybridge, Walton-on-Thames and surrounding areas.
+            Visit our <a href="contact.html">contact page</a>
+            for directions and further information.
+          </div>
+        </div>
+      </div>
+
     </div>
-    
-    <!-- FAQ Item 2 -->
-    <div class="accordion-item" style="border: none;">
-      <h2 class="accordion-header" id="headingTwo" style="margin-bottom: 0;">
-        <button 
-          class="accordion-button collapsed" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#collapseTwo" 
-          aria-expanded="false" 
-          aria-controls="collapseTwo"
-          style="background-color: #f9f9f9; border: none;"
-        >
-          Is hypnotherapy regulated?
-        </button>
-      </h2>
-      <div 
-        id="collapseTwo" 
-        class="accordion-collapse collapse" 
-        aria-labelledby="headingTwo" 
-        data-bs-parent="#faqAccordion"
-      >
-        <div class="accordion-body" style="background-color: #fff;">
-          In the UK, hypnotherapy is not currently subject to statutory regulation, unlike some 
-          other forms of therapy. However, many professional hypnotherapists (including us) 
-          complete accredited training and commit to strict ethical guidelines by joining 
-          recognized associations. When you choose a qualified practitioner who follows these 
-          standards, you can feel assured that you’re receiving safe, effective care tailored 
-          to your needs.
-        </div>
-      </div>
-    </div>
-    
-    <!-- FAQ Item 3 -->
-    <div class="accordion-item" style="border: none;">
-      <h2 class="accordion-header" id="headingThree" style="margin-bottom: 0;">
-        <button 
-          class="accordion-button collapsed" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#collapseThree" 
-          aria-expanded="false" 
-          aria-controls="collapseThree"
-          style="background-color: #f9f9f9; border: none;"
-        >
-          How effective is online hypnotherapy?
-        </button>
-      </h2>
-      <div 
-        id="collapseThree" 
-        class="accordion-collapse collapse" 
-        aria-labelledby="headingThree" 
-        data-bs-parent="#faqAccordion"
-      >
-        <div class="accordion-body" style="background-color: #fff;">
-          Many people find online hypnotherapy just as effective—sometimes even more so—than 
-          in-person sessions. It’s convenient, flexible, and can help you relax in the comfort 
-          of your own home. Research supports its effectiveness; for instance, studies by 
-          Professor Peter Whorwell at the University of Manchester show online hypnotherapy 
-          yields outcomes comparable to face-to-face therapy. Whichever format you choose, 
-          you can look forward to the same powerful, transformative benefits.
-        </div>
-      </div>
+
+    <!-- FAQ Call to Action -->
+    <div class="text-center mt-5">
+      <h3 class="mb-3">
+        Ready to Explore Hypnotherapy?
+      </h3>
+
+      <p class="mb-4">
+        Speak directly with Hugh to discuss your concerns and discover
+        whether personalised hypnotherapy is right for you.
+      </p>
+
+      <a href="contact.html" class="btn btn-primary btn-lg">
+        Book Your Free Initial Consultation
+      </a>
     </div>
 
   </div>
-</div>
-
-
+</section>
+<!-- ===== END FAQ SECTION ===== -->
   <!-- ===== SECTION 2: PROFESSIONAL HYPNOTHERAPY ===== -->
   <section id="professional-hypnotherapy" class="py-5 hypnotherapy-section bg-light">
     <div class="container">
@@ -315,7 +596,7 @@
           <p>
             Our professional hypnotherapy services focus on tangible results.
             Whether you need stress reduction, habit change, or personal
-            development, we’re here to support your growth. Each session
+            development, I am here to support your growth. Each session
             is confidential, tailored to your needs, and grounded in proven
             therapeutic methods.
           </p>
@@ -332,8 +613,7 @@
           </ul>
           <p>
             Combining CBT (Cognitive Behavioural Therapy) techniques with
-            hypnotherapy further enhances results by addressing root causes
-            and creating lasting transformation. Our calm, supportive
+            hypnotherapy further enhances results  creating lasting transformation. Our calm, supportive
             environment enables the breakthroughs you need to move forward
             confidently.
           </p>
@@ -365,7 +645,7 @@
           <p>
             Restore restful nights and wake with renewed energy through our
             specialized sleep hypnosis program. By guiding you into a calm,
-            receptive state, we help you uncover and resolve the core issues
+            receptive state, helping you uncover and resolve the core issues
             that disrupt your sleep.
           </p>
           <ul>
@@ -399,11 +679,11 @@
           />
         </div>
         <div class="col-lg-6 order-lg-1">
-          <h3 class="hypnotherapy-title">Quit Smoking Hypnosis</h3>
+          <h3 class="hypnotherapy-title">Quit Smoking/Vaping Hypnosis</h3>
           <p>
             Free yourself from nicotine dependence with our targeted Quit
             Smoking Hypnosis program. By directly addressing mental and
-            emotional triggers, we empower you to overcome cravings and
+            emotional triggers, empower yourself to overcome cravings and
             build a healthier, smoke-free future.
           </p>
           <ul>
@@ -461,46 +741,178 @@
     </div>
   </section>
   <!-- ===== /SECTION 5 ===== -->
+<!-- ===== FAQ SECTION (Therapy-Focused, British English) ===== -->
+
+<!-- ===== END FAQ SECTION ===== -->
 
   <!-- ===== TESTIMONIALS SECTION ===== -->
-  <section class="py-5">
+  <section class="testimonials-section py-5">
     <div class="container">
-      <h4 class="mb-4">What Our Clients Say</h4>
+      <h2 class="section-title text-center mb-4">What Our Clients Say</h2>
       <div class="row g-4">
-        <div class="col-md-4">
+  
+        <!-- 1. “I was recommended...” -->
+        <div class="col-md-6">
           <div class="testimonial-box p-4 shadow-sm">
             <p class="testimonial mb-2">
-              “After years of struggling with insomnia, the hypnotherapy at
-              Hugh Helps Alpha Consultancy finally provided a lasting
-              solution. I’m thrilled to be sleeping soundly again!”
-            </p>
-            <small class="text-muted"
-              >– Emma Johnson, Weybridge</small
-            >
+              Hugh was fantastic! So easy to talk to, gave me a good understanding of what I could achieve through hypnotherapy.            
+              </p>
+              <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- T.H.</small>
           </div>
         </div>
-        <div class="col-md-4">
+
+        <!-- 1. “I was recommended...” -->
+        <div class="col-md-6">
           <div class="testimonial-box p-4 shadow-sm">
             <p class="testimonial mb-2">
-              “Hugh’s stress management approach through hypnosis has truly
-              transformed my life. I feel calmer, more focused, and in control
-              of my daily challenges.”
+              I was recommended by two friends to try hypnotism with Hugh. My experience has been very positive. He is brilliant at what he does and I would not hesitate to recommend him.
             </p>
-            <small class="text-muted"
-              >– Liam Brown, Hampton</small
-            >
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- Anonymous</small>
           </div>
         </div>
-        <div class="col-md-4">
+  
+        <!-- 2. Kerry Gee -->
+        <div class="col-md-6">
           <div class="testimonial-box p-4 shadow-sm">
             <p class="testimonial mb-2">
-              “I’m proud to say I’ve quit smoking for good, and it’s all thanks
-              to the expert, supportive hypnotherapy I received. I never felt
-              out of control—just empowered.”
+              100% highly recommend Hugh; he is a great guy, very friendly. You can relax and feel comfortable as soon as you meet him. I went to see Hugh in 2010 to give up smoking, as I was a heavy smoker and never thought I’d be able to quit. Thanks to Hugh, he helped to change that for me… I’ve never smoked since. Thank you for helping me out recently too—much appreciated! 😃
             </p>
-            <small class="text-muted"
-              >– Ava Davis, Shepperton</small
-            >
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- Kerry Gee (10 months ago)</small>
+          </div>
+        </div>
+  
+        <!-- 3. Sukh Gill -->
+        <div class="col-md-6">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              Hugh is an amazing, warm man who made me feel at ease within minutes of speaking. I find great value in seeing Hugh on a weekly basis over the last 6 months—for the hypnotherapy, Hugh is able to put me into a deep trance and every session has been impactful. Hugh, you should be charging more, lol.
+            </p>
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- Sukh Gill (11 months ago)</small>
+          </div>
+        </div>
+  
+        <!-- 4. Lucy Cowan -->
+        <div class="col-md-6">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              Hugh helped me to give up smoking. I never thought I'd be able to do it, but Hugh gave me the confidence and helped me to achieve it. I would highly recommend Hugh.
+            </p>
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- Lucy Cowan (3 years ago)</small>
+          </div>
+        </div>
+  
+        <!-- 5. Kimberley Swaby-Burleigh -->
+        <div class="col-md-6">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              Hugh hypnotised me 10 years ago to stop me smoking & I haven’t felt the need to touch one since! Thank you so much, Hugh. My family, friends & the two healthy children I went on to have since quitting are so grateful.
+            </p>
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- Kimberley Swaby-Burleigh (2 years ago)</small>
+          </div>
+        </div>
+  
+        <!-- 6. R.N. -->
+        <div class="col-md-6">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              I’ve been smoke‐free for over two weeks since my session – I haven’t even thought about smoking, not even when out in a pub – and the savings have more than covered the cost of my visit. I’m truly grateful.
+            </p>
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- R.N.</small>
+          </div>
+        </div>
+  
+        <!-- 7. Anonymous (4.5 years smoke-free) -->
+        <div class="col-md-6">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              I attended Hugh’s hypnotherapy session four and a half years ago and haven’t smoked since; his effective relaxation techniques have kept any urge at bay and continue to benefit me.
+            </p>
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- Anonymous</small>
+          </div>
+        </div>
+  
+        <!-- 8. M.S. -->
+        <div class="col-md-6">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              I never imagined I could quit smoking after 28 years and 30 cigarettes a day, but one session with Hugh has left me nearly three weeks smoke‐free. I’m so impressed that I even recommended his services to a stranger.
+            </p>
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- M.S.</small>
+          </div>
+        </div>
+  
+        <!-- 9. Anonymous (M.E.) -->
+        <div class="col-md-6">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              I suffered from M.E. for three years, feeling depressed and helpless, but after a free consultation with Hugh, I began hypnotherapy with realistic expectations and a hopeful outlook.
+            </p>
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- Anonymous</small>
+          </div>
+        </div>
+  
+        <!-- 10. R.C. -->
+        <div class="col-md-6">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              Hugh’s hypnotherapy allowed me to enter a deeply relaxing state where I learned self-hypnosis and visualisation techniques, leading to better sleep, increased social confidence, and creative freedom – it’s been life-changing.
+            </p>
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- R.C.</small>
+          </div>
+        </div>
+  
+        <!-- 11. Anonymous (still off cigarettes) -->
+        <div class="col-md-6">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              I’m still off cigarettes and celebrating this success. I’m excited about upcoming trips to Australia and the US – it feels nothing short of miraculous.
+            </p>
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- Anonymous</small>
+          </div>
+        </div>
+  
+        <!-- 12. Anonymous (weight loss) -->
+        <div class="col-md-6">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              I feel significantly better after shedding extra weight, and I’m immensely grateful to Hugh for the help that’s improved my wellbeing.
+            </p>
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- Anonymous</small>
+          </div>
+        </div>
+  
+        <!-- 13. J (transformed life) -->
+        <div class="col-md-6">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              Since my hypnotherapy sessions with Hugh, my life has turned around – I’ve travelled extensively, boosted my self-confidence, and made great friends. I’m even in the process of buying my own flat.
+            </p>
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- J</small>
+          </div>
+        </div>
+  
+        <!-- 14. W.S. (lost 20lbs) -->
+        <div class="col-md-6">
+          <div class="testimonial-box p-4 shadow-sm">
+            <p class="testimonial mb-2">
+              I’ve also managed to lose 20lbs, and I’m thankful for the positive changes and improved health that have come about with Hugh’s guidance.
+            </p>
+            <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+            <small class="text-muted">- W.S.</small>
           </div>
         </div>
       </div>
@@ -527,6 +939,9 @@
             <a href="https://www.linkedin.com/company/hughhelpsalpha" class="text-white me-3 me-md-0 ms-md-3" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-linkedin" aria-label="LinkedIn"></i>
             </a>
+            <a href="https://share.google/MmSaZaNz31wiYLWju" class="text-white me-3 me-md-0 ms-md-3" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-google" aria-label="Google"></i>
+      </a>
           </div>
           
           <!-- Privacy and Cookie Policy Links -->
@@ -538,7 +953,7 @@
       </div>
       <!-- Copyright -->
       <div class="mt-3">
-        <p class="mb-2 text-center">&copy; 2025 Hugh Helps Alpha Consultancy. All Rights Reserved.</p>
+        <p class="mb-2 text-center">&copy; 2026 Hugh Helps. All Rights Reserved.</p>
       </div>
       <div class="designed-by">
         <p class="mb-0 text-center">
@@ -559,5 +974,7 @@
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
   ></script>
+  <script src="cookie.js"></script>
+
 </body>
 </html>

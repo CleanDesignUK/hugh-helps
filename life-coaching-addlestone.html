@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-715C5VPZCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-715C5VPZCM');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Life Coaching in Addlestone | Hugh Helps Alpha</title>
+  <title>Expert Life Coaching in Shepperton &amp; Walton-on-Thames | Hugh Helps</title>
 
-  <meta name="description" content="Certified life coaching in Addlestone, Thames Ditton, Cobham, and Shepperton. Achieve personal growth with Hugh Helps Alpha Consultancy.">
-  <meta name="keywords" content="life coaching services, Addlestone life coach, Thames Ditton coaching, personal development, adult ADHD coaching, bereavement counselling">
+  <meta name="description" content="Experience certified, personalised life coaching in Shepperton and Walton-on-Thames. Unlock your potential and achieve transformational personal growth with Hugh Helps Alpha." />
+  <meta name="keywords" content="life coaching services, Shepperton life coach, Walton-on-Thames life coach, personal development, personal growth" />
 
   <link rel="icon" href="hugh-helps-logo.jpg" type="image/jpeg">
 
@@ -24,30 +32,29 @@
 
   <!-- Page-Specific Styles for Life Coaching Services Page -->
   <link rel="stylesheet" href="services-4.css" />
+  <link rel="stylesheet" href="cookie.css">
+
 </head>
 <body>
+  <div id="cookie-banner">
+  <p>🍪 We use cookies to improve your browsing experience, deliver personalised content, and analyse our traffic. By clicking “<strong>Accept All</strong>”, you consent to our use of cookies. See our <a href="cookie-policy.html">Cookie Policy</a> for details.</p>
+  <div class="buttons">
+    <button id="accept-cookies" class="btn accept">Accept All 🍪</button>
+    <button id="decline-cookies" class="btn decline">Decline</button>
+  </div>
+</div>
+
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <!-- Logo Image -->
         <img src="hugh-helps-logo.jpg" alt="Hugh Helps Logo" class="navbar-logo me-2">
-        
-        <!-- Brand Title and Subtitle -->
         <div>
           <span class="brand-title">Hugh Helps</span>
-          <small class="brand-subtitle d-block">Alpha Consultancy</small>
         </div>
       </a>
-      <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarContent" 
-        aria-controls="navbarContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
   
@@ -55,23 +62,15 @@
         <ul class="navbar-nav">
           <!-- Home Link -->
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
-  
           <!-- About Link -->
           <li class="nav-item">
             <a class="nav-link" href="about-therapist-shepperton.html">About Hugh</a>
           </li>
-  
           <!-- Services Dropdown -->
           <li class="nav-item dropdown">
-            <a 
-              class="nav-link dropdown-toggle" 
-              href="#" 
-              role="button" 
-              data-bs-toggle="dropdown" 
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
             <ul class="dropdown-menu">
@@ -79,42 +78,39 @@
               <li><a class="dropdown-item" href="professional-therapist-shepperton.html#professional-therapy">Therapist Services</a></li>
               <li><a class="dropdown-item" href="professional-therapist-shepperton.html#expert-counselling">Expert Counselling</a></li>
               <li><a class="dropdown-item" href="professional-therapist-shepperton.html#local-therapy-sessions">Local Therapy Sessions</a></li>
-  
               <!-- Hypnotherapy Services -->
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#hypnotherapy-services">Hypnotherapy Services</a></li>
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#sleep-improvement-hypnosis">Sleep Improvement Hypnosis</a></li>
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#quit-smoking-hypnosis">Quit Smoking Hypnosis</a></li>
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#hypnosis-and-weight-loss">Weight-loss Hypnosis</a></li>
-  
-              <!-- EFT & Tapping Services -->
+              <!-- Emotional Freedom Technique (excluded on this page) -->
               <li><a class="dropdown-item" href="emotional-freedom-technique.html">Emotional Freedom Technique</a></li>
               <li><a class="dropdown-item" href="emotional-freedom-technique.html">Tapping</a></li>
-  
               <!-- Life Coaching Services -->
               <li><a class="dropdown-item" href="life-coaching-addlestone.html#life-coaching-services">Life Coaching Services</a></li>
-              <li><a class="dropdown-item" href="life-coaching-addlestone.html#adult-adhd-therapist">Adult ADHD Therapist</a></li>
+       
               <li><a class="dropdown-item" href="life-coaching-addlestone.html#bereavement-counsellor">Bereavement Counsellor</a></li>
-  
-              <!-- Mental Health Therapies -->
-              <li><a class="dropdown-item" href="mental-health-cobham.html#kids-therapist-near-me">Kids Therapist Near Me</a></li>
-              <li><a class="dropdown-item" href="mental-health-cobham.html#depression-therapy">Depression Therapy</a></li>
-              <li><a class="dropdown-item" href="mental-health-cobham.html#anxiety-therapy">Anxiety Therapy</a></li>
-  
-              <li><hr class="dropdown-divider" /></li>
-  
-              <!-- Additional Services -->
-              <li><a class="dropdown-item" href="additional-mental-health-services-shepperton.html">Additional Services</a></li>
+              <!-- Mental Health: Phobias, Anxiety & Stress (current page) -->
+              <li><a class="dropdown-item active" href="mental-health-phobias-anxiety-stress.html">Mental Health: Phobias, Anxiety &amp; Stress</a></li>
+              <li><a class="dropdown-item" href="mental-health-phobias-anxiety-stress.html#phobias">Phobias</a></li>
+              <li><a class="dropdown-item" href="mental-health-phobias-anxiety-stress.html#anxiety">Anxiety</a></li>
+              <li><a class="dropdown-item" href="mental-health-phobias-anxiety-stress.html#stress">Stress</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <!-- Additional Mental Health Services -->
+              <li><a class="dropdown-item" href="additional-mental-health-services-shepperton.html">Additional Mental Health Services</a></li>
             </ul>
           </li>
-  
+                   <!-- Testimonial Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="testimonial.html">Testimonials</a>
+          </li>
           <!-- Contact Link -->
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-  
           <!-- Pricing Link -->
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="pricing-therapy-shepperton.html">Pricing</a>
+            <a class="nav-link" href="pricing-therapy-shepperton.html">Pricing</a>
           </li>
         </ul>
       </div>
@@ -126,8 +122,7 @@
   <header class="life-coaching-header d-flex align-items-center justify-content-center">
     <div class="container text-center">
       <h1 class="page-title" id="life-coaching-header-title">
-        Life Coaching Services in Shepperton, Addlestone, Thames Ditton, and Cobham
-      </h1>
+        Life Coaching & Integrated Hypnotherapy in Shepperton, Addlestone, Thames Ditton, Cobham & Walton-on-Thames      </h1>
       <p class="page-subtitle text-dark" id="life-coaching-header-subtitle">
         Professional Life Coaching &amp; Personal Development Guidance
       </p>
@@ -139,10 +134,10 @@
   <section id="life-coaching-intro" class="py-5">
     <div class="container">
       <h2 class="text-center mb-4" id="life-coaching-intro-title">
-        Unlock Your Potential with Expert Life Coaching
+        Professional and Certified Life Coach
       </h2>
       <p class="mx-auto text-center" id="life-coaching-intro-text" style="max-width: 700px;">
-        At Hugh Helps Alpha Consultancy, our <strong>life coaching services</strong> are designed to help you achieve your personal and professional goals. Whether you're seeking to improve your career prospects, enhance your personal relationships, or overcome specific challenges, our certified life coaches provide the support and strategies you need to thrive.
+        At Hugh Helps Alpha, our life coaching services are designed to empower you to reach your personal and professional goals. Our certified life coaches provide tailored support and proven strategies to help improve your career prospects, enhance personal relationships, and overcome life’s challenges.
       </p>
     </div>
   </section>
@@ -162,7 +157,7 @@
         <div class="col-md-6" id="certified-life-coach-content">
           <h3 id="certified-life-coach-title">Certified Life Coach</h3>
           <p>
-            Experience transformative growth with a <strong>certified life coach</strong> who specialises in helping you define and achieve personal goals. Our life coaching programmes serve clients in <em>Shepperton</em>, <em>Addlestone</em>, <em>Thames Ditton</em>, <em>Cobham</em>, and beyond.
+            Experience transformative growth with a certified life coach dedicated to helping you define and achieve your personal goals. Our life coaching programmes are available in Shepperton, Addlestone, Thames Ditton, Cobham, Walton-on-Thames, and online.
           </p>
           <h5>Benefits:</h5>
           <ul>
@@ -172,11 +167,11 @@
           </ul>
           <h5>Methodologies:</h5>
           <p>
-            By combining proven life coaching techniques and motivational strategies, we help you overcome limiting beliefs and discover your full potential.
+            By combining proven life coaching techniques with motivational strategies, I help you overcome limiting beliefs and unlock your full potential.
           </p>
           <h5>Why Choose This Service:</h5>
           <p>
-            With years of experience and an empathetic approach, our certified life coach ensures that every session is impactful, guiding you step by step toward meaningful change.
+            With years of experience and an empathetic approach, our certified life coach delivers impactful, personalised sessions that guide you step by step toward meaningful, lasting change.
           </p>
           <a href="contact.html" class="btn btn-primary" id="book-life-coaching-btn">Book a Life Coaching Session</a>
         </div>
@@ -185,41 +180,7 @@
   </section>
   <!-- ===== /SECTION 1 ===== -->
 
-  <!-- ===== SECTION 2: ADULT ADHD THERAPIST ===== -->
-  <section id="adult-adhd-therapist-section" class="life-coaching-section">
-    <div class="container py-5">
-      <div class="row g-5 align-items-center">
-        <div class="col-md-6 order-md-2" id="adult-adhd-therapist-image">
-          <img
-            src="adult-adhd-therapist.jpg"
-            alt="Adult ADHD Therapist"
-            class="img-fluid rounded shadow"
-          />
-        </div>
-        <div class="col-md-6 order-md-1" id="adult-adhd-therapist-content">
-          <h3 id="adult-adhd-therapist-title">Adult ADHD Therapist</h3>
-          <p>
-            Managing ADHD as an adult can be overwhelming. Our specialised <strong>adult ADHD therapist</strong> sessions help you develop coping strategies, improve focus, and enhance daily functioning. Whether you're facing challenges at work or in your personal life, we tailor our approach to address your unique needs.
-          </p>
-          <h5>Benefits:</h5>
-          <ul>
-            <li>Improved concentration and time management</li>
-            <li>Strategies for organising tasks and priorities</li>
-            <li>Reduced stress and anxiety</li>
-          </ul>
-          <h5>Methodologies:</h5>
-          <p>
-            By combining elements of coaching skill frameworks and behavioural therapies, our sessions offer practical solutions for overcoming ADHD-related hurdles.
-          </p>
-          <h5>Why Choose This Service:</h5>
-          <p>
-            Our experienced therapists provide a supportive environment where you can learn to manage ADHD effectively, leading to a more organised and fulfilling life.
-          </p>
-          <a href="contact.html" class="btn btn-primary" id="book-adhd-coaching-btn">Book an Adult ADHD Coaching Session</a>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <!-- ===== /SECTION 2 ===== -->
 
   <!-- ===== SECTION 3: BEREAVEMENT COUNSELLOR ===== -->
@@ -236,7 +197,7 @@
         <div class="col-md-6" id="bereavement-counsellor-content">
           <h3 id="bereavement-counsellor-title">Bereavement Counsellor</h3>
           <p>
-            Dealing with loss can be an emotionally turbulent experience. Our <strong>bereavement counsellor</strong> provides compassionate support, offering coping strategies and a safe space to process grief. We serve Shepperton, Addlestone, Thames Ditton, and Cobham with tailored sessions aimed at guiding you through the healing process.
+            Dealing with loss can be an emotionally turbulent experience. Our <strong>bereavement counsellor</strong> provides compassionate support, offering coping strategies and a safe space to process grief. Serving Shepperton, Addlestone, Thames Ditton, and Cobham with tailored sessions aimed at guiding you through the healing process.
           </p>
           <h5>Benefits:</h5>
           <ul>
@@ -246,7 +207,7 @@
           </ul>
           <h5>Methodologies:</h5>
           <p>
-            Whether you've lost a loved one recently or have been struggling for some time, our counselling approach fosters understanding, acceptance, and resilience.
+            Whether you've lost a loved one recently or have been struggling for some time, Hugh's approach fosters understanding, acceptance, and resilience.
           </p>
           <h5>Why Choose This Service:</h5>
           <p>
@@ -260,37 +221,67 @@
   <!-- ===== /SECTION 3 ===== -->
 
   <!-- ===== TESTIMONIALS SECTION ===== -->
-  <section id="testimonials-section" class="testimonials-section py-5">
-    <div class="container">
-      <h2 class="section-title text-center mb-4" id="testimonials-title">Client Success Stories</h2>
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <div class="testimonial-box p-4 shadow-sm" id="testimonial-1">
-            <p class="testimonial mb-2">
-              "Working with a life coach at Hugh Helps Alpha Consultancy has helped me achieve my personal goals and improve my overall well-being."
-            </p>
-            <small class="text-muted">- Olivia Martin, Addlestone</small>
-          </div>
+<!-- ===== TESTIMONIALS SECTION ===== -->
+<section id="testimonials-section" class="testimonials-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4" id="testimonials-title">Client Success Stories</h2>
+    <h3 class="section-subtitle text-center mb-3" id="bereavement-subtitle">Life Coaching</h3>
+    <!-- General Testimonials -->
+    <div class="row g-4 mt-4">
+      <div class="col-lg-4">
+        <div class="testimonial-box p-4 shadow-sm" id="testimonial-1">
+          <p class="testimonial mb-2">
+            "Life has been great since I last saw you."
+          </p>
+          <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+          <small class="text-muted">- Ms J, a confident young lady</small>
         </div>
-        <div class="col-lg-4">
-          <div class="testimonial-box p-4 shadow-sm" id="testimonial-2">
-            <p class="testimonial mb-2">
-              "The personalised coaching sessions provided the motivation I needed to pursue my dreams."
-            </p>
-            <small class="text-muted">- James Wilson, Thames Ditton</small>
-          </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="testimonial-box p-4 shadow-sm" id="testimonial-2">
+          <p class="testimonial mb-2">
+            "Hugh, thank you so much for the help, you have given him a new sort of confidence."
+          </p>
+          <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+          <small class="text-muted">- Ms W, mother of an 8 year old boy</small>
         </div>
-        <div class="col-lg-4">
-          <div class="testimonial-box p-4 shadow-sm" id="testimonial-3">
-            <p class="testimonial mb-2">
-              "Hugh Helps Alpha Consultancy's life coaching services have been instrumental in my personal growth and development."
-            </p>
-            <small class="text-muted">- Mia Thompson, Shepperton</small>
-          </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="testimonial-box p-4 shadow-sm" id="testimonial-3">
+          <p class="testimonial mb-2">
+            "I have worked with Hugh for several sessions and he has really helped my confidence when speaking in meetings. I would totally recommend."
+          </p>
+          <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+          <small class="text-muted">- Luke Harrison</small>
         </div>
       </div>
     </div>
-  </section>
+  
+    <!-- Bereavement Testimonials -->
+    <h3 class="section-subtitle text-center mb-3 py-4" id="bereavement-subtitle">Bereavement</h3>
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="testimonial-box p-4 shadow-sm" id="testimonial-4">
+          <p class="testimonial mb-2">
+            "I’ve discovered how much I’d been bottling up inside thanks to Hugh’s guidance, and despite enduring an excruciating acupressure treatment elsewhere, I’ve experienced relief and clarity – though I had to cancel my appointment due to a busy schedule."
+          </p>
+          <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+          <small class="text-muted">- Anonymous</small>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="testimonial-box p-4 shadow-sm" id="testimonial-5">
+          <p class="testimonial mb-2">
+            "Over the last four months, I’ve managed to overcome old negative thoughts and cope with my divorce, enjoying social outings and a newfound ability to relax – for that, I am truly grateful."
+          </p>
+          <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+          <small class="text-muted">- H</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- ===== /TESTIMONIALS SECTION ===== -->
 
   <!-- ===== FOOTER ===== -->
@@ -312,6 +303,9 @@
             <a href="https://www.linkedin.com/company/hughhelpsalpha" class="text-white me-3 me-md-0 ms-md-3" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-linkedin" aria-label="LinkedIn"></i>
             </a>
+            <a href="https://share.google/MmSaZaNz31wiYLWju" class="text-white me-3 me-md-0 ms-md-3" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-google" aria-label="Google"></i>
+      </a>
           </div>
           
           <!-- Privacy and Cookie Policy Links -->
@@ -323,7 +317,7 @@
       </div>
       <!-- Copyright -->
       <div class="mt-3">
-        <p class="mb-2 text-center">&copy; 2025 Hugh Helps Alpha Consultancy. All Rights Reserved.</p>
+        <p class="mb-2 text-center">&copy; 2026 Hugh Helps. All Rights Reserved.</p>
       </div>
       <div class="designed-by">
         <p class="mb-0 text-center">
@@ -344,5 +338,7 @@
   <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
   </script>
+  <script src="cookie.js"></script>
+
 </body>
 </html>

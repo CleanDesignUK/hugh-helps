@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-715C5VPZCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-715C5VPZCM');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Therapist & Counsellor in Shepperton | Hugh Helps Alpha</title>
+<title>Hypnotherapy in Shepperton | Hugh Helps | Life Coaching & EFT</title>
 
   <!-- ===== META DESCRIPTION FOR SEO ===== -->
-  <meta name="description" content="Discover expert therapy, counselling, hypnotherapy, and EFT near Shepperton, Sunbury, and Walton. Overcome challenges with Hugh Helps Alpha Consultancy today!">
-  <meta name="keywords" content="therapist, counsellor, Shepperton, mental health, hypnotherapy, EFT, Tapping, life coaching">
+  <meta name="description" content="Trusted hypnosis therapist in Shepperton & Walton-on-Thames. Over 25 years’ experience in life coaching, anxiety and depression therapy, weight loss support, emotional freedom therapy, and quit smoking guidance.">
+  <meta name="keywords" content="hypnosis therapist, life coaching, anxiety therapist, depression therapy, weight loss therapist, emotional freedom therapy, quit smoking therapist, Shepperton, Walton-on-Thames">
   <link rel="icon" href="hugh-helps-logo.jpg" type="image/jpeg">
 
   <!-- ===== FONTS & STYLES ===== -->
@@ -33,31 +41,58 @@
   <link rel="stylesheet" href="styles.css" />
   <!-- Page-Specific Styles for Home Page -->
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="cookie.css">
+
+  <!-- LocalBusiness JSON-LD: put near end of <head>. 
+Fill address/phone if you want; leaving generic but valid. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Hugh Helps",
+  "url": "https://hughhelps.com/",
+  "image": "https://hughhelps.com/hugh-helps-logo.jpg",
+  "description": "Hypnotherapy, life coaching and EFT in Shepperton and nearby areas.",
+  "areaServed": ["Shepperton","Walton-on-Thames","Weybridge","Sunbury-on-Thames","Staines-upon-Thames"],
+  "sameAs": [
+    "https://www.facebook.com/hughhelpsalpha",
+    "https://www.linkedin.com/company/hughhelpsalpha"
+  ],
+  "telephone": "+447443625032",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  }],
+  "priceRange": "££"
+}
+</script>
+
+
 </head>
 
 <body>
+  <div id="cookie-banner">
+  <p>🍪 We use cookies to improve your browsing experience, deliver personalised content, and analyse our traffic. By clicking “<strong>Accept All</strong>”, you consent to our use of cookies. See our <a href="cookie-policy.html">Cookie Policy</a> for details.</p>
+  <div class="buttons">
+    <button id="accept-cookies" class="btn accept">Accept All 🍪</button>
+    <button id="decline-cookies" class="btn decline">Decline</button>
+  </div>
+</div>
+
+  <!-- ===== NAVBAR ===== -->
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <!-- Logo Image -->
         <img src="hugh-helps-logo.jpg" alt="Hugh Helps Logo" class="navbar-logo me-2">
-        
-        <!-- Brand Title and Subtitle -->
         <div>
           <span class="brand-title">Hugh Helps</span>
-          <small class="brand-subtitle d-block">Alpha Consultancy</small>
         </div>
       </a>
-      <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarContent" 
-        aria-controls="navbarContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
   
@@ -65,23 +100,15 @@
         <ul class="navbar-nav">
           <!-- Home Link -->
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
-  
           <!-- About Link -->
           <li class="nav-item">
             <a class="nav-link" href="about-therapist-shepperton.html">About Hugh</a>
           </li>
-  
           <!-- Services Dropdown -->
           <li class="nav-item dropdown">
-            <a 
-              class="nav-link dropdown-toggle" 
-              href="#" 
-              role="button" 
-              data-bs-toggle="dropdown" 
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
             <ul class="dropdown-menu">
@@ -89,42 +116,40 @@
               <li><a class="dropdown-item" href="professional-therapist-shepperton.html#professional-therapy">Therapist Services</a></li>
               <li><a class="dropdown-item" href="professional-therapist-shepperton.html#expert-counselling">Expert Counselling</a></li>
               <li><a class="dropdown-item" href="professional-therapist-shepperton.html#local-therapy-sessions">Local Therapy Sessions</a></li>
-  
-              <!-- Hypnotherapy Services -->
+              <li><a class="dropdown-item" href="professional-therapist-shepperton.html#youth-family-therapy">Youth Therapy Services</a></li>
+              
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#hypnotherapy-services">Hypnotherapy Services</a></li>
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#sleep-improvement-hypnosis">Sleep Improvement Hypnosis</a></li>
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#quit-smoking-hypnosis">Quit Smoking Hypnosis</a></li>
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#hypnosis-and-weight-loss">Weight-loss Hypnosis</a></li>
-  
-              <!-- EFT & Tapping Services -->
+              <!-- Emotional Freedom Technique (excluded on this page) -->
               <li><a class="dropdown-item" href="emotional-freedom-technique.html">Emotional Freedom Technique</a></li>
               <li><a class="dropdown-item" href="emotional-freedom-technique.html">Tapping</a></li>
-  
               <!-- Life Coaching Services -->
               <li><a class="dropdown-item" href="life-coaching-addlestone.html#life-coaching-services">Life Coaching Services</a></li>
-              <li><a class="dropdown-item" href="life-coaching-addlestone.html#adult-adhd-therapist">Adult ADHD Therapist</a></li>
+            
               <li><a class="dropdown-item" href="life-coaching-addlestone.html#bereavement-counsellor">Bereavement Counsellor</a></li>
-  
-              <!-- Mental Health Therapies -->
-              <li><a class="dropdown-item" href="mental-health-cobham.html#kids-therapist-near-me">Kids Therapist Near Me</a></li>
-              <li><a class="dropdown-item" href="mental-health-cobham.html#depression-therapy">Depression Therapy</a></li>
-              <li><a class="dropdown-item" href="mental-health-cobham.html#anxiety-therapy">Anxiety Therapy</a></li>
-  
-              <li><hr class="dropdown-divider" /></li>
-  
-              <!-- Additional Services -->
-              <li><a class="dropdown-item" href="additional-mental-health-services-shepperton.html">Additional Services</a></li>
+              <!-- Mental Health: Phobias, Anxiety & Stress (current page) -->
+              <li><a class="dropdown-item active" href="mental-health-phobias-anxiety-stress.html">Mental Health: Phobias, Anxiety &amp; Stress</a></li>
+              <li><a class="dropdown-item" href="mental-health-phobias-anxiety-stress.html#phobias">Phobias</a></li>
+              <li><a class="dropdown-item" href="mental-health-phobias-anxiety-stress.html#anxiety">Anxiety</a></li>
+              <li><a class="dropdown-item" href="mental-health-phobias-anxiety-stress.html#stress">Stress</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <!-- Additional Mental Health Services -->
+              <li><a class="dropdown-item" href="additional-mental-health-services-shepperton.html">Additional Mental Health Services</a></li>
             </ul>
           </li>
-  
+                   <!-- Testimonial Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="testimonial.html">Testimonials</a>
+          </li>
           <!-- Contact Link -->
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-  
           <!-- Pricing Link -->
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="pricing-therapy-shepperton.html">Pricing</a>
+            <a class="nav-link" href="pricing-therapy-shepperton.html">Pricing</a>
           </li>
         </ul>
       </div>
@@ -136,16 +161,28 @@
   <section class="hero-section d-flex align-items-center">
     <div class="container text-center">
       <h1 class="hero-title">
-        Your Trusted Therapist, Counsellor, &amp; Hypnotherapist
+        Your Trusted Hypnosis Therapist &amp; Life Coach in Shepperton
       </h1>
+      <h2 class="py-2"> Fast results to help you move forward  </h2>
       <p class="hero-subtitle">
-        Serving Shepperton, Sunbury-on-Thames, Walton-on-Thames, Weybridge, and
+        Serving Shepperton, Staines-upon-Thames, Walton-on-Thames, Weybridge, and
         Surrounding Areas for Over 25 Years
       </p>
+
       <a href="contact.html" class="btn btn-primary btn-lg mt-3">
         Book Your Free Consultation
       </a>
-    </div>
+            <!-- Google Review Badge -->
+<div class="mt-3">
+  <a href="https://share.google/ysQkWDJfFiCwofzqt"
+     target="_blank" rel="noopener noreferrer"
+     class="google-review-badge d-inline-flex align-items-center gap-2 text-decoration-none">
+    <img src="google-logo.webp" alt="Google" width="22" height="22" loading="lazy">
+    <span class="google-stars" aria-hidden="true" style="color:#1f4e79;">★★★★★</span>
+    <span class="fw-semibold" style="color:#1f4e79;">5/5 stars</span>
+    <span style="color:#1f4e79;"> Google reviews</span>
+  </a>
+</div>
   </section>
   <!-- ===== /HERO SECTION ===== -->
 
@@ -161,9 +198,12 @@
           />
         </div>
         <div class="col-lg-6">
-          <h2 class="section-title">Meet Hugh Helps</h2>
+          <h2 class="section-title">Meet Hugh Helps – Your Expert Hypnosis Therapist</h2>
           <p class="section-text">
-            Hugh is a highly experienced <strong>therapist</strong>, 
+          Hypnotherapy in Shepperton with caring, results-focused sessions for anxiety, stress, phobias, sleep issues, quit smoking therapy, and habit change.
+        </p>
+          <p class="section-text">
+            Hugh Christensen is a highly experienced <strong>therapist</strong>, 
             <strong>counsellor</strong>, and <strong>hypnotherapist</strong>
             who has been in full-time practice since 1995. With a passion for
             helping clients overcome challenges—ranging from anxiety and 
@@ -171,17 +211,13 @@
             evidence-based techniques provide lasting solutions.
           </p>
           <p class="section-text">
-            Throughout the years, Hugh Helps Alpha Consultancy has empowered 
-            individuals in <em>Shepperton</em>, <em>Sunbury-on-Thames</em>, 
-            <em>Walton-on-Thames</em>, and <em>Weybridge</em> with personalized 
-            therapy, <strong>NHS talking therapies</strong>, 
-            and <strong>life coaching</strong>. Whether you're seeking
-            <strong>Tapping</strong> or looking for a 
-            <strong>therapist near me</strong>, Hugh is committed to guiding 
-            you toward improved mental health and well-being.
+            Throughout the years, Hugh Helps has empowered individuals in <em>Shepperton</em>, <em>Walton-on-Thames</em>, <em>Sunbury-on-Thames</em>, and <em>Weybridge</em> with personalised therapy, expert life coaching, and proven emotional freedom therapy techniques.
           </p>
+          <p class="section-text">
+            Whether you're looking for a dedicated hypnosis therapist to support you as a therapist for anxiety and depression, seeking expert guidance as a weight loss therapist, or need effective emotional freedom therapy, Hugh is committed to providing direct and tailored support to boost your mental health and overall well-being.
+          </p>          
           <p class="mt-4">
-            <a href="about.html" class="btn btn-outline-primary">
+            <a href="about-therapist-shepperton.html" class="btn btn-outline-primary">
               Learn More About Hugh
             </a>
           </p>
@@ -196,7 +232,7 @@
 <section class="services-preview py-5">
   <div class="container">
     <h2 class="section-title text-center mb-5">
-      Key Services at Hugh Helps Alpha Consultancy
+      Key Services at Hugh Helps 
     </h2>
     <div class="row g-4">
       <!-- Therapist Services -->
@@ -247,116 +283,396 @@
         </div>
       </div>
     </div>
+
+<!-- ===== CONDITIONS I TREAT (ACCORDION) ===== -->
+<section class="additional-services py-5">
+  <div class="container">
+    <h3 class="section-title text-center mb-4">Conditions I Treat</h3>
+    <p class="section-text text-center mb-4">
+        These are the type of problems I can help with:      
+      </p>
+
+    <div class="accordion" id="servicesAccordion">
+<!-- BWRT -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingBWRT">
+    <button class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseBWRT"
+            aria-expanded="false"
+            aria-controls="collapseBWRT">
+      🧠 BWRT — Reboot your life with Brain Working Recursive Therapy
+    </button>
+  </h2>
+  <div id="collapseBWRT"
+       class="accordion-collapse collapse"
+       aria-labelledby="headingBWRT"
+       data-bs-parent="#servicesAccordion">
+    <div class="accordion-body">
+      <p>A powerful treatment for helping to resolve Emotional and Physiological Problems.</p>
+    </div>
+  </div>
+</div>
+
+      <!-- Stress & Anxiety -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingAnxiety">
+          <button class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseAnxiety"
+                  aria-expanded="false"
+                  aria-controls="collapseAnxiety">
+            🌟 Stress &amp; Anxiety
+          </button>
+        </h2>
+        <div id="collapseAnxiety"
+             class="accordion-collapse collapse"
+             aria-labelledby="headingAnxiety"
+             data-bs-parent="#servicesAccordion">
+          <div class="accordion-body">
+            <ul class="list-unstyled mb-0">
+              <li>Panic attacks</li>
+              <li>Generalised anxiety</li>
+              <li>Exam nerves</li>
+              <li>Public speaking</li>
+              <li>Worry</li>
+              <li>PTSD</li>
+              <li>Abuse</li>
+              <li>Stress</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phobias & Fears -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingPhobias">
+          <button class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsePhobias"
+                  aria-expanded="false"
+                  aria-controls="collapsePhobias">
+            🕷️ Phobias &amp; Fears
+          </button>
+        </h2>
+        <div id="collapsePhobias"
+             class="accordion-collapse collapse"
+             aria-labelledby="headingPhobias"
+             data-bs-parent="#servicesAccordion">
+          <div class="accordion-body">
+            <ul class="list-unstyled mb-0">
+              <li>Flying fear</li>
+              <li>Small spaces (claustrophobia)</li>
+              <li>Insects &amp; animals</li>
+              <li>Fear of driving</li>
+              <li>Germs or dirt</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Habits & Behaviours -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingHabits">
+          <button class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseHabits"
+                  aria-expanded="false"
+                  aria-controls="collapseHabits">
+            ⚙️ Habits &amp; Behaviours
+          </button>
+        </h2>
+        <div id="collapseHabits"
+             class="accordion-collapse collapse"
+             aria-labelledby="headingHabits"
+             data-bs-parent="#servicesAccordion">
+          <div class="accordion-body">
+            <ul class="list-unstyled mb-0">
+              <li>Addictive behaviours</li>
+              <li>Compulsions</li>
+              <li>Teeth grinding (bruxism)</li>
+              <li>Nail biting</li>
+              <li>Procrastination</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Physical & Health Concerns -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingHealth">
+          <button class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseHealth"
+                  aria-expanded="false"
+                  aria-controls="collapseHealth">
+            ❤️ Physical &amp; Health Concerns
+          </button>
+        </h2>
+        <div id="collapseHealth"
+             class="accordion-collapse collapse"
+             aria-labelledby="headingHealth"
+             data-bs-parent="#servicesAccordion">
+          <div class="accordion-body">
+            <ul class="list-unstyled mb-0">
+              <li>Pain management</li>
+              <li>IBS (Irritable Bowel Syndrome)</li>
+              <li>Chronic Fatigue (ME)</li>
+              <li>Eating problems &amp; weight issues</li>
+              <li>Skin problems</li>
+              <li>Tinnitus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Performance & Confidence -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingPerformance">
+          <button class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsePerformance"
+                  aria-expanded="false"
+                  aria-controls="collapsePerformance">
+            🎭 Performance &amp; Confidence
+          </button>
+        </h2>
+        <div id="collapsePerformance"
+             class="accordion-collapse collapse"
+             aria-labelledby="headingPerformance"
+             data-bs-parent="#servicesAccordion">
+          <div class="accordion-body">
+            <ul class="list-unstyled mb-0">
+              <li>Confidence building</li>
+              <li>Imposter syndrome</li>
+              <li>Stage fright</li>
+              <li>Job interview nerves</li>
+              <li>Sporting performance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.accordion -->
+  </div><!-- /.container -->
+</section>
+<!-- ===== /CONDITIONS I TREAT ===== -->
+
+
+    
     <div class="text-center mt-5">
       <a href="additional-mental-health-services-shepperton.html" class="btn btn-outline-primary">View All Services</a>
     </div>
   </div>
 </section>
+<!-- ===== NEW MENTAL HEALTH FOCUS ROW ===== -->
+<section class="mental-health-focus py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <img src="specialised-mental-health.jpg" alt="Specialised Mental Health" class="d-none d-md-flex img-fluid mb-4 mx-auto" style="width:60%;">
+        <h2 class="section-title">Specialised Mental Health: Phobias, Anxiety &amp; Stress</h2>
+        <p class="section-text">
+          Discover expert strategies to overcome phobias, manage anxiety, and reduce stress with our evidence‐based NLP techniques. Empower your emotional wellbeing with a focussed approach.
+        </p>
+        <a href="mental-health-phobias-anxiety-stress.html" class="btn btn-primary btn-lg mt-3">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== /NEW MENTAL HEALTH FOCUS ROW ===== -->
 
   <!-- ===== /SERVICES PREVIEW SECTION ===== -->
 
   <!-- ===== LOCAL REACH SECTION ===== -->
-  <section class="local-reach-section py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title text-center mb-4">
-        Serving Shepperton &amp; Surrounding Areas
-      </h2>
-      <p class="section-text text-center mb-5">
-        Our clients come from communities across 
-        <em>Sunbury-on-Thames</em>, <em>Walton-on-Thames</em>, 
-        <em>Staines-upon-Thames</em>, <em>Weybridge</em>, and many other 
-        neighboring towns. We offer virtual and in-person appointments to 
-        ensure everyone can access our comprehensive range of services.
-      </p>
-      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 justify-content-center">
-        <div class="col">
-          <div class="location-box text-center p-3 shadow-sm bg-white">
-            <h6>Sunbury-on-Thames</h6>
-            <small class="text-muted">Population ~42,000</small>
-          </div>
+<!-- ===== LOCAL REACH SECTION ===== -->
+<section class="local-reach-section py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">
+      Serving Shepperton &amp; Surrounding Areas
+    </h2>
+    <p class="section-text text-center mb-5">
+      Our clients come from communities across 
+      <em>Sunbury-on-Thames</em>, <em>Walton-on-Thames</em>, 
+      <em>Staines-upon-Thames</em>, <em>Weybridge</em>, and many other 
+      neighboring towns. I offer virtual and in-person appointments to 
+      ensure everyone can access our comprehensive range of services.
+    </p>
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 justify-content-center">
+      <div class="col">
+        <div class="location-box text-center p-3 shadow-sm bg-white">
+          <h6>Sunbury-on-Thames</h6>
         </div>
-        <div class="col">
-          <div class="location-box text-center p-3 shadow-sm bg-white">
-            <h6>Walton-on-Thames</h6>
-            <small class="text-muted">Population ~35,000</small>
-          </div>
+      </div>
+      <div class="col">
+        <div class="location-box text-center p-3 shadow-sm bg-white">
+          <h6>Staines-upon-Thames</h6>
         </div>
-        <div class="col">
-          <div class="location-box text-center p-3 shadow-sm bg-white">
-            <h6>Weybridge</h6>
-            <small class="text-muted">Population ~34,000</small>
-          </div>
+      </div>
+      <div class="col">
+        <div class="location-box text-center p-3 shadow-sm bg-white">
+          <h6>Walton-on-Thames</h6>
         </div>
-        <div class="col">
-          <div class="location-box text-center p-3 shadow-sm bg-white">
-            <h6>Staines-upon-Thames</h6>
-            <small class="text-muted">Population ~30,000</small>
-          </div>
+      </div>
+      <div class="col">
+        <div class="location-box text-center p-3 shadow-sm bg-white">
+          <h6>Weybridge</h6>
         </div>
-        <div class="col">
-          <div class="location-box text-center p-3 shadow-sm bg-white">
-            <h6>Egham</h6>
-            <small class="text-muted">Population ~30,000</small>
-          </div>
+      </div>
+      <div class="col">
+        <div class="location-box text-center p-3 shadow-sm bg-white">
+          <h6>Egham</h6>
         </div>
-        <div class="col">
-          <div class="location-box text-center p-3 shadow-sm bg-white">
-            <h6>Hampton</h6>
-            <small class="text-muted">Population ~26,000</small>
-          </div>
+      </div>
+      <div class="col">
+        <div class="location-box text-center p-3 shadow-sm bg-white">
+          <h6>Hampton</h6>
         </div>
-        <div class="col">
-          <div class="location-box text-center p-3 shadow-sm bg-white">
-            <h6>Addlestone</h6>
-            <small class="text-muted">Population ~24,000</small>
-          </div>
+      </div>
+      <div class="col">
+        <div class="location-box text-center p-3 shadow-sm bg-white">
+          <h6>Addlestone</h6>
         </div>
-        <div class="col">
-          <div class="location-box text-center p-3 shadow-sm bg-white">
-            <h6>Chertsey</h6>
-            <small class="text-muted">Population ~22,000</small>
-          </div>
+      </div>
+      <div class="col">
+        <div class="location-box text-center p-3 shadow-sm bg-white">
+          <h6>Chertsey</h6>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   <!-- ===== /LOCAL REACH SECTION ===== -->
 
   <!-- ===== TESTIMONIALS SECTION ===== -->
-  <section class="testimonials-section py-5">
-    <div class="container">
-      <h2 class="section-title text-center mb-4">Client Success Stories</h2>
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <div class="testimonial-box p-4 shadow-sm">
-            <p class="testimonial mb-2">
-              "Thanks to Hugh's <strong>therapist services</strong>, I've 
-              overcome anxiety and feel more confident in my daily life. 
-              Highly recommended!"
-            </p>
-            <small class="text-muted">- Sarah, Sunbury-on-Thames</small>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="testimonial-box p-4 shadow-sm">
-            <p class="testimonial mb-2">
-              "The <strong>hypnotherapy</strong> for weight loss changed my 
-              habits completely. I'm thrilled with the results!"
-            </p>
-            <small class="text-muted">- Michael, Walton-on-Thames</small>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="testimonial-box p-4 shadow-sm">
-            <p class="testimonial mb-2">
-              "EFT with Hugh fundamentally changed how I thought about problems and their effects on me."
-            </p>
-            <small class="text-muted">- James, Weybridge</small>
-          </div>
-        </div>
+<!-- ===== TESTIMONIALS SECTION ===== -->
+<section class="testimonials-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">Client Success Stories</h2>
+    <!-- Google reviews header -->
+    <div class="text-center mb-4">
+      <img src="google-logo.webp" alt="Google Logo" width="40" height="40">
+      <div class="d-inline-block align-middle ms-2">
+        <span style="color:#1f4e79; font-size:1.2rem;">★</span>
+        <span style="color:#1f4e79; font-size:1.2rem;">★</span>
+        <span style="color:#1f4e79; font-size:1.2rem;">★</span>
+        <span style="color:#1f4e79; font-size:1.2rem;">★</span>
+        <span style="color:#1f4e79; font-size:1.2rem;">★</span>
+        <span class="text-muted ms-2">(5.0 on Google)</span>
       </div>
     </div>
-  </section>
+    <!-- Google reviews button -->
+<div class="text-center mb-4">
+  <a href="https://share.google/ysQkWDJfFiCwofzqt" 
+     target="_blank" class="btn btn-primary">
+    ★ See More Reviews on Google
+  </a>
+</div>
+
+    <div class="row g-4">
+      <!-- Existing Testimonial 1 -->
+      <div class="col-md-6">
+        <div class="testimonial-box p-4 shadow-sm">
+          <p class="testimonial mb-2">
+            Hugh had a significant impact in just four therapy sessions over a few weeks. His ability to create a comfortable and supportive environment put me at ease.
+          </p>
+          <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+          <small class="text-muted">- rpsthandi</small>
+        </div>
+      </div>
+
+      <!-- Existing Testimonial 2 -->
+      <div class="col-md-6">
+        <div class="testimonial-box p-4 shadow-sm">
+          <p class="testimonial mb-2">
+            Seeing Hugh has really made a huge difference to my life. A very friendly and comfortable experience and I use to look forward to each session. Would recommend to anyone.
+          </p>
+          <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+          <small class="text-muted">- David Hall</small>
+        </div>
+      </div>
+
+      <!-- New Testimonial (Mr C) -->
+      <div class="col-md-6">
+        <div class="testimonial-box p-4 shadow-sm">
+          <p class="testimonial mb-2">
+            "I have managed to lose 20lbs in weight."
+          </p>
+          <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+          <small class="text-muted">- Mr C</small>
+        </div>
+      </div>
+
+      <!-- New Testimonial (Mr V) -->
+      <div class="col-md-6">
+        <div class="testimonial-box p-4 shadow-sm">
+          <p class="testimonial mb-2">
+            "I have made a few calculations, I have never seen a return on an investment like that!"
+          </p>
+          <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+          <small class="text-muted">- Mr V, ex-smoker and wealthier</small>
+        </div>
+      </div>
+
+      <!-- New Testimonial (Sukh Gill) -->
+      <div class="col-md-12">
+        <div class="testimonial-box p-4 shadow-sm">
+          <p class="testimonial mb-2">
+            "Hugh is an amazing warm man who made me feel at ease within mins of speaking. I find great value in seeing Hugh these past 5 sessions - for the hypnotherapy, Hugh is able to put me into a deep trance and every session has been impactful and Hugh you should be charging more lol"
+          </p>
+          <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+          <small class="text-muted">– Sukh Gill</small>
+        </div>
+      </div>
+<!-- New Testimonial (J.P.) -->
+<div class="col-md-6">
+  <div class="testimonial-box p-4 shadow-sm">
+    <p class="testimonial mb-2">
+      I sought Hugh’s help to overcome my grief, travel phobia, and fears, and since then I’ve been able to travel freely, attend seminars, and even book a holiday in Ibiza, while his hypnosis tapes help me relax on stressful days. I’m very thankful.
+    </p>
+    <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+    <small class="text-muted">- J.P.</small>
+  </div>
+</div>
+
+<!-- New Testimonial (Anonymous) -->
+<div class="col-md-6">
+  <div class="testimonial-box p-4 shadow-sm">
+    <p class="testimonial mb-2">
+      While holidaying in Southern Germany, I felt largely restored and would love to meet Hugh for a beer should I need further professional support.
+    </p>
+    <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+    <small class="text-muted">- Anonymous</small>
+  </div>
+</div>
+
+<!-- New Testimonial (J) -->
+<div class="col-md-6">
+  <div class="testimonial-box p-4 shadow-sm">
+    <p class="testimonial mb-2">
+      I wanted to express a simple thank you – I truly appreciate all the help I’ve received from Hugh.
+    </p>
+    <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+    <small class="text-muted">- J</small>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+<!-- ===== /TESTIMONIALS SECTION ===== -->
+
+
+
   <!-- ===== /TESTIMONIALS SECTION ===== -->
 
   <!-- ===== CTA SECTION ===== -->
@@ -373,6 +689,115 @@
     </div>
   </section>
   <!-- ===== /CTA SECTION ===== -->
+
+  <section class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faq">
+
+      <!-- Q1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q1">
+            How many sessions will I need?
+          </button>
+        </h2>
+        <div id="q1" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Each client is different, but most notice meaningful improvement within a few sessions. The number of appointments depends on your goals and personal progress.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
+            Do you offer online appointments?
+          </button>
+        </h2>
+        <div id="q2" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Yes. Online hypnotherapy, counselling, and life-coaching sessions are available via secure video call for clients who prefer remote support.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q3">
+            What issues can therapy help with?
+          </button>
+        </h2>
+        <div id="q3" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Sessions can help with anxiety, stress, confidence, phobias, grief, relationship challenges, motivation, and personal development. Many clients also benefit from coaching support to make positive life changes.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q4">
+            Is hypnotherapy or counselling safe?
+          </button>
+        </h2>
+        <div id="q4" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Yes. Both hypnotherapy and counselling are safe, evidence-based practices carried out professionally. You remain fully aware and in control at all times.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q5">
+            How should I prepare for my first session?
+          </button>
+        </h2>
+        <div id="q5" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Simply come with an open mind and clear goals. Wear comfortable clothes and allow yourself time to relax before and after the session.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q6">
+            Where are you located?
+          </button>
+        </h2>
+        <div id="q6" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            The practice is located on <strong>Manygate Lane, Shepperton TW17 9EP, United Kingdom</strong>, within easy reach of Walton-on-Thames, Weybridge, and Sunbury-on-Thames.  
+            Online appointments are also available for clients throughout the UK.
+          </div>
+        </div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q7">
+            Do you offer life coaching as well as therapy?
+          </button>
+        </h2>
+        <div id="q7" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Yes. Alongside counselling and therapy, Hugh offers personal life-coaching sessions focused on motivation, career growth, and achieving balance in daily life.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
   <!-- ===== FOOTER ===== -->
   <footer class="custom-footer py-4">
@@ -393,6 +818,9 @@
             <a href="https://www.linkedin.com/company/hughhelpsalpha" class="text-white me-3 me-md-0 ms-md-3" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-linkedin" aria-label="LinkedIn"></i>
             </a>
+            <a href="https://share.google/MmSaZaNz31wiYLWju" class="text-white me-3 me-md-0 ms-md-3" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-google" aria-label="Google"></i>
+      </a>
           </div>
           
           <!-- Privacy and Cookie Policy Links -->
@@ -404,7 +832,7 @@
       </div>
       <!-- Copyright -->
       <div class="mt-3">
-        <p class="mb-2 text-center">&copy; 2025 Hugh Helps Alpha Consultancy. All Rights Reserved.</p>
+        <p class="mb-2 text-center">&copy; 2026 Hugh Helps. All Rights Reserved.</p>
       </div>
       <div class="designed-by">
         <p class="mb-0 text-center">
@@ -426,5 +854,73 @@
   <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
   </script>
+  <script src="cookie.js"></script>
+
+  <!-- JSON-LD for FAQPage -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "How many sessions will I need?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Each client is different, but most notice meaningful improvement within a few sessions. The number of appointments depends on your goals and personal progress."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do you offer online appointments?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Online hypnotherapy, counselling, and life-coaching sessions are available via secure video call for clients who prefer remote support."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What issues can therapy help with?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sessions can help with anxiety, stress, confidence, phobias, grief, relationship challenges, motivation, and personal development. Many clients also benefit from coaching support to make positive life changes."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is hypnotherapy or counselling safe?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Both hypnotherapy and counselling are safe, evidence-based practices carried out professionally. You remain fully aware and in control at all times."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How should I prepare for my first session?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Simply come with an open mind and clear goals. Wear comfortable clothes and allow yourself time to relax before and after the session."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Where are you located?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The practice is located on Manygate Lane, Shepperton TW17 9EP, United Kingdom, within easy reach of Walton-on-Thames, Weybridge, and Sunbury-on-Thames. Online appointments are also available for clients throughout the UK."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do you offer life coaching as well as therapy?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Alongside counselling and therapy, Hugh offers personal life-coaching sessions focused on motivation, career growth, and achieving balance in daily life."
+   }
+  }
+ ]
+}
+</script>
+
 </body>
 </html>

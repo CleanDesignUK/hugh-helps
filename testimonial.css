@@ -1,0 +1,138 @@
+/* ===== HERO SECTION FIX ===== */
+.hero-section{
+  background: #053171;          /* full-width brand top bar */
+  padding: 120px 0 100px;                        /* enough space under navbar */
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle gradient fade to light brand blue */
+.hero-section::after{
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient(
+      180deg,
+      var(--color-accent-dark) 0%,
+      var(--color-accent-light) 100%
+  );
+  opacity:.15;                                   /* gentle texture, optional */
+  pointer-events:none;
+}
+
+.hero-title{
+  color:#fff;
+  font-family:var(--font-title);
+  font-size:2.25rem;
+}
+
+.hero-subtitle{
+  color:#fff;
+  font-family:var(--font-body);
+  font-size:1.15rem;
+  max-width:640px;
+  margin-left:auto;margin-right:auto;
+}
+
+@media (min-width:992px){
+  .hero-title{font-size:3rem;}
+  .hero-section{padding:150px 0 130px;}
+}
+
+
+
+
+/* ===== Testimonials page custom rules ===== */
+.testimonial-intro{
+  background-color: var(--color-accent-light);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card{
+  background-color:#fff;
+  border-radius:8px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+.testimonial-card .card-img-top{
+  height:360px;
+  object-fit:cover;
+}
+
+@media (max-width:991.98px){
+  .testimonial-card .card-img-top{height:280px;}
+}
+
+/* ===== testimonial-page extras (keeps brand palette) ===== */
+
+.testimonial-card{
+  border-radius:8px;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.card-accent-light{ background: var(--color-accent-light); }
+.card-accent      { background: var(--color-accent);       color:#fff; }
+.card-accent-dark { background: var(--color-accent-dark);  color:#fff; }
+.card-bg-light    { background:#ffffff; }
+
+.testimonial-card h6{ font-family:var(--font-subtitle); margin-top:auto; }
+
+@media (max-width: 991.98px){
+  .testimonial-card{ font-size:0.95rem; }
+}
+
+/* turn former aqua (#76d7ea) cards into clean white blocks */
+.card-accent{
+  background:#ffffff;                     /* calm white */
+  border:2px solid var(--color-accent);   /* thin branded edge */
+  color:var(--color-text-dark);           /* default body text */
+}
+
+/* lift & glow when you hover / focus the card */
+.testimonial-card{
+  transition:transform .25s ease, box-shadow .25s ease;
+  cursor:pointer;                         /* indicate it’s clickable */
+}
+.testimonial-card:hover,
+.testimonial-card:focus-within{
+  transform:translateY(-4px);
+  box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+/* ensure full contrast on dark-blue cards */
+.card-accent-dark{
+  background: var(--color-accent-dark); /* already set */
+  color:#ffffff;                        /* body text + p element */
+}
+
+.card-accent-dark h6,
+.card-accent-dark small,
+.card-accent-dark .text-muted{
+  color:#ffffff !important;             /* name + service label */
+  opacity:0.9;                          /* optional: a soft tint */
+}
+
+/* testimonials.css — keep existing rules, just add the lines marked ★ */
+
+.testimonial-card{
+  position: relative;                       /* needed for stretched-link  */
+  transition: transform .25s ease, box-shadow .25s ease;
+  cursor: pointer;
+  z-index: 1;                               /* ★ ensures card sits ON TOP */
+}
+
+.testimonial-card:hover,
+.testimonial-card:focus-within{
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.15);
+  z-index: 5;                               /* ★ lift above neighbours   */
+}
+
+/* the overlay itself must stay inside the card’s context */
+.testimonial-card .stretched-link{
+  z-index: 2;                               /* ★ inside, never above card */
+}

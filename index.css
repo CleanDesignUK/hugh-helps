@@ -219,6 +219,55 @@
   }
 }
 
+.google-review-badge{
+  background: rgba(255,255,255,0.92);
+  border-radius: 9999px;
+  padding: .5rem .75rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+  white-space: nowrap;             /* keeps it on one line for a neat pill */
+}
+
+.google-badge-logo{ width: 22px; height: 22px; }
+
+.google-review-badge .google-stars{
+  color: #fbbc05;                  /* Google star gold */
+  letter-spacing: 2px;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+/* Small screens */
+@media (max-width: 576px){
+  .google-review-badge{
+    padding: .4rem .6rem;
+  }
+  .google-badge-logo{
+    width: 18px; height: 18px;
+  }
+  .google-review-badge .google-stars{
+    letter-spacing: 1px;
+    font-size: .95rem;
+  }
+}
+
+/* Very small screens or narrow viewports */
+@media (max-width: 360px){
+  .google-review-badge{
+    padding: .35rem .5rem;
+  }
+  .google-badge-logo{
+    width: 16px; height: 16px;
+  }
+  .google-review-badge .google-stars{
+    font-size: .9rem;
+  }
+}
+
+/* Dark mode tweak */
+@media (prefers-color-scheme: dark){
+  .google-review-badge{ background: rgba(255,255,255,0.85); }
+}
+
 
   /* ===== CARD UTILS ===== */
   .card {
@@ -261,4 +310,52 @@
     left: 0;                /* Align it to the parent container */
     right: auto;            /* Prevent it from sticking to the right side */
   }
+}
+
+/* ==========================================================================
+   NEW MENTAL HEALTH FOCUS ROW STYLES
+========================================================================== */
+.mental-health-focus {
+  background-color: var(--color-bg-light); /* Uses your global light background */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.mental-health-focus .section-title {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  color: var(--color-text-dark);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.mental-health-focus .section-text {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--color-text-dark);
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mental-health-focus .btn-primary {
+  background-color: var(--color-accent-dark) !important;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.mental-health-focus .btn-primary:hover,
+.mental-health-focus .btn-primary:focus {
+  background-color: var(--color-accent) !important;
+}
+
+/* ==========================================================================
+   CENTER & NARROW THE ACCORDION
+   ========================================================================== */
+.additional-services .accordion {
+  max-width: 700px;    /* or whatever width fits your design */
+  margin: 0 auto;      /* center horizontally */
+  padding: 0 1rem;     /* small side padding on very narrow viewports */
 }

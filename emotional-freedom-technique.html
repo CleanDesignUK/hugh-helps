@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-715C5VPZCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-715C5VPZCM');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EFT Tapping in Cobham | Hugh Helps Alpha</title>
+  <title>EFT Tapping &amp; Emotional Freedom Therapy in Cobham | Hugh Helps</title>
 
-  <meta name="description" content="Professional EFT Tapping therapy in Shepperton, Weybridge, Hampton, Egham, Staines-upon-Thames, and Cobham. Experience Emotional Freedom Techniques with Hugh Helps Alpha Consultancy.">
-  <meta name="keywords" content="EFT, tapping therapy, emotional freedom techniques, Cobham EFT, Shepperton EFT, Weybridge tapping therapy">
+  <meta name="description" content="Professional EFT Tapping and emotional freedom therapy with Hugh Helps Alpha. Our holistic approach—led by a trusted hypnosis therapist—integrates life coaching and support for anxiety, weight management, and quitting smoking. Now serving Cobham, Shepperton, Weybridge, and nearby areas." />
+  <meta name="keywords" content="EFT, tapping therapy, emotional freedom therapy, hypnosis therapist, life coaching, anxiety support, weight loss therapy, quit smoking therapy, Cobham, Shepperton, Weybridge" />
 
-  <link rel="icon" href="hugh-helps-logo.jpg" type="image/jpeg">
+  <link rel="icon" href="hugh-helps-logo.jpg" type="image/jpeg" />
 
   <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link 
-    rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-  >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   
   <!-- Global Styles (Navbar, Footer, etc.) -->
   <link rel="stylesheet" href="index.css" />
 
   <!-- Page-Specific Styles (Optional) -->
   <link rel="stylesheet" href="services-eft.css" />
+  <link rel="stylesheet" href="cookie.css">
+
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+  <div id="cookie-banner">
+  <p>🍪 We use cookies to improve your browsing experience, deliver personalised content, and analyse our traffic. By clicking “<strong>Accept All</strong>”, you consent to our use of cookies. See our <a href="cookie-policy.html">Cookie Policy</a> for details.</p>
+  <div class="buttons">
+    <button id="accept-cookies" class="btn accept">Accept All 🍪</button>
+    <button id="decline-cookies" class="btn decline">Decline</button>
+  </div>
+</div>
+
+   <!-- ===== NAVBAR ===== -->
+   <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <!-- Logo Image -->
         <img src="hugh-helps-logo.jpg" alt="Hugh Helps Logo" class="navbar-logo me-2">
-        
-        <!-- Brand Title and Subtitle -->
         <div>
           <span class="brand-title">Hugh Helps</span>
-          <small class="brand-subtitle d-block">Alpha Consultancy</small>
         </div>
       </a>
-      <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarContent" 
-        aria-controls="navbarContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
   
@@ -55,23 +57,15 @@
         <ul class="navbar-nav">
           <!-- Home Link -->
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
-  
           <!-- About Link -->
           <li class="nav-item">
             <a class="nav-link" href="about-therapist-shepperton.html">About Hugh</a>
           </li>
-  
           <!-- Services Dropdown -->
           <li class="nav-item dropdown">
-            <a 
-              class="nav-link dropdown-toggle" 
-              href="#" 
-              role="button" 
-              data-bs-toggle="dropdown" 
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
             <ul class="dropdown-menu">
@@ -79,42 +73,39 @@
               <li><a class="dropdown-item" href="professional-therapist-shepperton.html#professional-therapy">Therapist Services</a></li>
               <li><a class="dropdown-item" href="professional-therapist-shepperton.html#expert-counselling">Expert Counselling</a></li>
               <li><a class="dropdown-item" href="professional-therapist-shepperton.html#local-therapy-sessions">Local Therapy Sessions</a></li>
-  
               <!-- Hypnotherapy Services -->
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#hypnotherapy-services">Hypnotherapy Services</a></li>
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#sleep-improvement-hypnosis">Sleep Improvement Hypnosis</a></li>
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#quit-smoking-hypnosis">Quit Smoking Hypnosis</a></li>
               <li><a class="dropdown-item" href="hypnotherapy-weybridge.html#hypnosis-and-weight-loss">Weight-loss Hypnosis</a></li>
-  
-              <!-- EFT & Tapping Services -->
+              <!-- Emotional Freedom Technique (excluded on this page) -->
               <li><a class="dropdown-item" href="emotional-freedom-technique.html">Emotional Freedom Technique</a></li>
               <li><a class="dropdown-item" href="emotional-freedom-technique.html">Tapping</a></li>
-  
               <!-- Life Coaching Services -->
               <li><a class="dropdown-item" href="life-coaching-addlestone.html#life-coaching-services">Life Coaching Services</a></li>
-              <li><a class="dropdown-item" href="life-coaching-addlestone.html#adult-adhd-therapist">Adult ADHD Therapist</a></li>
+             
               <li><a class="dropdown-item" href="life-coaching-addlestone.html#bereavement-counsellor">Bereavement Counsellor</a></li>
-  
-              <!-- Mental Health Therapies -->
-              <li><a class="dropdown-item" href="mental-health-cobham.html#kids-therapist-near-me">Kids Therapist Near Me</a></li>
-              <li><a class="dropdown-item" href="mental-health-cobham.html#depression-therapy">Depression Therapy</a></li>
-              <li><a class="dropdown-item" href="mental-health-cobham.html#anxiety-therapy">Anxiety Therapy</a></li>
-  
-              <li><hr class="dropdown-divider" /></li>
-  
-              <!-- Additional Services -->
-              <li><a class="dropdown-item" href="additional-mental-health-services-shepperton.html">Additional Services</a></li>
+              <!-- Mental Health: Phobias, Anxiety & Stress (current page) -->
+              <li><a class="dropdown-item active" href="mental-health-phobias-anxiety-stress.html">Mental Health: Phobias, Anxiety &amp; Stress</a></li>
+              <li><a class="dropdown-item" href="mental-health-phobias-anxiety-stress.html#phobias">Phobias</a></li>
+              <li><a class="dropdown-item" href="mental-health-phobias-anxiety-stress.html#anxiety">Anxiety</a></li>
+              <li><a class="dropdown-item" href="mental-health-phobias-anxiety-stress.html#stress">Stress</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <!-- Additional Mental Health Services -->
+              <li><a class="dropdown-item" href="additional-mental-health-services-shepperton.html">Additional Mental Health Services</a></li>
             </ul>
           </li>
-  
+                   <!-- Testimonial Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="testimonial.html">Testimonials</a>
+          </li>
           <!-- Contact Link -->
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-  
           <!-- Pricing Link -->
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="pricing-therapy-shepperton.html">Pricing</a>
+            <a class="nav-link" href="pricing-therapy-shepperton.html">Pricing</a>
           </li>
         </ul>
       </div>
@@ -126,11 +117,10 @@
   <header class="eft-tapping-header d-flex align-items-center justify-content-center pt-5 mt-5" style="background: url('placeholder-eft-header.jpg') center/cover no-repeat;">
     <div class="container text-center">
       <h1 class="page-title text-dark">
-        EFT Tapping Services in Shepperton, Weybridge, Hampton,<br />
-        Egham, Staines-upon-Thames, and Cobham
+        EFT Tapping Services in Shepperton and Walton-on-Thames
       </h1>
       <p class="page-subtitle text-muted">
-        Emotional Freedom Techniques for Stress Relief and Personal Growth
+        <h2>Emotional Freedom Therapy for Lasting Stress Relief &amp; Personal Growth</h2>
       </p>
     </div>
   </header>
@@ -143,12 +133,11 @@
         Experience Emotional Freedom Techniques (EFT)
       </h2>
       <p class="mx-auto text-center" style="max-width: 700px;">
-        EFT, or “Tapping Therapy,” is a mind–body approach that blends elements 
-        of cognitive and behavioral techniques with the physical act of tapping 
-        specific meridian endpoints. Whether you’re seeking relief from stress, 
-        anxiety, pain, or traumatic memories, EFT may help “reprogram” the way 
-        your mind and body respond to negative thoughts and emotions.
+        Emotional freedom therapy (EFT) – a proven, direct method that merges cognitive-behavioral techniques with precise tapping on key meridian points. As part of the comprehensive care at Hugh Helps, your trusted hypnosis therapist, our EFT sessions are designed to rapidly ease stress, anxiety, and unwanted habits while promoting lasting change.
       </p>
+      <p class="mx-auto text-center fst-italic" style="max-width: 700px; margin-top: 1rem;">
+  <strong>At Hugh Helps, we’ll guide you step-by-step through each tapping point, so you know exactly where and when to tap.</strong>
+</p>
     </div>
   </section>
   <!-- ===== /INTRO SECTION ===== -->
@@ -208,17 +197,17 @@
           </p>
           <ol>
             <li><strong>Identify the Issue:</strong> Pinpoint a specific problem, memory, or feeling you want to address.</li>
-            <li><strong>Set Up and Acknowledge:</strong> Rate your distress (e.g., 0–10). Use a statement like, 
-            “Even though I feel this anxiety, I deeply and completely accept myself.”</li>
-            <li><strong>Tap on Meridian Points:</strong> Lightly tap on specific points (karate chop, eyebrow, side of eye, under eye, etc.) 
-            while repeating a reminder phrase about the issue.</li>
-            <li><strong>Reassess:</strong> Rate your distress again to see if it has decreased. Continue tapping in rounds until the discomfort subsides.</li>
+            <li><strong>Set Up and Acknowledge:</strong> Rate your distress (e.g., 0–10) and use a statement such as, 
+              “Even though I feel this anxiety, I deeply and completely accept myself.”</li>
+            <li><strong>Tap on Meridian Points:</strong> With Hugh’s guidance, you will tap on yourself at specific meridian points 
+              (e.g., the karate chop, eyebrow, side of the eye, under the eye, etc.) while repeating a reminder phrase about the issue.</li>
+            <li><strong>Record and Reassess:</strong> I encourage you to record the session. This way, you can review the process at home, 
+              repeat the tapping on your own, and monitor your progress as you reassess your distress levels.</li>
           </ol>
           <p>
-            By combining mindful exposure to negative emotions (or memories) with the physical calming 
-            effect of tapping, EFT may help regulate the body’s stress response. Some studies suggest it 
-            lowers cortisol levels and eases anxiety symptoms. While more research is ongoing, many users 
-            report immediate, noticeable relief.
+            By combining mindful exposure to negative emotions with the calming effect of self-tapping under direct instruction, 
+            EFT may help regulate the body’s stress response. Some studies suggest it lowers cortisol levels and eases anxiety symptoms. 
+            While more research is ongoing, many users report immediate, noticeable relief.
           </p>
           <a href="contact.html" class="btn btn-primary">Book an EFT Session</a>
         </div>
@@ -252,12 +241,9 @@
           </ul>
           <p>
             EFT may serve as a valuable self-help tool or be integrated into a broader therapeutic 
-            framework. At Hugh Helps Alpha Consultancy, we tailor EFT sessions to your individual 
-            needs, ensuring a safe, professional environment whether in-person or online.
+            framework. At Hugh Helps Alpha Consultancy, I tailor EFT sessions to your individual needs, ensuring a safe, professional environment whether in-person or online.
           </p>
-          <a href="contact.html" class="btn btn-primary"
-            >Schedule Your Tapping Therapy</a
-          >
+          <a href="contact.html" class="btn btn-primary">Schedule Your Tapping Therapy</a>
         </div>
       </div>
     </div>
@@ -272,19 +258,19 @@
         <div class="col-md-6">
           <p>
             In your first EFT session, we’ll discuss your primary concerns, goals, and any 
-            specific issues causing distress. We then guide you through the tapping process:
+            specific issues causing distress. Hugh will then guide you through the tapping process, ensuring you know exactly which points to tap on your own.
           </p>
           <ul>
             <li>Exploring relevant thoughts, memories, or fears</li>
             <li>Establishing a “setup statement” to acknowledge the issue</li>
-            <li>Gently tapping through the standard meridian points</li>
+            <li>Gently tapping on your own meridian points under Hugh’s clear instruction</li>
             <li>Monitoring changes in emotional or physical intensity</li>
-            <li>Repeating or refining the process as needed</li>
+            <li>Recording the session so you can revisit and repeat the process at home</li>
           </ul>
           <p>
-            Clients often describe feeling lighter, calmer, or less reactive to the 
-            negative thought after tapping. Some notice improvements immediately, 
-            while others require several sessions to achieve deeper relief.
+            Clients often describe feeling lighter, calmer, or less reactive to negative thoughts after tapping. 
+            Some notice improvements immediately, while others find that regularly reviewing their recorded sessions 
+            helps deepen the benefits over time.
           </p>
         </div>
         <div class="col-md-6">
@@ -304,34 +290,28 @@
   </section>
   <!-- ===== /SECTION 4 ===== -->
 
-  <!-- ===== TESTIMONIALS SECTION (OPTIONAL) ===== -->
-  <section class="py-5">
-    <div class="container">
-      <h4 class="mb-4">Client Feedback</h4>
-      <blockquote class="blockquote">
-        <p class="mb-2">
-          "I never realized how simple tapping on a few points could ease my anxiety. I felt calmer 
-          after just one session!"
-        </p>
-        <footer class="blockquote-footer">- Alex, Weybridge</footer>
-      </blockquote>
-      <blockquote class="blockquote">
-        <p class="mb-2">
-          "EFT helped me work through a traumatic memory I’d been stuck on for years. It gave me 
-          immediate relief and clarity."
-        </p>
-        <footer class="blockquote-footer">- Samantha, Cobham</footer>
-      </blockquote>
-      <blockquote class="blockquote">
-        <p class="mb-2">
-          "I was skeptical at first, but tapping has become a go-to technique for stress management. 
-          Hugh’s guidance made all the difference."
-        </p>
-        <footer class="blockquote-footer">- Tom, Shepperton</footer>
-      </blockquote>
+ 
+ <!-- ===== TESTIMONIALS SECTION ===== -->
+<section class="testimonials-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">What Our Clients Say</h2>
+    <div class="row justify-content-center g-4">
+
+      <!-- Centered testimonial -->
+      <div class="col-md-6">
+        <div class="testimonial-box p-4 shadow-sm text-center">
+          <p class="testimonial mb-2">
+            My experience with Hugh has been amazing and at the moment its still ongoing but I have to say when I'm there I feel totally relaxed and above all safe. Hugh makes you feel totally at ease from the time you step foot into his house. He is a very warm and caring man. I enjoy my visits and come out feeling good. You have to make the effort and carry on with the practicing but I'm sure it will be all worth it in the end. Thank you Hugh for your continuous support.
+          </p>
+          <p style="color:#1f4e79; font-size:18px; margin:0;">★★★★★</p>
+          <small class="text-muted">- D.G.</small>
+        </div>
+      </div>
+
     </div>
-  </section>
-  <!-- ===== /TESTIMONIALS SECTION ===== -->
+  </div>
+</section>
+
 
   <!-- ===== CALL-TO-ACTION SECTION ===== -->
   <section class="py-5 bg-dark text-white text-center">
@@ -367,6 +347,9 @@
             <a href="https://www.linkedin.com/company/hughhelpsalpha" class="text-white me-3 me-md-0 ms-md-3" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-linkedin" aria-label="LinkedIn"></i>
             </a>
+            <a href="https://share.google/MmSaZaNz31wiYLWju" class="text-white me-3 me-md-0 ms-md-3" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-google" aria-label="Google"></i>
+      </a>
           </div>
           
           <!-- Privacy and Cookie Policy Links -->
@@ -378,7 +361,7 @@
       </div>
       <!-- Copyright -->
       <div class="mt-3">
-        <p class="mb-2 text-center">&copy; 2025 Hugh Helps Alpha Consultancy. All Rights Reserved.</p>
+        <p class="mb-2 text-center">&copy; 2026 Hugh Helps Alpha Consultancy. All Rights Reserved.</p>
       </div>
       <div class="designed-by">
         <p class="mb-0 text-center">
@@ -394,5 +377,7 @@
 
   <!-- Bootstrap JS & Dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="cookie.js"></script>
+
 </body>
 </html>

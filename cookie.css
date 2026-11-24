@@ -1,0 +1,69 @@
+/* cookie.css */
+#cookie-banner {
+  display: none;               /* shown by JS if no consent found */
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #c2e2ff;
+  color: #000;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 450px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-family: sans-serif;
+  z-index: 10000;
+}
+
+#cookie-banner p {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+#cookie-banner a {
+  color: #1f4e79;
+  text-decoration: underline;
+}
+
+#cookie-banner .buttons {
+  text-align: right;
+}
+
+#cookie-banner .btn {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+#cookie-banner .btn.accept {
+  background: #1f4e79;
+  color: #fff;
+}
+
+#cookie-banner .btn.decline {
+  background: #fff;
+  color: #000;
+}
+/* keep buttons side-by-side and same shape */
+#cookie-banner .buttons {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 0.5rem;           /* small gap between buttons */
+}
+
+#cookie-banner .btn {
+  white-space: nowrap;   /* prevent button text from wrapping */
+}
+
+/* ensure the banner isn’t too wide on tiny phones */
+@media (max-width: 400px) {
+  #cookie-banner {
+    max-width: 100%;      /* shrink to 90% of viewport width */
+    padding: 0.75rem;     /* slightly less padding on mobile */
+  }
+}
